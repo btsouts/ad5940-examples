@@ -15,7 +15,7 @@ Analog Devices Software License Agreement.
  
 *****************************************************************************/
 #include "Impedance.h"
-
+#include "SignalGen.h"
 /**
    User could configure following parameters
 **/
@@ -125,20 +125,71 @@ void AD5940_Main(void)
 {
   uint32_t temp;  
   AD5940PlatformCfg();
-  AD5940ImpedanceStructInit();
   
+	signalGenReset();
+	AD5940_Delay10us(200000);
+
+	signalGenSetMode(SQUARE);
+	AD5940_Delay10us(300000);
+
+	signalGenSetMode(SQUARE_2);
+	AD5940_Delay10us(300000);
+
+	signalGenSetMode(TRIANGLE);
+	AD5940_Delay10us(300000);
+
+	signalGenSetMode(SINE);
+	AD5940_Delay10us(300000);
+
+	signalGenSetFreqAdjustMode(FULL);
+	AD5940_Delay10us(300000);
+
+	AD5940ImpedanceStructInit();
   AppIMPInit(AppBuff, APPBUFF_SIZE);    /* Initialize IMP application. Provide a buffer, which is used to store sequencer commands */
   AppIMPCtrl(IMPCTRL_START, 0);          /* Control IMP measurment to start. Second parameter has no meaning with this command. */
- 
+	
+	float frequency = 100.0;
+	uint32_t freqReg;
+	static int intCounter = 0;
+	
+	/*
+	while (1)
+	{
+		freqReg = signalGenFreqCalc(frequency);
+		signalGenAdjustFreq(FREQ0, freqReg);
+		//AD5940_Delay10us(1000000);
+
+		//SEGGER_RTT_WriteString(0, "\r[ Written]\n");
+		frequency += 50.0;
+	}
+	*/
+	
+	freqReg = signalGenFreqCalc(frequency);
+	signalGenAdjustFreq(FREQ0, freqReg);
+	
   while(1)
   {
-    if(AD5940_GetMCUIntFlag())
+    /*
+		if (intCounter == 0) {
+			freqReg = signalGenFreqCalc(frequency);
+			signalGenAdjustFreq(FREQ0, freqReg);
+			//AD5940_Delay10us(1000000);
+
+			//SEGGER_RTT_WriteString(0, "\r[ Written]\n");
+			frequency += 50.0;
+		}
+		*/
+		
+		if(AD5940_GetMCUIntFlag())
     {
       AD5940_ClrMCUIntFlag();
       temp = APPBUFF_SIZE;
       AppIMPISR(AppBuff, &temp);
       ImpedanceShowResult(AppBuff, temp);
+			intCounter = (intCounter+1) % 100;
     }
+				
   }
+	
 }
 

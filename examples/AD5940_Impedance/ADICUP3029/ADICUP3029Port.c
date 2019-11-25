@@ -51,6 +51,24 @@ void AD5940_ReadWriteNBytes(unsigned char *pSendBuffer,unsigned char *pRecvBuff,
   }
 }
 
+void AD5940_SPI1ReadWriteNBytes(unsigned char *pSendBuffer,unsigned char *pRecvBuff,unsigned long length)
+{
+  ///@todo optimize FIFO operation for ADUCM3029.
+  while(length--)
+  {
+    // Flush Tx FIFO
+    pADI_SPI1->CTL |= BITM_SPI_CTL_TFLUSH;
+    pADI_SPI1->CTL &=~BITM_SPI_CTL_TFLUSH;
+    //do spi read and write
+    pADI_SPI1->CNT = 1;
+    pADI_SPI1->TX = *pSendBuffer++;
+    while((pADI_SPI1->STAT&BITM_SPI_STAT_XFRDONE) == 0);
+    while((pADI_SPI1->STAT&BITM_SPI_STAT_TXIRQ) == 0);
+    pADI_SPI1->STAT = BITM_SPI_STAT_TXIRQ|BITM_SPI_STAT_XFRDONE;
+    *pRecvBuff++ = pADI_SPI1->RX;
+  }
+}
+
 void AD5940_CsClr(void)
 {
    pADI_GPIO1->CLR = (1<<10);
@@ -59,6 +77,16 @@ void AD5940_CsClr(void)
 void AD5940_CsSet(void)
 {
    pADI_GPIO1->SET = (1<<10);
+}
+
+void AD5940_SPI1CsClr(void)
+{
+   pADI_GPIO1->CLR = (1<<9);
+}
+
+void AD5940_SPI1CsSet(void)
+{
+   pADI_GPIO1->SET = (1<<9);
 }
 
 void AD5940_RstSet(void)
@@ -121,6 +149,7 @@ uint32_t AD5940_MCUResourceInit(void *pCfg)
             BITM_SPI_CTL_RXOF|                    // overwrite data in Rx FIFO during overflow states
                /*BITM_SPI_CTL_ZEN|*/                     // transmit 00 when no valid data in Tx FIFO
                   BITM_SPI_CTL_TIM|                     // initiate trasnfer with a write to SPITX
+										//BITM_SPI_CTL_CPOL|
                      BITM_SPI_CTL_SPIEN;                  // Enable SPI. SCLK idles low/ data clocked on SCLK falling edge
   pADI_SPI0->CNT = 1;// Setup to transfer 1 bytes to slave
   /* Step2: initialize GPIO interrupt that connects to AD5940's interrupt output pin(Gp0, Gp3, Gp4, Gp6 or Gp7 ) */
@@ -132,6 +161,30 @@ uint32_t AD5940_MCUResourceInit(void *pCfg)
   
   AD5940_CsSet();
   AD5940_RstSet();
+	
+	/* -------------------- */
+	/* ADuCM302x GPIO Register Descriptions - 5-9 
+	 * 98 page of ADuCM302x-mixed-signal-control-processor-hardware-reference.pdf
+	 */
+	/*Setup Pins P1.06-->SCLK P1.07-->MOSI P1.08-->MISO P1.09-->CS*/
+  pADI_GPIO1->CFG = pADI_GPIO1->CFG|(1<<12)|(1<<14)|(1<<16); //|(1<<18)
+  pADI_GPIO1->OEN |= (1<<9); /* P1.9 Output Enable */
+  
+	/*Set SPI Baudrate = PCLK/2x(iCLKDiv+1).*/
+  pADI_SPI1->DIV = 0;/*Baudrae is 13MHz*/
+  pADI_SPI1->CTL = BITM_SPI_CTL_CSRST|        // Configure SPI to reset after a bit shift error is detected
+      BITM_SPI_CTL_MASEN|                   // Enable master mode
+      /*BITM_SPI_CTL_CON|*/                     // Enable continous transfer mode
+         BITM_SPI_CTL_OEN|                     // Select MISO pin to operate as normal -
+            BITM_SPI_CTL_RXOF|                    // overwrite data in Rx FIFO during overflow states
+               /*BITM_SPI_CTL_ZEN|*/                     // transmit 00 when no valid data in Tx FIFO
+                  BITM_SPI_CTL_TIM|                     // initiate trasnfer with a write to SPITX
+										BITM_SPI_CTL_CPOL|
+                      BITM_SPI_CTL_SPIEN;                  // Enable SPI. SCLK idles low/ data clocked on SCLK falling edge
+  pADI_SPI1->CNT = 1;// Setup to transfer 1 bytes to slave
+  
+  AD5940_SPI1CsSet();
+  
   return 0;
 }
 
