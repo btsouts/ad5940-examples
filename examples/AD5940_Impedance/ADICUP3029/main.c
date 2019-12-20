@@ -17,11 +17,32 @@ uint32_t MCUPlatformInit(void *pCfg);
 
 int main(void)
 {
-  void AD5940_Main(void);
+  char rxC;
+	
+	void AD5940_Main(void);
   MCUPlatformInit(0);
   AD5940_MCUResourceInit(0);
-  printf("Hello AD5940-Build Time:%s\n",__TIME__);
-  AD5940_Main();
+  printf("Hello AD5940-Build Comm Test 1 Time:%s\n",__TIME__);
+  //AD5940_Main();
+	//AD5940_MainCommTest();
+	while(1)
+  {
+		//scanf("%s",inputCmd);
+		
+		//printf("RFC 0x%X COMRFC 0x%X\n", pADI_UART0->RFC, pADI_UART0->COMRFC);
+		printf("RFC 0x%X\n", pADI_UART0->RFC);
+		while (pADI_UART0->RFC > 0)
+		{
+			//printf("I read %c\n", pADI_UART0->COMRX);
+			rxC = pADI_UART0->RX;
+			//comRXC = pADI_UART0->COMRX;
+			printf("Read %c\n", rxC);
+			//printf("rxC %c comRXC %c\n", rxC, comRXC);
+			//printf("RX 0x%X COMRFC 0x%X\n", pADI_UART0->RX, pADI_UART0->COMRX);
+		}
+			
+		AD5940_Delay10us(200000);	
+	}	
 }
 
 /* Below functions are used to initialize MCU Platform */
@@ -126,8 +147,8 @@ int UrtCfg(int iBaud)
   pADI_UART0->COMFCR |= BITM_UART_COMFCR_RFCLR|BITM_UART_COMFCR_TFCLR;                                   // Clear the UART FIFOs
   pADI_UART0->COMFCR &= ~(BITM_UART_COMFCR_RFCLR|BITM_UART_COMFCR_TFCLR);                                // Disable clearing mechanism
 
-  NVIC_EnableIRQ(UART_EVT_IRQn);              // Enable UART interrupt source in NVIC
-  pADI_UART0->COMIEN = BITM_UART_COMIEN_ERBFI|BITM_UART_COMIEN_ELSI; /* Rx Interrupt */
+  //NVIC_EnableIRQ(UART_EVT_IRQn);              // Enable UART interrupt source in NVIC
+  //pADI_UART0->COMIEN = BITM_UART_COMIEN_ERBFI|BITM_UART_COMIEN_ELSI; /* Rx Interrupt */
   return pADI_UART0->COMLSR;
 }
 #include "stdio.h"
@@ -140,4 +161,13 @@ int fputc(int c, FILE *f)
   pADI_UART0->COMTX = c;
   while((pADI_UART0->COMLSR&0x20) == 0);// tx fifo empty
   return c;
+}
+
+/* MCU related external line interrupt service routine */
+void UART_Int_Handler()
+{
+  /*
+	uartInt = true;
+	pADI_UART0->COMIEN = ~(BITM_UART_COMIEN_ERBFI|BITM_UART_COMIEN_ELSI);
+	*/
 }

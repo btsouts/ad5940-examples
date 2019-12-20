@@ -33,13 +33,15 @@ float LFOSCFreq;    /* Measured LFOSC frequency */
 */
 static int32_t RampShowResult(float *pData, uint32_t DataCount)
 {
-  static uint32_t index;
+  static uint32_t index=0;
   /* Print data*/
   for(int i=0;i<DataCount;i++)
   {
     printf("index:%d, %.3fuA\n", index++, pData[i]);
     //i += 10;  /* Print though UART consumes too much time. */
   }
+	
+	//printf("This ok\n");
   return 0;
 }
 
@@ -151,9 +153,10 @@ void AD5940_Main(void)
   {
     if(AD5940_GetMCUIntFlag())
     {
-      AD5940_ClrMCUIntFlag();
+      AD5940_ClrMCUIntFlag();	
       temp = APPBUFF_SIZE;
       AppRAMPISR(AppBuff, &temp);
+			//AppRAMPISR(AppBuff, APPBUFF_SIZE);
       RampShowResult((float*)AppBuff, temp);
     }
 
