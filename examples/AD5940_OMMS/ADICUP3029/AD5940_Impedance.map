@@ -1,0 +1,2056 @@
+Component: ARM Compiler 5.06 update 6 (build 750) Tool: armlink [4d35ed]
+
+==============================================================================
+
+Section Cross References
+
+    ad5940.o(i.AD5940_ADCBaseCfgS) refers to ad5940.o(i.AD5940_WriteReg) for AD5940_WriteReg
+    ad5940.o(i.AD5940_ADCCode2Volt) refers to fflti.o(.text) for __aeabi_i2f
+    ad5940.o(i.AD5940_ADCCode2Volt) refers to fdiv.o(.text) for __aeabi_fdiv
+    ad5940.o(i.AD5940_ADCCode2Volt) refers to fmul.o(.text) for __aeabi_fmul
+    ad5940.o(i.AD5940_ADCConvtCtrlS) refers to ad5940.o(i.AD5940_ReadReg) for AD5940_ReadReg
+    ad5940.o(i.AD5940_ADCConvtCtrlS) refers to ad5940.o(i.AD5940_WriteReg) for AD5940_WriteReg
+    ad5940.o(i.AD5940_ADCDigCompCfgS) refers to ad5940.o(i.AD5940_WriteReg) for AD5940_WriteReg
+    ad5940.o(i.AD5940_ADCFilterCfgS) refers to ad5940.o(i.AD5940_ReadReg) for AD5940_ReadReg
+    ad5940.o(i.AD5940_ADCFilterCfgS) refers to ad5940.o(i.AD5940_WriteReg) for AD5940_WriteReg
+    ad5940.o(i.AD5940_ADCFilterCfgS) refers to ad5940.o(i.AD5940_AFECtrlS) for AD5940_AFECtrlS
+    ad5940.o(i.AD5940_ADCMuxCfgS) refers to ad5940.o(i.AD5940_ReadReg) for AD5940_ReadReg
+    ad5940.o(i.AD5940_ADCMuxCfgS) refers to ad5940.o(i.AD5940_WriteReg) for AD5940_WriteReg
+    ad5940.o(i.AD5940_ADCPGACal) refers to cfcmple.o(.text) for __aeabi_cfcmple
+    ad5940.o(i.AD5940_ADCPGACal) refers to f2d.o(.text) for __aeabi_f2d
+    ad5940.o(i.AD5940_ADCPGACal) refers to cdrcmple.o(.text) for __aeabi_cdrcmple
+    ad5940.o(i.AD5940_ADCPGACal) refers to fadd.o(.text) for __aeabi_fsub
+    ad5940.o(i.AD5940_ADCPGACal) refers to fmul.o(.text) for __aeabi_fmul
+    ad5940.o(i.AD5940_ADCPGACal) refers to fdiv.o(.text) for __aeabi_fdiv
+    ad5940.o(i.AD5940_ADCPGACal) refers to ffixi.o(.text) for __aeabi_f2iz
+    ad5940.o(i.AD5940_ADCPGACal) refers to ad5940.o(i.__AD5940_ReferenceON) for __AD5940_ReferenceON
+    ad5940.o(i.AD5940_ADCPGACal) refers to ad5940.o(i.AD5940_ADCFilterCfgS) for AD5940_ADCFilterCfgS
+    ad5940.o(i.AD5940_ADCPGACal) refers to ad5940.o(i.AD5940_ADCBaseCfgS) for AD5940_ADCBaseCfgS
+    ad5940.o(i.AD5940_ADCPGACal) refers to ad5940.o(i.AD5940_HSLoopCfgS) for AD5940_HSLoopCfgS
+    ad5940.o(i.AD5940_ADCPGACal) refers to ad5940.o(i.AD5940_AFECtrlS) for AD5940_AFECtrlS
+    ad5940.o(i.AD5940_ADCPGACal) refers to adicup3029port.o(i.AD5940_Delay10us) for AD5940_Delay10us
+    ad5940.o(i.AD5940_ADCPGACal) refers to ad5940.o(i.AD5940_INTCGetCfg) for AD5940_INTCGetCfg
+    ad5940.o(i.AD5940_ADCPGACal) refers to ad5940.o(i.AD5940_INTCCfg) for AD5940_INTCCfg
+    ad5940.o(i.AD5940_ADCPGACal) refers to ad5940.o(i.AD5940_WriteReg) for AD5940_WriteReg
+    ad5940.o(i.AD5940_ADCPGACal) refers to ad5940.o(i.AD5940_ADCMuxCfgS) for AD5940_ADCMuxCfgS
+    ad5940.o(i.AD5940_ADCPGACal) refers to ad5940.o(i.__AD5940_TakeMeasurement) for __AD5940_TakeMeasurement
+    ad5940.o(i.AD5940_ADCPGACal) refers to dflti.o(.text) for __aeabi_i2d
+    ad5940.o(i.AD5940_ADCPGACal) refers to ddiv.o(.text) for __aeabi_ddiv
+    ad5940.o(i.AD5940_ADCPGACal) refers to dadd.o(.text) for __aeabi_dadd
+    ad5940.o(i.AD5940_ADCPGACal) refers to dfixi.o(.text) for __aeabi_d2iz
+    ad5940.o(i.AD5940_ADCPGACal) refers to ad5940.o(i.AD5940_ADCConvtCtrlS) for AD5940_ADCConvtCtrlS
+    ad5940.o(i.AD5940_ADCPowerCtrlS) refers to ad5940.o(i.AD5940_ReadReg) for AD5940_ReadReg
+    ad5940.o(i.AD5940_ADCPowerCtrlS) refers to ad5940.o(i.AD5940_WriteReg) for AD5940_WriteReg
+    ad5940.o(i.AD5940_ADCRepeatCfgS) refers to ad5940.o(i.AD5940_WriteReg) for AD5940_WriteReg
+    ad5940.o(i.AD5940_AFECtrlS) refers to ad5940.o(i.AD5940_ReadReg) for AD5940_ReadReg
+    ad5940.o(i.AD5940_AFECtrlS) refers to ad5940.o(i.AD5940_WriteReg) for AD5940_WriteReg
+    ad5940.o(i.AD5940_AFEPwrBW) refers to ad5940.o(i.AD5940_WriteReg) for AD5940_WriteReg
+    ad5940.o(i.AD5940_AGPIOCfg) refers to ad5940.o(i.AD5940_AGPIOFuncCfg) for AD5940_AGPIOFuncCfg
+    ad5940.o(i.AD5940_AGPIOCfg) refers to ad5940.o(i.AD5940_AGPIOOen) for AD5940_AGPIOOen
+    ad5940.o(i.AD5940_AGPIOCfg) refers to ad5940.o(i.AD5940_AGPIOIen) for AD5940_AGPIOIen
+    ad5940.o(i.AD5940_AGPIOCfg) refers to ad5940.o(i.AD5940_AGPIOPen) for AD5940_AGPIOPen
+    ad5940.o(i.AD5940_AGPIOCfg) refers to ad5940.o(i.AD5940_WriteReg) for AD5940_WriteReg
+    ad5940.o(i.AD5940_AGPIOClr) refers to ad5940.o(i.AD5940_WriteReg) for AD5940_WriteReg
+    ad5940.o(i.AD5940_AGPIOFuncCfg) refers to ad5940.o(i.AD5940_WriteReg) for AD5940_WriteReg
+    ad5940.o(i.AD5940_AGPIOIen) refers to ad5940.o(i.AD5940_WriteReg) for AD5940_WriteReg
+    ad5940.o(i.AD5940_AGPIOIn) refers to ad5940.o(i.AD5940_ReadReg) for AD5940_ReadReg
+    ad5940.o(i.AD5940_AGPIOOen) refers to ad5940.o(i.AD5940_WriteReg) for AD5940_WriteReg
+    ad5940.o(i.AD5940_AGPIOPen) refers to ad5940.o(i.AD5940_WriteReg) for AD5940_WriteReg
+    ad5940.o(i.AD5940_AGPIOSet) refers to ad5940.o(i.AD5940_WriteReg) for AD5940_WriteReg
+    ad5940.o(i.AD5940_AGPIOToggle) refers to ad5940.o(i.AD5940_WriteReg) for AD5940_WriteReg
+    ad5940.o(i.AD5940_CLKCfg) refers to ad5940.o(i.AD5940_ReadReg) for AD5940_ReadReg
+    ad5940.o(i.AD5940_CLKCfg) refers to ad5940.o(i.AD5940_WriteReg) for AD5940_WriteReg
+    ad5940.o(i.AD5940_CLKCfg) refers to ad5940.o(i.AD5940_HFOSC32MHzCtrl) for AD5940_HFOSC32MHzCtrl
+    ad5940.o(i.AD5940_CLKCfg) refers to adicup3029port.o(i.AD5940_Delay10us) for AD5940_Delay10us
+    ad5940.o(i.AD5940_ClksCalculate) refers to memcpya.o(.text) for __aeabi_memcpy4
+    ad5940.o(i.AD5940_ClksCalculate) refers to ffltui.o(.text) for __aeabi_ui2f
+    ad5940.o(i.AD5940_ClksCalculate) refers to fmul.o(.text) for __aeabi_fmul
+    ad5940.o(i.AD5940_ClksCalculate) refers to ffixui.o(.text) for __aeabi_f2uiz
+    ad5940.o(i.AD5940_ClksCalculate) refers to fadd.o(.text) for __aeabi_fadd
+    ad5940.o(i.AD5940_ClksCalculate) refers to ad5940.o(.constdata) for .constdata
+    ad5940.o(i.AD5940_ComplexAddFloat) refers to fadd.o(.text) for __aeabi_fadd
+    ad5940.o(i.AD5940_ComplexDivFloat) refers to fmul.o(.text) for __aeabi_fmul
+    ad5940.o(i.AD5940_ComplexDivFloat) refers to fadd.o(.text) for __aeabi_fadd
+    ad5940.o(i.AD5940_ComplexDivFloat) refers to fdiv.o(.text) for __aeabi_fdiv
+    ad5940.o(i.AD5940_ComplexDivInt) refers to fflti.o(.text) for __aeabi_i2f
+    ad5940.o(i.AD5940_ComplexDivInt) refers to fmul.o(.text) for __aeabi_fmul
+    ad5940.o(i.AD5940_ComplexDivInt) refers to fadd.o(.text) for __aeabi_fadd
+    ad5940.o(i.AD5940_ComplexDivInt) refers to fdiv.o(.text) for __aeabi_fdiv
+    ad5940.o(i.AD5940_ComplexMag) refers to fmul.o(.text) for __aeabi_fmul
+    ad5940.o(i.AD5940_ComplexMag) refers to fadd.o(.text) for __aeabi_fadd
+    ad5940.o(i.AD5940_ComplexMag) refers to f2d.o(.text) for __aeabi_f2d
+    ad5940.o(i.AD5940_ComplexMag) refers to sqrt.o(i.sqrt) for sqrt
+    ad5940.o(i.AD5940_ComplexMag) refers to d2f.o(.text) for __aeabi_d2f
+    ad5940.o(i.AD5940_ComplexMulFloat) refers to fmul.o(.text) for __aeabi_fmul
+    ad5940.o(i.AD5940_ComplexMulFloat) refers to fadd.o(.text) for __aeabi_fsub
+    ad5940.o(i.AD5940_ComplexMulInt) refers to fflti.o(.text) for __aeabi_i2f
+    ad5940.o(i.AD5940_ComplexMulInt) refers to fmul.o(.text) for __aeabi_fmul
+    ad5940.o(i.AD5940_ComplexMulInt) refers to fadd.o(.text) for __aeabi_fsub
+    ad5940.o(i.AD5940_ComplexPhase) refers to f2d.o(.text) for __aeabi_f2d
+    ad5940.o(i.AD5940_ComplexPhase) refers to atan2.o(i.atan2) for atan2
+    ad5940.o(i.AD5940_ComplexPhase) refers to d2f.o(.text) for __aeabi_d2f
+    ad5940.o(i.AD5940_ComplexSubFloat) refers to fadd.o(.text) for __aeabi_fsub
+    ad5940.o(i.AD5940_DFTCfgS) refers to ad5940.o(i.AD5940_ReadReg) for AD5940_ReadReg
+    ad5940.o(i.AD5940_DFTCfgS) refers to ad5940.o(i.AD5940_WriteReg) for AD5940_WriteReg
+    ad5940.o(i.AD5940_DSPCfgS) refers to ad5940.o(i.AD5940_ADCBaseCfgS) for AD5940_ADCBaseCfgS
+    ad5940.o(i.AD5940_DSPCfgS) refers to ad5940.o(i.AD5940_ADCFilterCfgS) for AD5940_ADCFilterCfgS
+    ad5940.o(i.AD5940_DSPCfgS) refers to ad5940.o(i.AD5940_ADCDigCompCfgS) for AD5940_ADCDigCompCfgS
+    ad5940.o(i.AD5940_DSPCfgS) refers to ad5940.o(i.AD5940_DFTCfgS) for AD5940_DFTCfgS
+    ad5940.o(i.AD5940_DSPCfgS) refers to ad5940.o(i.AD5940_StatisticCfgS) for AD5940_StatisticCfgS
+    ad5940.o(i.AD5940_EnterSleepS) refers to ad5940.o(i.AD5940_WriteReg) for AD5940_WriteReg
+    ad5940.o(i.AD5940_FIFOCfg) refers to ad5940.o(i.AD5940_WriteReg) for AD5940_WriteReg
+    ad5940.o(i.AD5940_FIFOCfg) refers to ad5940.o(i.AD5940_ReadReg) for AD5940_ReadReg
+    ad5940.o(i.AD5940_FIFOCtrlS) refers to ad5940.o(i.AD5940_WriteReg) for AD5940_WriteReg
+    ad5940.o(i.AD5940_FIFOGetCfg) refers to ad5940.o(i.AD5940_ReadReg) for AD5940_ReadReg
+    ad5940.o(i.AD5940_FIFOGetCnt) refers to ad5940.o(i.AD5940_ReadReg) for AD5940_ReadReg
+    ad5940.o(i.AD5940_FIFORd) refers to adicup3029port.o(i.AD5940_CsClr) for AD5940_CsClr
+    ad5940.o(i.AD5940_FIFORd) refers to ad5940.o(i.AD5940_ReadWrite8B) for AD5940_ReadWrite8B
+    ad5940.o(i.AD5940_FIFORd) refers to ad5940.o(i.AD5940_ReadWrite16B) for AD5940_ReadWrite16B
+    ad5940.o(i.AD5940_FIFORd) refers to adicup3029port.o(i.AD5940_CsSet) for AD5940_CsSet
+    ad5940.o(i.AD5940_FIFORd) refers to ad5940.o(i.AD5940_ReadWrite32B) for AD5940_ReadWrite32B
+    ad5940.o(i.AD5940_FIFOThrshSet) refers to ad5940.o(i.AD5940_WriteReg) for AD5940_WriteReg
+    ad5940.o(i.AD5940_GetADIID) refers to ad5940.o(i.AD5940_ReadReg) for AD5940_ReadReg
+    ad5940.o(i.AD5940_GetChipID) refers to ad5940.o(i.AD5940_ReadReg) for AD5940_ReadReg
+    ad5940.o(i.AD5940_HFOSC32MHzCtrl) refers to ad5940.o(i.AD5940_ReadReg) for AD5940_ReadReg
+    ad5940.o(i.AD5940_HFOSC32MHzCtrl) refers to ad5940.o(i.AD5940_WriteReg) for AD5940_WriteReg
+    ad5940.o(i.AD5940_HSDACCal) refers to ad5940.o(i.__AD5940_ReferenceON) for __AD5940_ReferenceON
+    ad5940.o(i.AD5940_HSDACCal) refers to ad5940.o(i.AD5940_ADCFilterCfgS) for AD5940_ADCFilterCfgS
+    ad5940.o(i.AD5940_HSDACCal) refers to ad5940.o(i.AD5940_ADCBaseCfgS) for AD5940_ADCBaseCfgS
+    ad5940.o(i.AD5940_HSDACCal) refers to ad5940.o(i.AD5940_LPLoopCfgS) for AD5940_LPLoopCfgS
+    ad5940.o(i.AD5940_HSDACCal) refers to ad5940.o(i.AD5940_HSLoopCfgS) for AD5940_HSLoopCfgS
+    ad5940.o(i.AD5940_HSDACCal) refers to ad5940.o(i.AD5940_AFECtrlS) for AD5940_AFECtrlS
+    ad5940.o(i.AD5940_HSDACCal) refers to adicup3029port.o(i.AD5940_Delay10us) for AD5940_Delay10us
+    ad5940.o(i.AD5940_HSDACCal) refers to ad5940.o(i.AD5940_INTCCfg) for AD5940_INTCCfg
+    ad5940.o(i.AD5940_HSDACCal) refers to ad5940.o(i.AD5940_WriteReg) for AD5940_WriteReg
+    ad5940.o(i.AD5940_HSDACCal) refers to ad5940.o(i.__AD5940_TakeMeasurement) for __AD5940_TakeMeasurement
+    ad5940.o(i.AD5940_HSDACCal) refers to ad5940.o(i.AD5940_ADCCode2Volt) for AD5940_ADCCode2Volt
+    ad5940.o(i.AD5940_HSDACCal) refers to f2d.o(.text) for __aeabi_f2d
+    ad5940.o(i.AD5940_HSDACCal) refers to printfa.o(i.__0printf) for __2printf
+    ad5940.o(i.AD5940_HSDACCal) refers to ad5940.o(i.AD5940_ADCConvtCtrlS) for AD5940_ADCConvtCtrlS
+    ad5940.o(i.AD5940_HSDacCfgS) refers to ad5940.o(i.AD5940_WriteReg) for AD5940_WriteReg
+    ad5940.o(i.AD5940_HSLoopCfgS) refers to ad5940.o(i.AD5940_HSDacCfgS) for AD5940_HSDacCfgS
+    ad5940.o(i.AD5940_HSLoopCfgS) refers to ad5940.o(i.AD5940_HSTIACfgS) for AD5940_HSTIACfgS
+    ad5940.o(i.AD5940_HSLoopCfgS) refers to ad5940.o(i.AD5940_SWMatrixCfgS) for AD5940_SWMatrixCfgS
+    ad5940.o(i.AD5940_HSLoopCfgS) refers to ad5940.o(i.AD5940_WGCfgS) for AD5940_WGCfgS
+    ad5940.o(i.AD5940_HSRTIACfgS) refers to ad5940.o(i.AD5940_ReadReg) for AD5940_ReadReg
+    ad5940.o(i.AD5940_HSRTIACfgS) refers to ad5940.o(i.AD5940_WriteReg) for AD5940_WriteReg
+    ad5940.o(i.AD5940_HSRtiaCal) refers to memcpya.o(.text) for __aeabi_memcpy4
+    ad5940.o(i.AD5940_HSRtiaCal) refers to cfcmple.o(.text) for __aeabi_cfcmpeq
+    ad5940.o(i.AD5940_HSRtiaCal) refers to f2d.o(.text) for __aeabi_f2d
+    ad5940.o(i.AD5940_HSRtiaCal) refers to cdrcmple.o(.text) for __aeabi_cdrcmple
+    ad5940.o(i.AD5940_HSRtiaCal) refers to dfltui.o(.text) for __aeabi_ui2d
+    ad5940.o(i.AD5940_HSRtiaCal) refers to dmul.o(.text) for __aeabi_dmul
+    ad5940.o(i.AD5940_HSRtiaCal) refers to ddiv.o(.text) for __aeabi_ddiv
+    ad5940.o(i.AD5940_HSRtiaCal) refers to d2f.o(.text) for __aeabi_d2f
+    ad5940.o(i.AD5940_HSRtiaCal) refers to cdcmple.o(.text) for __aeabi_cdcmple
+    ad5940.o(i.AD5940_HSRtiaCal) refers to fdiv.o(.text) for __aeabi_fdiv
+    ad5940.o(i.AD5940_HSRtiaCal) refers to fmul.o(.text) for __aeabi_fmul
+    ad5940.o(i.AD5940_HSRtiaCal) refers to ffixui.o(.text) for __aeabi_f2uiz
+    ad5940.o(i.AD5940_HSRtiaCal) refers to ad5940.o(i.AD5940_INTCGetCfg) for AD5940_INTCGetCfg
+    ad5940.o(i.AD5940_HSRtiaCal) refers to ad5940.o(i.AD5940_INTCCfg) for AD5940_INTCCfg
+    ad5940.o(i.AD5940_HSRtiaCal) refers to ad5940.o(i.AD5940_AFECtrlS) for AD5940_AFECtrlS
+    ad5940.o(i.AD5940_HSRtiaCal) refers to ad5940.o(i.AD5940_REFCfgS) for AD5940_REFCfgS
+    ad5940.o(i.AD5940_HSRtiaCal) refers to ad5940.o(i.AD5940_WGFreqWordCal) for AD5940_WGFreqWordCal
+    ad5940.o(i.AD5940_HSRtiaCal) refers to ad5940.o(i.AD5940_HSLoopCfgS) for AD5940_HSLoopCfgS
+    ad5940.o(i.AD5940_HSRtiaCal) refers to ad5940.o(i.AD5940_StructInit) for AD5940_StructInit
+    ad5940.o(i.AD5940_HSRtiaCal) refers to ad5940.o(i.AD5940_DSPCfgS) for AD5940_DSPCfgS
+    ad5940.o(i.AD5940_HSRtiaCal) refers to ad5940.o(i.AD5940_INTCTestFlag) for AD5940_INTCTestFlag
+    ad5940.o(i.AD5940_HSRtiaCal) refers to ad5940.o(i.AD5940_INTCClrFlag) for AD5940_INTCClrFlag
+    ad5940.o(i.AD5940_HSRtiaCal) refers to ad5940.o(i.AD5940_ReadAfeResult) for AD5940_ReadAfeResult
+    ad5940.o(i.AD5940_HSRtiaCal) refers to ad5940.o(i.AD5940_ADCMuxCfgS) for AD5940_ADCMuxCfgS
+    ad5940.o(i.AD5940_HSRtiaCal) refers to fflti.o(.text) for __aeabi_i2f
+    ad5940.o(i.AD5940_HSRtiaCal) refers to ad5940.o(.constdata) for .constdata
+    ad5940.o(i.AD5940_HSRtiaCal) refers to fadd.o(.text) for __aeabi_fadd
+    ad5940.o(i.AD5940_HSRtiaCal) refers to sqrt.o(i.sqrt) for sqrt
+    ad5940.o(i.AD5940_HSRtiaCal) refers to dflti.o(.text) for __aeabi_i2d
+    ad5940.o(i.AD5940_HSRtiaCal) refers to atan2.o(i.atan2) for atan2
+    ad5940.o(i.AD5940_HSRtiaCal) refers to dadd.o(.text) for __aeabi_dsub
+    ad5940.o(i.AD5940_HSTIACfgS) refers to ad5940.o(i.AD5940_WriteReg) for AD5940_WriteReg
+    ad5940.o(i.AD5940_HSTIACfgS) refers to ad5940.o(.constdata) for .constdata
+    ad5940.o(i.AD5940_HWReset) refers to adicup3029port.o(i.AD5940_RstClr) for AD5940_RstClr
+    ad5940.o(i.AD5940_HWReset) refers to adicup3029port.o(i.AD5940_Delay10us) for AD5940_Delay10us
+    ad5940.o(i.AD5940_HWReset) refers to adicup3029port.o(i.AD5940_RstSet) for AD5940_RstSet
+    ad5940.o(i.AD5940_INTCCfg) refers to ad5940.o(i.AD5940_ReadReg) for AD5940_ReadReg
+    ad5940.o(i.AD5940_INTCCfg) refers to ad5940.o(i.AD5940_WriteReg) for AD5940_WriteReg
+    ad5940.o(i.AD5940_INTCClrFlag) refers to ad5940.o(i.AD5940_WriteReg) for AD5940_WriteReg
+    ad5940.o(i.AD5940_INTCGetCfg) refers to ad5940.o(i.AD5940_ReadReg) for AD5940_ReadReg
+    ad5940.o(i.AD5940_INTCGetFlag) refers to ad5940.o(i.AD5940_ReadReg) for AD5940_ReadReg
+    ad5940.o(i.AD5940_INTCTestFlag) refers to ad5940.o(i.AD5940_ReadReg) for AD5940_ReadReg
+    ad5940.o(i.AD5940_Initialize) refers to memcpya.o(.text) for __aeabi_memcpy4
+    ad5940.o(i.AD5940_Initialize) refers to adicup3029port.o(i.AD5940_CsSet) for AD5940_CsSet
+    ad5940.o(i.AD5940_Initialize) refers to ad5940.o(i.AD5940_WriteReg) for AD5940_WriteReg
+    ad5940.o(i.AD5940_Initialize) refers to ad5940.o(i.AD5940_ReadReg) for AD5940_ReadReg
+    ad5940.o(i.AD5940_Initialize) refers to printfa.o(i.__0printf) for __2printf
+    ad5940.o(i.AD5940_Initialize) refers to ad5940.o(.constdata) for .constdata
+    ad5940.o(i.AD5940_Initialize) refers to ad5940.o(.data) for bIsS2silicon
+    ad5940.o(i.AD5940_LFOSCMeasure) refers to cfcmple.o(.text) for __aeabi_cfcmple
+    ad5940.o(i.AD5940_LFOSCMeasure) refers to ad5940.o(i.AD5940_SEQGetCfg) for AD5940_SEQGetCfg
+    ad5940.o(i.AD5940_LFOSCMeasure) refers to ad5940.o(i.AD5940_INTCGetCfg) for AD5940_INTCGetCfg
+    ad5940.o(i.AD5940_LFOSCMeasure) refers to ad5940.o(i.AD5940_INTCCfg) for AD5940_INTCCfg
+    ad5940.o(i.AD5940_LFOSCMeasure) refers to ad5940.o(i.AD5940_INTCClrFlag) for AD5940_INTCClrFlag
+    ad5940.o(i.AD5940_LFOSCMeasure) refers to ad5940.o(i.AD5940_SEQCfg) for AD5940_SEQCfg
+    ad5940.o(i.AD5940_LFOSCMeasure) refers to ad5940.o(i.AD5940_SEQInfoCfg) for AD5940_SEQInfoCfg
+    ad5940.o(i.AD5940_LFOSCMeasure) refers to fmul.o(.text) for __aeabi_fmul
+    ad5940.o(i.AD5940_LFOSCMeasure) refers to fadd.o(.text) for __aeabi_fadd
+    ad5940.o(i.AD5940_LFOSCMeasure) refers to ffixui.o(.text) for __aeabi_f2uiz
+    ad5940.o(i.AD5940_LFOSCMeasure) refers to ad5940.o(i.AD5940_WUPTCfg) for AD5940_WUPTCfg
+    ad5940.o(i.AD5940_LFOSCMeasure) refers to ad5940.o(i.AD5940_WUPTCtrl) for AD5940_WUPTCtrl
+    ad5940.o(i.AD5940_LFOSCMeasure) refers to ad5940.o(i.AD5940_INTCTestFlag) for AD5940_INTCTestFlag
+    ad5940.o(i.AD5940_LFOSCMeasure) refers to ad5940.o(i.AD5940_SEQTimeOutRd) for AD5940_SEQTimeOutRd
+    ad5940.o(i.AD5940_LFOSCMeasure) refers to ad5940.o(i.AD5940_WUPTTime) for AD5940_WUPTTime
+    ad5940.o(i.AD5940_LFOSCMeasure) refers to ad5940.o(i.AD5940_SEQCtrlS) for AD5940_SEQCtrlS
+    ad5940.o(i.AD5940_LFOSCMeasure) refers to ffltui.o(.text) for __aeabi_ui2f
+    ad5940.o(i.AD5940_LFOSCMeasure) refers to fdiv.o(.text) for __aeabi_fdiv
+    ad5940.o(i.AD5940_LFOSCMeasure) refers to ad5940.o(.constdata) for SeqA
+    ad5940.o(i.AD5940_LPAMPCfgS) refers to ad5940.o(i.AD5940_WriteReg) for AD5940_WriteReg
+    ad5940.o(i.AD5940_LPDAC0WriteS) refers to ad5940.o(i.AD5940_WriteReg) for AD5940_WriteReg
+    ad5940.o(i.AD5940_LPDAC1WriteS) refers to ad5940.o(i.AD5940_WriteReg) for AD5940_WriteReg
+    ad5940.o(i.AD5940_LPDACCal) refers to f2d.o(.text) for __aeabi_f2d
+    ad5940.o(i.AD5940_LPDACCal) refers to cdrcmple.o(.text) for __aeabi_cdrcmple
+    ad5940.o(i.AD5940_LPDACCal) refers to ad5940.o(i.__AD5940_ReferenceON) for __AD5940_ReferenceON
+    ad5940.o(i.AD5940_LPDACCal) refers to ad5940.o(i.AD5940_LPDACCfgS) for AD5940_LPDACCfgS
+    ad5940.o(i.AD5940_LPDACCal) refers to ad5940.o(i.AD5940_ADCFilterCfgS) for AD5940_ADCFilterCfgS
+    ad5940.o(i.AD5940_LPDACCal) refers to ad5940.o(i.AD5940_ADCBaseCfgS) for AD5940_ADCBaseCfgS
+    ad5940.o(i.AD5940_LPDACCal) refers to ad5940.o(i.AD5940_AFECtrlS) for AD5940_AFECtrlS
+    ad5940.o(i.AD5940_LPDACCal) refers to adicup3029port.o(i.AD5940_Delay10us) for AD5940_Delay10us
+    ad5940.o(i.AD5940_LPDACCal) refers to ad5940.o(i.AD5940_INTCGetCfg) for AD5940_INTCGetCfg
+    ad5940.o(i.AD5940_LPDACCal) refers to ad5940.o(i.AD5940_INTCCfg) for AD5940_INTCCfg
+    ad5940.o(i.AD5940_LPDACCal) refers to ad5940.o(i.__AD5940_TakeMeasurement) for __AD5940_TakeMeasurement
+    ad5940.o(i.AD5940_LPDACCal) refers to ad5940.o(i.AD5940_LPDACWriteS) for AD5940_LPDACWriteS
+    ad5940.o(i.AD5940_LPDACCal) refers to ad5940.o(i.AD5940_ADCMuxCfgS) for AD5940_ADCMuxCfgS
+    ad5940.o(i.AD5940_LPDACCal) refers to fflti.o(.text) for __aeabi_i2f
+    ad5940.o(i.AD5940_LPDACCal) refers to fmul.o(.text) for __aeabi_fmul
+    ad5940.o(i.AD5940_LPDACCal) refers to fdiv.o(.text) for __aeabi_fdiv
+    ad5940.o(i.AD5940_LPDACCal) refers to fadd.o(.text) for __aeabi_fsub
+    ad5940.o(i.AD5940_LPDACCal) refers to ad5940.o(i.AD5940_ADCConvtCtrlS) for AD5940_ADCConvtCtrlS
+    ad5940.o(i.AD5940_LPDACCfgS) refers to ad5940.o(i.AD5940_WriteReg) for AD5940_WriteReg
+    ad5940.o(i.AD5940_LPDACCfgS) refers to ad5940.o(i.AD5940_LPDAC0WriteS) for AD5940_LPDAC0WriteS
+    ad5940.o(i.AD5940_LPDACCfgS) refers to ad5940.o(i.AD5940_LPDAC1WriteS) for AD5940_LPDAC1WriteS
+    ad5940.o(i.AD5940_LPDACWriteS) refers to ad5940.o(i.AD5940_WriteReg) for AD5940_WriteReg
+    ad5940.o(i.AD5940_LPLoopCfgS) refers to ad5940.o(i.AD5940_LPDACCfgS) for AD5940_LPDACCfgS
+    ad5940.o(i.AD5940_LPLoopCfgS) refers to ad5940.o(i.AD5940_LPAMPCfgS) for AD5940_LPAMPCfgS
+    ad5940.o(i.AD5940_LPModeClkS) refers to ad5940.o(i.AD5940_WriteReg) for AD5940_WriteReg
+    ad5940.o(i.AD5940_LPModeCtrlS) refers to ad5940.o(i.AD5940_ReadReg) for AD5940_ReadReg
+    ad5940.o(i.AD5940_LPModeCtrlS) refers to ad5940.o(i.AD5940_WriteReg) for AD5940_WriteReg
+    ad5940.o(i.AD5940_LPModeEnS) refers to ad5940.o(i.AD5940_WriteReg) for AD5940_WriteReg
+    ad5940.o(i.AD5940_LPRtiaCal) refers to memcpya.o(.text) for __aeabi_memcpy4
+    ad5940.o(i.AD5940_LPRtiaCal) refers to cfcmple.o(.text) for __aeabi_cfcmpeq
+    ad5940.o(i.AD5940_LPRtiaCal) refers to f2d.o(.text) for __aeabi_f2d
+    ad5940.o(i.AD5940_LPRtiaCal) refers to cdrcmple.o(.text) for __aeabi_cdrcmple
+    ad5940.o(i.AD5940_LPRtiaCal) refers to dfltui.o(.text) for __aeabi_ui2d
+    ad5940.o(i.AD5940_LPRtiaCal) refers to dmul.o(.text) for __aeabi_dmul
+    ad5940.o(i.AD5940_LPRtiaCal) refers to ddiv.o(.text) for __aeabi_ddiv
+    ad5940.o(i.AD5940_LPRtiaCal) refers to d2f.o(.text) for __aeabi_d2f
+    ad5940.o(i.AD5940_LPRtiaCal) refers to fdiv.o(.text) for __aeabi_fdiv
+    ad5940.o(i.AD5940_LPRtiaCal) refers to fmul.o(.text) for __aeabi_fmul
+    ad5940.o(i.AD5940_LPRtiaCal) refers to ffixui.o(.text) for __aeabi_f2uiz
+    ad5940.o(i.AD5940_LPRtiaCal) refers to ffltui.o(.text) for __aeabi_ui2f
+    ad5940.o(i.AD5940_LPRtiaCal) refers to fadd.o(.text) for __aeabi_fadd
+    ad5940.o(i.AD5940_LPRtiaCal) refers to cfrcmple.o(.text) for __aeabi_cfrcmple
+    ad5940.o(i.AD5940_LPRtiaCal) refers to ad5940.o(i.AD5940_ReadReg) for AD5940_ReadReg
+    ad5940.o(i.AD5940_LPRtiaCal) refers to ad5940.o(i.AD5940_INTCGetCfg) for AD5940_INTCGetCfg
+    ad5940.o(i.AD5940_LPRtiaCal) refers to ad5940.o(i.AD5940_INTCCfg) for AD5940_INTCCfg
+    ad5940.o(i.AD5940_LPRtiaCal) refers to ad5940.o(i.AD5940_INTCClrFlag) for AD5940_INTCClrFlag
+    ad5940.o(i.AD5940_LPRtiaCal) refers to ad5940.o(i.AD5940_AFECtrlS) for AD5940_AFECtrlS
+    ad5940.o(i.AD5940_LPRtiaCal) refers to ad5940.o(i.__AD5940_ReferenceON) for __AD5940_ReferenceON
+    ad5940.o(i.AD5940_LPRtiaCal) refers to ad5940.o(i.AD5940_StructInit) for AD5940_StructInit
+    ad5940.o(i.AD5940_LPRtiaCal) refers to ad5940.o(i.AD5940_DSPCfgS) for AD5940_DSPCfgS
+    ad5940.o(i.AD5940_LPRtiaCal) refers to ad5940.o(i.AD5940_LPLoopCfgS) for AD5940_LPLoopCfgS
+    ad5940.o(i.AD5940_LPRtiaCal) refers to ad5940.o(i.AD5940_HSLoopCfgS) for AD5940_HSLoopCfgS
+    ad5940.o(i.AD5940_LPRtiaCal) refers to ad5940.o(i.AD5940_WGDACCodeS) for AD5940_WGDACCodeS
+    ad5940.o(i.AD5940_LPRtiaCal) refers to ad5940.o(i.AD5940_SWMatrixCfgS) for AD5940_SWMatrixCfgS
+    ad5940.o(i.AD5940_LPRtiaCal) refers to adicup3029port.o(i.AD5940_Delay10us) for AD5940_Delay10us
+    ad5940.o(i.AD5940_LPRtiaCal) refers to ad5940.o(.constdata) for .constdata
+    ad5940.o(i.AD5940_LPRtiaCal) refers to ad5940.o(i.AD5940_ADCBaseCfgS) for AD5940_ADCBaseCfgS
+    ad5940.o(i.AD5940_LPRtiaCal) refers to ad5940.o(i.__AD5940_TakeMeasurement) for __AD5940_TakeMeasurement
+    ad5940.o(i.AD5940_LPRtiaCal) refers to ad5940.o(i.AD5940_WGFreqWordCal) for AD5940_WGFreqWordCal
+    ad5940.o(i.AD5940_LPRtiaCal) refers to ad5940.o(i.AD5940_SEQGetCfg) for AD5940_SEQGetCfg
+    ad5940.o(i.AD5940_LPRtiaCal) refers to ad5940.o(i.AD5940_SEQInfoGet) for AD5940_SEQInfoGet
+    ad5940.o(i.AD5940_LPRtiaCal) refers to ad5940.o(i.AD5940_SEQCfg) for AD5940_SEQCfg
+    ad5940.o(i.AD5940_LPRtiaCal) refers to ad5940.o(i.AD5940_SEQInfoCfg) for AD5940_SEQInfoCfg
+    ad5940.o(i.AD5940_LPRtiaCal) refers to ad5940.o(i.AD5940_SEQMmrTrig) for AD5940_SEQMmrTrig
+    ad5940.o(i.AD5940_LPRtiaCal) refers to ad5940.o(i.AD5940_INTCTestFlag) for AD5940_INTCTestFlag
+    ad5940.o(i.AD5940_LPRtiaCal) refers to ad5940.o(i.AD5940_ReadAfeResult) for AD5940_ReadAfeResult
+    ad5940.o(i.AD5940_LPRtiaCal) refers to ad5940.o(i.AD5940_SEQCtrlS) for AD5940_SEQCtrlS
+    ad5940.o(i.AD5940_LPRtiaCal) refers to ad5940.o(i.AD5940_ComplexDivInt) for AD5940_ComplexDivInt
+    ad5940.o(i.AD5940_LPRtiaCal) refers to fflti.o(.text) for __aeabi_i2f
+    ad5940.o(i.AD5940_LPRtiaCal) refers to sqrt.o(i.sqrt) for sqrt
+    ad5940.o(i.AD5940_LPRtiaCal) refers to dflti.o(.text) for __aeabi_i2d
+    ad5940.o(i.AD5940_LPRtiaCal) refers to atan2.o(i.atan2) for atan2
+    ad5940.o(i.AD5940_LPRtiaCal) refers to dadd.o(.text) for __aeabi_dsub
+    ad5940.o(i.AD5940_LPRtiaCal) refers to ad5940.o(i.AD5940_WriteReg) for AD5940_WriteReg
+    ad5940.o(i.AD5940_LPRtiaCal_HSDAC) refers to memcpya.o(.text) for __aeabi_memcpy4
+    ad5940.o(i.AD5940_LPRtiaCal_HSDAC) refers to cfcmple.o(.text) for __aeabi_cfcmpeq
+    ad5940.o(i.AD5940_LPRtiaCal_HSDAC) refers to f2d.o(.text) for __aeabi_f2d
+    ad5940.o(i.AD5940_LPRtiaCal_HSDAC) refers to cdrcmple.o(.text) for __aeabi_cdrcmple
+    ad5940.o(i.AD5940_LPRtiaCal_HSDAC) refers to dfltui.o(.text) for __aeabi_ui2d
+    ad5940.o(i.AD5940_LPRtiaCal_HSDAC) refers to dmul.o(.text) for __aeabi_dmul
+    ad5940.o(i.AD5940_LPRtiaCal_HSDAC) refers to ddiv.o(.text) for __aeabi_ddiv
+    ad5940.o(i.AD5940_LPRtiaCal_HSDAC) refers to d2f.o(.text) for __aeabi_d2f
+    ad5940.o(i.AD5940_LPRtiaCal_HSDAC) refers to cdcmple.o(.text) for __aeabi_cdcmple
+    ad5940.o(i.AD5940_LPRtiaCal_HSDAC) refers to fdiv.o(.text) for __aeabi_fdiv
+    ad5940.o(i.AD5940_LPRtiaCal_HSDAC) refers to fmul.o(.text) for __aeabi_fmul
+    ad5940.o(i.AD5940_LPRtiaCal_HSDAC) refers to ffixui.o(.text) for __aeabi_f2uiz
+    ad5940.o(i.AD5940_LPRtiaCal_HSDAC) refers to ad5940.o(i.AD5940_ReadReg) for AD5940_ReadReg
+    ad5940.o(i.AD5940_LPRtiaCal_HSDAC) refers to ad5940.o(i.AD5940_INTCGetCfg) for AD5940_INTCGetCfg
+    ad5940.o(i.AD5940_LPRtiaCal_HSDAC) refers to ad5940.o(i.AD5940_INTCCfg) for AD5940_INTCCfg
+    ad5940.o(i.AD5940_LPRtiaCal_HSDAC) refers to ad5940.o(i.AD5940_AFECtrlS) for AD5940_AFECtrlS
+    ad5940.o(i.AD5940_LPRtiaCal_HSDAC) refers to ad5940.o(i.AD5940_StructInit) for AD5940_StructInit
+    ad5940.o(i.AD5940_LPRtiaCal_HSDAC) refers to ad5940.o(i.AD5940_REFCfgS) for AD5940_REFCfgS
+    ad5940.o(i.AD5940_LPRtiaCal_HSDAC) refers to ad5940.o(i.AD5940_LPLoopCfgS) for AD5940_LPLoopCfgS
+    ad5940.o(i.AD5940_LPRtiaCal_HSDAC) refers to ad5940.o(i.AD5940_HSLoopCfgS) for AD5940_HSLoopCfgS
+    ad5940.o(i.AD5940_LPRtiaCal_HSDAC) refers to ad5940.o(i.AD5940_DSPCfgS) for AD5940_DSPCfgS
+    ad5940.o(i.AD5940_LPRtiaCal_HSDAC) refers to ad5940.o(i.AD5940_INTCClrFlag) for AD5940_INTCClrFlag
+    ad5940.o(i.AD5940_LPRtiaCal_HSDAC) refers to ad5940.o(i.AD5940_INTCTestFlag) for AD5940_INTCTestFlag
+    ad5940.o(i.AD5940_LPRtiaCal_HSDAC) refers to ad5940.o(i.AD5940_ReadAfeResult) for AD5940_ReadAfeResult
+    ad5940.o(i.AD5940_LPRtiaCal_HSDAC) refers to ad5940.o(i.AD5940_ADCMuxCfgS) for AD5940_ADCMuxCfgS
+    ad5940.o(i.AD5940_LPRtiaCal_HSDAC) refers to ad5940.o(i.AD5940_WGFreqWordCal) for AD5940_WGFreqWordCal
+    ad5940.o(i.AD5940_LPRtiaCal_HSDAC) refers to ad5940.o(.constdata) for .constdata
+    ad5940.o(i.AD5940_LPRtiaCal_HSDAC) refers to ad5940.o(i.AD5940_SEQGetCfg) for AD5940_SEQGetCfg
+    ad5940.o(i.AD5940_LPRtiaCal_HSDAC) refers to ad5940.o(i.AD5940_SEQCfg) for AD5940_SEQCfg
+    ad5940.o(i.AD5940_LPRtiaCal_HSDAC) refers to ad5940.o(i.AD5940_SEQInfoCfg) for AD5940_SEQInfoCfg
+    ad5940.o(i.AD5940_LPRtiaCal_HSDAC) refers to ad5940.o(i.AD5940_SEQMmrTrig) for AD5940_SEQMmrTrig
+    ad5940.o(i.AD5940_LPRtiaCal_HSDAC) refers to ad5940.o(i.AD5940_ComplexDivInt) for AD5940_ComplexDivInt
+    ad5940.o(i.AD5940_LPRtiaCal_HSDAC) refers to fflti.o(.text) for __aeabi_i2f
+    ad5940.o(i.AD5940_LPRtiaCal_HSDAC) refers to fadd.o(.text) for __aeabi_fadd
+    ad5940.o(i.AD5940_LPRtiaCal_HSDAC) refers to sqrt.o(i.sqrt) for sqrt
+    ad5940.o(i.AD5940_LPRtiaCal_HSDAC) refers to dflti.o(.text) for __aeabi_i2d
+    ad5940.o(i.AD5940_LPRtiaCal_HSDAC) refers to atan2.o(i.atan2) for atan2
+    ad5940.o(i.AD5940_LPRtiaCal_HSDAC) refers to dadd.o(.text) for __aeabi_dsub
+    ad5940.o(i.AD5940_LPRtiaCal_HSDAC) refers to ad5940.o(i.AD5940_WriteReg) for AD5940_WriteReg
+    ad5940.o(i.AD5940_LPRtiaCal_HSDAC) refers to ad5940.o(i.AD5940_SWMatrixCfgS) for AD5940_SWMatrixCfgS
+    ad5940.o(i.AD5940_LPTIAOffsetCal) refers to f2d.o(.text) for __aeabi_f2d
+    ad5940.o(i.AD5940_LPTIAOffsetCal) refers to cdrcmple.o(.text) for __aeabi_cdrcmple
+    ad5940.o(i.AD5940_LPTIAOffsetCal) refers to ad5940.o(i.__AD5940_ReferenceON) for __AD5940_ReferenceON
+    ad5940.o(i.AD5940_LPTIAOffsetCal) refers to ad5940.o(i.AD5940_LPLoopCfgS) for AD5940_LPLoopCfgS
+    ad5940.o(i.AD5940_LPTIAOffsetCal) refers to ad5940.o(i.AD5940_ADCFilterCfgS) for AD5940_ADCFilterCfgS
+    ad5940.o(i.AD5940_LPTIAOffsetCal) refers to ad5940.o(i.AD5940_ADCBaseCfgS) for AD5940_ADCBaseCfgS
+    ad5940.o(i.AD5940_LPTIAOffsetCal) refers to ad5940.o(i.AD5940_AFECtrlS) for AD5940_AFECtrlS
+    ad5940.o(i.AD5940_LPTIAOffsetCal) refers to adicup3029port.o(i.AD5940_Delay10us) for AD5940_Delay10us
+    ad5940.o(i.AD5940_LPTIAOffsetCal) refers to ad5940.o(i.AD5940_INTCGetCfg) for AD5940_INTCGetCfg
+    ad5940.o(i.AD5940_LPTIAOffsetCal) refers to ad5940.o(i.AD5940_INTCCfg) for AD5940_INTCCfg
+    ad5940.o(i.AD5940_LPTIAOffsetCal) refers to ad5940.o(i.AD5940_WriteReg) for AD5940_WriteReg
+    ad5940.o(i.AD5940_LPTIAOffsetCal) refers to ad5940.o(i.__AD5940_TakeMeasurement) for __AD5940_TakeMeasurement
+    ad5940.o(i.AD5940_LPTIAOffsetCal) refers to ad5940.o(i.AD5940_ADCConvtCtrlS) for AD5940_ADCConvtCtrlS
+    ad5940.o(i.AD5940_REFCfgS) refers to ad5940.o(i.AD5940_ReadReg) for AD5940_ReadReg
+    ad5940.o(i.AD5940_REFCfgS) refers to ad5940.o(i.AD5940_WriteReg) for AD5940_WriteReg
+    ad5940.o(i.AD5940_ReadAfeResult) refers to ad5940.o(i.AD5940_ReadReg) for AD5940_ReadReg
+    ad5940.o(i.AD5940_ReadReg) refers to ad5940.o(i.AD5940_SEQReadReg) for AD5940_SEQReadReg
+    ad5940.o(i.AD5940_ReadReg) refers to ad5940.o(i.AD5940_SPIReadReg) for AD5940_SPIReadReg
+    ad5940.o(i.AD5940_ReadReg) refers to ad5940.o(.bss) for SeqGenDB
+    ad5940.o(i.AD5940_ReadWrite16B) refers to adicup3029port.o(i.AD5940_ReadWriteNBytes) for AD5940_ReadWriteNBytes
+    ad5940.o(i.AD5940_ReadWrite32B) refers to adicup3029port.o(i.AD5940_ReadWriteNBytes) for AD5940_ReadWriteNBytes
+    ad5940.o(i.AD5940_ReadWrite8B) refers to adicup3029port.o(i.AD5940_ReadWriteNBytes) for AD5940_ReadWriteNBytes
+    ad5940.o(i.AD5940_SEQCfg) refers to ad5940.o(i.AD5940_ReadReg) for AD5940_ReadReg
+    ad5940.o(i.AD5940_SEQCfg) refers to ad5940.o(i.AD5940_WriteReg) for AD5940_WriteReg
+    ad5940.o(i.AD5940_SEQCmdWrite) refers to ad5940.o(i.AD5940_WriteReg) for AD5940_WriteReg
+    ad5940.o(i.AD5940_SEQCtrlS) refers to ad5940.o(i.AD5940_ReadReg) for AD5940_ReadReg
+    ad5940.o(i.AD5940_SEQCtrlS) refers to ad5940.o(i.AD5940_WriteReg) for AD5940_WriteReg
+    ad5940.o(i.AD5940_SEQCycleTime) refers to ad5940.o(.bss) for SeqGenDB
+    ad5940.o(i.AD5940_SEQGenCtrl) refers to ad5940.o(.bss) for SeqGenDB
+    ad5940.o(i.AD5940_SEQGenFetchSeq) refers to ad5940.o(.bss) for SeqGenDB
+    ad5940.o(i.AD5940_SEQGenGetRegDefault) refers to ad5940.o(i.AD5940_SPIReadReg) for AD5940_SPIReadReg
+    ad5940.o(i.AD5940_SEQGenInit) refers to ad5940.o(.bss) for SeqGenDB
+    ad5940.o(i.AD5940_SEQGenInsert) refers to ad5940.o(.bss) for SeqGenDB
+    ad5940.o(i.AD5940_SEQGenSearchReg) refers to ad5940.o(.bss) for SeqGenDB
+    ad5940.o(i.AD5940_SEQGetCfg) refers to ad5940.o(i.AD5940_ReadReg) for AD5940_ReadReg
+    ad5940.o(i.AD5940_SEQGpioCtrlS) refers to ad5940.o(i.AD5940_WriteReg) for AD5940_WriteReg
+    ad5940.o(i.AD5940_SEQGpioTrigCfg) refers to ad5940.o(i.AD5940_ReadReg) for AD5940_ReadReg
+    ad5940.o(i.AD5940_SEQGpioTrigCfg) refers to ad5940.o(i.AD5940_WriteReg) for AD5940_WriteReg
+    ad5940.o(i.AD5940_SEQHaltS) refers to ad5940.o(i.AD5940_WriteReg) for AD5940_WriteReg
+    ad5940.o(i.AD5940_SEQInfoCfg) refers to ad5940.o(i.AD5940_WriteReg) for AD5940_WriteReg
+    ad5940.o(i.AD5940_SEQInfoCfg) refers to ad5940.o(i.AD5940_SEQCmdWrite) for AD5940_SEQCmdWrite
+    ad5940.o(i.AD5940_SEQInfoGet) refers to ad5940.o(i.AD5940_ReadReg) for AD5940_ReadReg
+    ad5940.o(i.AD5940_SEQMmrTrig) refers to ad5940.o(i.AD5940_WriteReg) for AD5940_WriteReg
+    ad5940.o(i.AD5940_SEQReadReg) refers to ad5940.o(i.AD5940_SEQGenSearchReg) for AD5940_SEQGenSearchReg
+    ad5940.o(i.AD5940_SEQReadReg) refers to ad5940.o(i.AD5940_SEQGenGetRegDefault) for AD5940_SEQGenGetRegDefault
+    ad5940.o(i.AD5940_SEQReadReg) refers to ad5940.o(i.AD5940_SEQRegInfoInsert) for AD5940_SEQRegInfoInsert
+    ad5940.o(i.AD5940_SEQReadReg) refers to ad5940.o(.bss) for SeqGenDB
+    ad5940.o(i.AD5940_SEQRegInfoInsert) refers to ad5940.o(.bss) for SeqGenDB
+    ad5940.o(i.AD5940_SEQTimeOutRd) refers to ad5940.o(i.AD5940_ReadReg) for AD5940_ReadReg
+    ad5940.o(i.AD5940_SEQWriteReg) refers to ad5940.o(i.AD5940_SEQGenSearchReg) for AD5940_SEQGenSearchReg
+    ad5940.o(i.AD5940_SEQWriteReg) refers to ad5940.o(i.AD5940_SEQGenInsert) for AD5940_SEQGenInsert
+    ad5940.o(i.AD5940_SEQWriteReg) refers to ad5940.o(i.AD5940_SEQRegInfoInsert) for AD5940_SEQRegInfoInsert
+    ad5940.o(i.AD5940_SEQWriteReg) refers to ad5940.o(.bss) for SeqGenDB
+    ad5940.o(i.AD5940_SPIReadReg) refers to adicup3029port.o(i.AD5940_CsClr) for AD5940_CsClr
+    ad5940.o(i.AD5940_SPIReadReg) refers to ad5940.o(i.AD5940_ReadWrite8B) for AD5940_ReadWrite8B
+    ad5940.o(i.AD5940_SPIReadReg) refers to ad5940.o(i.AD5940_ReadWrite16B) for AD5940_ReadWrite16B
+    ad5940.o(i.AD5940_SPIReadReg) refers to adicup3029port.o(i.AD5940_CsSet) for AD5940_CsSet
+    ad5940.o(i.AD5940_SPIReadReg) refers to ad5940.o(i.AD5940_ReadWrite32B) for AD5940_ReadWrite32B
+    ad5940.o(i.AD5940_SPIWriteReg) refers to adicup3029port.o(i.AD5940_CsClr) for AD5940_CsClr
+    ad5940.o(i.AD5940_SPIWriteReg) refers to ad5940.o(i.AD5940_ReadWrite8B) for AD5940_ReadWrite8B
+    ad5940.o(i.AD5940_SPIWriteReg) refers to ad5940.o(i.AD5940_ReadWrite16B) for AD5940_ReadWrite16B
+    ad5940.o(i.AD5940_SPIWriteReg) refers to adicup3029port.o(i.AD5940_CsSet) for AD5940_CsSet
+    ad5940.o(i.AD5940_SPIWriteReg) refers to ad5940.o(i.AD5940_ReadWrite32B) for AD5940_ReadWrite32B
+    ad5940.o(i.AD5940_SPIWriteRegCSSelect) refers to ad5940.o(i.AD5940_ReadWrite8B) for AD5940_ReadWrite8B
+    ad5940.o(i.AD5940_SPIWriteRegCSSelect) refers to ad5940.o(i.AD5940_ReadWrite16B) for AD5940_ReadWrite16B
+    ad5940.o(i.AD5940_SPIWriteRegCSSelect) refers to adicup3029port.o(i.AD5940_CsSet) for AD5940_CsSet
+    ad5940.o(i.AD5940_SPIWriteRegCSSelect) refers to adicup3029port.o(i.AD5940_CsClr) for AD5940_CsClr
+    ad5940.o(i.AD5940_SPIWriteRegCSSelect) refers to ad5940.o(i.AD5940_ReadWrite32B) for AD5940_ReadWrite32B
+    ad5940.o(i.AD5940_SWMatrixCfgS) refers to ad5940.o(i.AD5940_WriteReg) for AD5940_WriteReg
+    ad5940.o(i.AD5940_ShutDownS) refers to ad5940.o(i.AD5940_StructInit) for AD5940_StructInit
+    ad5940.o(i.AD5940_ShutDownS) refers to ad5940.o(i.AD5940_REFCfgS) for AD5940_REFCfgS
+    ad5940.o(i.AD5940_ShutDownS) refers to ad5940.o(i.AD5940_LPLoopCfgS) for AD5940_LPLoopCfgS
+    ad5940.o(i.AD5940_ShutDownS) refers to ad5940.o(i.AD5940_SleepKeyCtrlS) for AD5940_SleepKeyCtrlS
+    ad5940.o(i.AD5940_ShutDownS) refers to ad5940.o(i.AD5940_EnterSleepS) for AD5940_EnterSleepS
+    ad5940.o(i.AD5940_SleepKeyCtrlS) refers to ad5940.o(i.AD5940_WriteReg) for AD5940_WriteReg
+    ad5940.o(i.AD5940_SoftRst) refers to ad5940.o(i.AD5940_WriteReg) for AD5940_WriteReg
+    ad5940.o(i.AD5940_SoftRst) refers to adicup3029port.o(i.AD5940_Delay10us) for AD5940_Delay10us
+    ad5940.o(i.AD5940_StatisticCfgS) refers to ad5940.o(i.AD5940_WriteReg) for AD5940_WriteReg
+    ad5940.o(i.AD5940_StructInit) refers to memseta.o(.text) for __aeabi_memclr
+    ad5940.o(i.AD5940_SweepNext) refers to cfcmple.o(.text) for __aeabi_cfcmple
+    ad5940.o(i.AD5940_SweepNext) refers to dfltui.o(.text) for __aeabi_ui2d
+    ad5940.o(i.AD5940_SweepNext) refers to fdiv.o(.text) for __aeabi_fdiv
+    ad5940.o(i.AD5940_SweepNext) refers to f2d.o(.text) for __aeabi_f2d
+    ad5940.o(i.AD5940_SweepNext) refers to log10.o(i.log10) for log10
+    ad5940.o(i.AD5940_SweepNext) refers to dmul.o(.text) for __aeabi_dmul
+    ad5940.o(i.AD5940_SweepNext) refers to ddiv.o(.text) for __aeabi_ddiv
+    ad5940.o(i.AD5940_SweepNext) refers to pow.o(i.pow) for pow
+    ad5940.o(i.AD5940_SweepNext) refers to d2f.o(.text) for __aeabi_d2f
+    ad5940.o(i.AD5940_SweepNext) refers to fadd.o(.text) for __aeabi_fsub
+    ad5940.o(i.AD5940_SweepNext) refers to dadd.o(.text) for __aeabi_dadd
+    ad5940.o(i.AD5940_WGCfgS) refers to ad5940.o(i.AD5940_WriteReg) for AD5940_WriteReg
+    ad5940.o(i.AD5940_WGDACCodeS) refers to ad5940.o(i.AD5940_WriteReg) for AD5940_WriteReg
+    ad5940.o(i.AD5940_WGFreqCtrlS) refers to ad5940.o(i.AD5940_WGFreqWordCal) for AD5940_WGFreqWordCal
+    ad5940.o(i.AD5940_WGFreqCtrlS) refers to ad5940.o(i.AD5940_WriteReg) for AD5940_WriteReg
+    ad5940.o(i.AD5940_WGFreqWordCal) refers to cfcmple.o(.text) for __aeabi_cfcmpeq
+    ad5940.o(i.AD5940_WGFreqWordCal) refers to llshl.o(.text) for __aeabi_llsl
+    ad5940.o(i.AD5940_WGFreqWordCal) refers to ffltl.o(.text) for __aeabi_l2f
+    ad5940.o(i.AD5940_WGFreqWordCal) refers to fmul.o(.text) for __aeabi_fmul
+    ad5940.o(i.AD5940_WGFreqWordCal) refers to fdiv.o(.text) for __aeabi_fdiv
+    ad5940.o(i.AD5940_WGFreqWordCal) refers to fadd.o(.text) for __aeabi_fadd
+    ad5940.o(i.AD5940_WGFreqWordCal) refers to ffixui.o(.text) for __aeabi_f2uiz
+    ad5940.o(i.AD5940_WGFreqWordCal) refers to ad5940.o(.data) for bIsS2silicon
+    ad5940.o(i.AD5940_WUPTCfg) refers to ad5940.o(i.AD5940_WriteReg) for AD5940_WriteReg
+    ad5940.o(i.AD5940_WUPTCtrl) refers to ad5940.o(i.AD5940_ReadReg) for AD5940_ReadReg
+    ad5940.o(i.AD5940_WUPTCtrl) refers to ad5940.o(i.AD5940_WriteReg) for AD5940_WriteReg
+    ad5940.o(i.AD5940_WUPTTime) refers to ad5940.o(i.AD5940_WriteReg) for AD5940_WriteReg
+    ad5940.o(i.AD5940_WakeUp) refers to ad5940.o(i.AD5940_ReadReg) for AD5940_ReadReg
+    ad5940.o(i.AD5940_WriteReg) refers to ad5940.o(i.AD5940_SEQWriteReg) for AD5940_SEQWriteReg
+    ad5940.o(i.AD5940_WriteReg) refers to ad5940.o(i.AD5940_SPIWriteReg) for AD5940_SPIWriteReg
+    ad5940.o(i.AD5940_WriteReg) refers to ad5940.o(.bss) for SeqGenDB
+    ad5940.o(i.AD5940_WriteRegCSSelect) refers to ad5940.o(i.AD5940_SEQWriteReg) for AD5940_SEQWriteReg
+    ad5940.o(i.AD5940_WriteRegCSSelect) refers to ad5940.o(i.AD5940_SPIWriteRegCSSelect) for AD5940_SPIWriteRegCSSelect
+    ad5940.o(i.AD5940_WriteRegCSSelect) refers to ad5940.o(.bss) for SeqGenDB
+    ad5940.o(i.__AD5940_ReferenceON) refers to ad5940.o(i.AD5940_REFCfgS) for AD5940_REFCfgS
+    ad5940.o(i.__AD5940_TakeMeasurement) refers to ad5940.o(i.AD5940_INTCClrFlag) for AD5940_INTCClrFlag
+    ad5940.o(i.__AD5940_TakeMeasurement) refers to ad5940.o(i.AD5940_AFECtrlS) for AD5940_AFECtrlS
+    ad5940.o(i.__AD5940_TakeMeasurement) refers to adicup3029port.o(i.AD5940_Delay10us) for AD5940_Delay10us
+    ad5940.o(i.__AD5940_TakeMeasurement) refers to ad5940.o(i.AD5940_INTCTestFlag) for AD5940_INTCTestFlag
+    ad5940.o(i.__AD5940_TakeMeasurement) refers to ad5940.o(i.AD5940_ReadAfeResult) for AD5940_ReadAfeResult
+    adicup3029port.o(i.AD5940_ClrMCUIntFlag) refers to adicup3029port.o(.data) for ucInterrupted
+    adicup3029port.o(i.AD5940_GetMCUIntFlag) refers to adicup3029port.o(.data) for ucInterrupted
+    adicup3029port.o(i.AD5940_MCUResourceInit) refers to adicup3029port.o(i.AD5940_CsSet) for AD5940_CsSet
+    adicup3029port.o(i.AD5940_MCUResourceInit) refers to adicup3029port.o(i.AD5940_RstSet) for AD5940_RstSet
+    adicup3029port.o(i.AD5940_MCUResourceInit) refers to adicup3029port.o(i.AD5940_SPI1CsSet) for AD5940_SPI1CsSet
+    adicup3029port.o(i.Ext_Int0_Handler) refers to adicup3029port.o(.data) for ucInterrupted
+    main.o(i.MCUPlatformInit) refers to main.o(i.UrtCfg) for UrtCfg
+    main.o(i.UART_Int_Handler) refers to uartcmd.o(i.UARTCmd_Process) for UARTCmd_Process
+    main.o(i.UrtCfg) refers to uldiv.o(.text) for __aeabi_uldivmod
+    main.o(i.main) refers to main.o(i.MCUPlatformInit) for MCUPlatformInit
+    main.o(i.main) refers to adicup3029port.o(i.AD5940_MCUResourceInit) for AD5940_MCUResourceInit
+    main.o(i.main) refers to printfa.o(i.__0printf) for __2printf
+    ad5940main.o(i.AD5940AMPPlatformCfg) refers to ad5940.o(i.AD5940_HWReset) for AD5940_HWReset
+    ad5940main.o(i.AD5940AMPPlatformCfg) refers to ad5940.o(i.AD5940_Initialize) for AD5940_Initialize
+    ad5940main.o(i.AD5940AMPPlatformCfg) refers to ad5940.o(i.AD5940_CLKCfg) for AD5940_CLKCfg
+    ad5940main.o(i.AD5940AMPPlatformCfg) refers to ad5940.o(i.AD5940_FIFOCfg) for AD5940_FIFOCfg
+    ad5940main.o(i.AD5940AMPPlatformCfg) refers to ad5940.o(i.AD5940_SEQCfg) for AD5940_SEQCfg
+    ad5940main.o(i.AD5940AMPPlatformCfg) refers to ad5940.o(i.AD5940_INTCCfg) for AD5940_INTCCfg
+    ad5940main.o(i.AD5940AMPPlatformCfg) refers to ad5940.o(i.AD5940_INTCClrFlag) for AD5940_INTCClrFlag
+    ad5940main.o(i.AD5940AMPPlatformCfg) refers to ad5940.o(i.AD5940_AGPIOCfg) for AD5940_AGPIOCfg
+    ad5940main.o(i.AD5940AMPPlatformCfg) refers to ad5940.o(i.AD5940_SleepKeyCtrlS) for AD5940_SleepKeyCtrlS
+    ad5940main.o(i.AD5940AMPPlatformCfg) refers to ad5940.o(i.AD5940_LFOSCMeasure) for AD5940_LFOSCMeasure
+    ad5940main.o(i.AD5940AMPPlatformCfg) refers to f2d.o(.text) for __aeabi_f2d
+    ad5940main.o(i.AD5940AMPPlatformCfg) refers to printfa.o(i.__0printf) for __2printf
+    ad5940main.o(i.AD5940AMPPlatformCfg) refers to ad5940main.o(.data) for LFOSCFreq
+    ad5940main.o(i.AD5940AMPStructInit) refers to amperometric.o(i.AppAMPGetCfg) for AppAMPGetCfg
+    ad5940main.o(i.AD5940AMPStructInit) refers to ad5940main.o(.data) for LFOSCFreq
+    ad5940main.o(i.AD5940ImpedancePlatformCfg) refers to ad5940.o(i.AD5940_HWReset) for AD5940_HWReset
+    ad5940main.o(i.AD5940ImpedancePlatformCfg) refers to ad5940.o(i.AD5940_Initialize) for AD5940_Initialize
+    ad5940main.o(i.AD5940ImpedancePlatformCfg) refers to ad5940.o(i.AD5940_CLKCfg) for AD5940_CLKCfg
+    ad5940main.o(i.AD5940ImpedancePlatformCfg) refers to ad5940.o(i.AD5940_FIFOCfg) for AD5940_FIFOCfg
+    ad5940main.o(i.AD5940ImpedancePlatformCfg) refers to ad5940.o(i.AD5940_INTCCfg) for AD5940_INTCCfg
+    ad5940main.o(i.AD5940ImpedancePlatformCfg) refers to ad5940.o(i.AD5940_INTCClrFlag) for AD5940_INTCClrFlag
+    ad5940main.o(i.AD5940ImpedancePlatformCfg) refers to ad5940.o(i.AD5940_AGPIOCfg) for AD5940_AGPIOCfg
+    ad5940main.o(i.AD5940ImpedancePlatformCfg) refers to ad5940.o(i.AD5940_SleepKeyCtrlS) for AD5940_SleepKeyCtrlS
+    ad5940main.o(i.AD5940ImpedanceStructInit) refers to impedance.o(i.AppIMPGetCfg) for AppIMPGetCfg
+    ad5940main.o(i.AD5940_Main) refers to ad5940main.o(i.AD5940ImpedancePlatformCfg) for AD5940ImpedancePlatformCfg
+    ad5940main.o(i.AD5940_Main) refers to ad5940main.o(i.AD5940ImpedanceStructInit) for AD5940ImpedanceStructInit
+    ad5940main.o(i.AD5940_Main) refers to impedance.o(i.AppIMPInit) for AppIMPInit
+    ad5940main.o(i.AD5940_Main) refers to impedance.o(i.AppIMPCtrl) for AppIMPCtrl
+    ad5940main.o(i.AD5940_Main) refers to adicup3029port.o(i.AD5940_GetMCUIntFlag) for AD5940_GetMCUIntFlag
+    ad5940main.o(i.AD5940_Main) refers to adicup3029port.o(i.AD5940_ClrMCUIntFlag) for AD5940_ClrMCUIntFlag
+    ad5940main.o(i.AD5940_Main) refers to impedance.o(i.AppIMPISR) for AppIMPISR
+    ad5940main.o(i.AD5940_Main) refers to ad5940main.o(i.ImpedanceShowResult) for ImpedanceShowResult
+    ad5940main.o(i.AD5940_Main) refers to ad5940main.o(.bss) for AppBuff
+    ad5940main.o(i.AMPShowResult) refers to f2d.o(.text) for __aeabi_f2d
+    ad5940main.o(i.AMPShowResult) refers to printfa.o(i.__0printf) for __2printf
+    ad5940main.o(i.ImpedanceShowResult) refers to impedance.o(i.AppIMPCtrl) for AppIMPCtrl
+    ad5940main.o(i.ImpedanceShowResult) refers to f2d.o(.text) for __aeabi_f2d
+    ad5940main.o(i.ImpedanceShowResult) refers to printfa.o(i.__0printf) for __2printf
+    impedance.o(i.AppIMPCtrl) refers to ad5940.o(i.AD5940_WakeUp) for AD5940_WakeUp
+    impedance.o(i.AppIMPCtrl) refers to fdiv.o(.text) for __aeabi_fdiv
+    impedance.o(i.AppIMPCtrl) refers to ffixui.o(.text) for __aeabi_f2uiz
+    impedance.o(i.AppIMPCtrl) refers to ad5940.o(i.AD5940_WUPTCfg) for AD5940_WUPTCfg
+    impedance.o(i.AppIMPCtrl) refers to ad5940.o(i.AD5940_WUPTCtrl) for AD5940_WUPTCtrl
+    impedance.o(i.AppIMPCtrl) refers to ad5940.o(i.AD5940_REFCfgS) for AD5940_REFCfgS
+    impedance.o(i.AppIMPCtrl) refers to memseta.o(.text) for __aeabi_memclr4
+    impedance.o(i.AppIMPCtrl) refers to ad5940.o(i.AD5940_LPLoopCfgS) for AD5940_LPLoopCfgS
+    impedance.o(i.AppIMPCtrl) refers to ad5940.o(i.AD5940_EnterSleepS) for AD5940_EnterSleepS
+    impedance.o(i.AppIMPCtrl) refers to impedance.o(.data) for AppIMPCfg
+    impedance.o(i.AppIMPDataProcess) refers to fflti.o(.text) for __aeabi_i2f
+    impedance.o(i.AppIMPDataProcess) refers to fmul.o(.text) for __aeabi_fmul
+    impedance.o(i.AppIMPDataProcess) refers to fadd.o(.text) for __aeabi_fadd
+    impedance.o(i.AppIMPDataProcess) refers to f2d.o(.text) for __aeabi_f2d
+    impedance.o(i.AppIMPDataProcess) refers to sqrt.o(i.sqrt) for sqrt
+    impedance.o(i.AppIMPDataProcess) refers to d2f.o(.text) for __aeabi_d2f
+    impedance.o(i.AppIMPDataProcess) refers to dflti.o(.text) for __aeabi_i2d
+    impedance.o(i.AppIMPDataProcess) refers to atan2.o(i.atan2) for atan2
+    impedance.o(i.AppIMPDataProcess) refers to fdiv.o(.text) for __aeabi_fdiv
+    impedance.o(i.AppIMPDataProcess) refers to cos.o(i.cos) for cos
+    impedance.o(i.AppIMPDataProcess) refers to dmul.o(.text) for __aeabi_dmul
+    impedance.o(i.AppIMPDataProcess) refers to sin.o(i.sin) for sin
+    impedance.o(i.AppIMPDataProcess) refers to printfa.o(i.__0printf) for __2printf
+    impedance.o(i.AppIMPDataProcess) refers to ad5940.o(i.AD5940_SweepNext) for AD5940_SweepNext
+    impedance.o(i.AppIMPDataProcess) refers to impedance.o(.data) for AppIMPCfg
+    impedance.o(i.AppIMPGetCfg) refers to impedance.o(.data) for AppIMPCfg
+    impedance.o(i.AppIMPGetCurrFreq) refers to impedance.o(.data) for AppIMPCfg
+    impedance.o(i.AppIMPISR) refers to ad5940.o(i.AD5940_WakeUp) for AD5940_WakeUp
+    impedance.o(i.AppIMPISR) refers to ad5940.o(i.AD5940_SleepKeyCtrlS) for AD5940_SleepKeyCtrlS
+    impedance.o(i.AppIMPISR) refers to ad5940.o(i.AD5940_INTCTestFlag) for AD5940_INTCTestFlag
+    impedance.o(i.AppIMPISR) refers to ad5940.o(i.AD5940_FIFOGetCnt) for AD5940_FIFOGetCnt
+    impedance.o(i.AppIMPISR) refers to ad5940.o(i.AD5940_FIFORd) for AD5940_FIFORd
+    impedance.o(i.AppIMPISR) refers to ad5940.o(i.AD5940_INTCClrFlag) for AD5940_INTCClrFlag
+    impedance.o(i.AppIMPISR) refers to impedance.o(i.AppIMPRegModify) for AppIMPRegModify
+    impedance.o(i.AppIMPISR) refers to impedance.o(i.AppIMPDataProcess) for AppIMPDataProcess
+    impedance.o(i.AppIMPInit) refers to ad5940.o(i.AD5940_WakeUp) for AD5940_WakeUp
+    impedance.o(i.AppIMPInit) refers to ad5940.o(i.AD5940_SEQCfg) for AD5940_SEQCfg
+    impedance.o(i.AppIMPInit) refers to ad5940.o(i.AD5940_FIFOCtrlS) for AD5940_FIFOCtrlS
+    impedance.o(i.AppIMPInit) refers to ad5940.o(i.AD5940_FIFOCfg) for AD5940_FIFOCfg
+    impedance.o(i.AppIMPInit) refers to ad5940.o(i.AD5940_INTCClrFlag) for AD5940_INTCClrFlag
+    impedance.o(i.AppIMPInit) refers to ad5940.o(i.AD5940_SEQGenInit) for AD5940_SEQGenInit
+    impedance.o(i.AppIMPInit) refers to impedance.o(i.AppIMPSeqCfgGen) for AppIMPSeqCfgGen
+    impedance.o(i.AppIMPInit) refers to impedance.o(i.AppIMPSeqMeasureGen) for AppIMPSeqMeasureGen
+    impedance.o(i.AppIMPInit) refers to ad5940.o(i.AD5940_SEQInfoCfg) for AD5940_SEQInfoCfg
+    impedance.o(i.AppIMPInit) refers to ad5940.o(i.AD5940_SEQMmrTrig) for AD5940_SEQMmrTrig
+    impedance.o(i.AppIMPInit) refers to ad5940.o(i.AD5940_INTCTestFlag) for AD5940_INTCTestFlag
+    impedance.o(i.AppIMPInit) refers to adicup3029port.o(i.AD5940_ClrMCUIntFlag) for AD5940_ClrMCUIntFlag
+    impedance.o(i.AppIMPInit) refers to ad5940.o(i.AD5940_AFEPwrBW) for AD5940_AFEPwrBW
+    impedance.o(i.AppIMPInit) refers to impedance.o(.data) for AppIMPCfg
+    impedance.o(i.AppIMPRegModify) refers to ad5940.o(i.AD5940_WUPTCtrl) for AD5940_WUPTCtrl
+    impedance.o(i.AppIMPRegModify) refers to ad5940.o(i.AD5940_WGFreqCtrlS) for AD5940_WGFreqCtrlS
+    impedance.o(i.AppIMPRegModify) refers to impedance.o(.data) for AppIMPCfg
+    impedance.o(i.AppIMPSeqCfgGen) refers to ad5940.o(i.AD5940_SEQGenCtrl) for AD5940_SEQGenCtrl
+    impedance.o(i.AppIMPSeqCfgGen) refers to ad5940.o(i.AD5940_AFECtrlS) for AD5940_AFECtrlS
+    impedance.o(i.AppIMPSeqCfgGen) refers to cfcmple.o(.text) for __aeabi_cfcmpeq
+    impedance.o(i.AppIMPSeqCfgGen) refers to ad5940.o(i.AD5940_REFCfgS) for AD5940_REFCfgS
+    impedance.o(i.AppIMPSeqCfgGen) refers to ad5940.o(i.AD5940_SweepNext) for AD5940_SweepNext
+    impedance.o(i.AppIMPSeqCfgGen) refers to ad5940.o(i.AD5940_WGFreqWordCal) for AD5940_WGFreqWordCal
+    impedance.o(i.AppIMPSeqCfgGen) refers to fdiv.o(.text) for __aeabi_fdiv
+    impedance.o(i.AppIMPSeqCfgGen) refers to fmul.o(.text) for __aeabi_fmul
+    impedance.o(i.AppIMPSeqCfgGen) refers to fadd.o(.text) for __aeabi_fadd
+    impedance.o(i.AppIMPSeqCfgGen) refers to ffixui.o(.text) for __aeabi_f2uiz
+    impedance.o(i.AppIMPSeqCfgGen) refers to ad5940.o(i.AD5940_HSLoopCfgS) for AD5940_HSLoopCfgS
+    impedance.o(i.AppIMPSeqCfgGen) refers to cfrcmple.o(.text) for __aeabi_cfrcmple
+    impedance.o(i.AppIMPSeqCfgGen) refers to ad5940.o(i.AD5940_LPDACCfgS) for AD5940_LPDACCfgS
+    impedance.o(i.AppIMPSeqCfgGen) refers to ad5940.o(i.AD5940_DSPCfgS) for AD5940_DSPCfgS
+    impedance.o(i.AppIMPSeqCfgGen) refers to ad5940.o(i.AD5940_SEQGenInsert) for AD5940_SEQGenInsert
+    impedance.o(i.AppIMPSeqCfgGen) refers to ad5940.o(i.AD5940_SEQGenFetchSeq) for AD5940_SEQGenFetchSeq
+    impedance.o(i.AppIMPSeqCfgGen) refers to ad5940.o(i.AD5940_SEQCmdWrite) for AD5940_SEQCmdWrite
+    impedance.o(i.AppIMPSeqCfgGen) refers to impedance.o(.data) for AppIMPCfg
+    impedance.o(i.AppIMPSeqMeasureGen) refers to fdiv.o(.text) for __aeabi_fdiv
+    impedance.o(i.AppIMPSeqMeasureGen) refers to ad5940.o(i.AD5940_ClksCalculate) for AD5940_ClksCalculate
+    impedance.o(i.AppIMPSeqMeasureGen) refers to ad5940.o(i.AD5940_SEQGenCtrl) for AD5940_SEQGenCtrl
+    impedance.o(i.AppIMPSeqMeasureGen) refers to ad5940.o(i.AD5940_SEQGpioCtrlS) for AD5940_SEQGpioCtrlS
+    impedance.o(i.AppIMPSeqMeasureGen) refers to ad5940.o(i.AD5940_SEQGenInsert) for AD5940_SEQGenInsert
+    impedance.o(i.AppIMPSeqMeasureGen) refers to ad5940.o(i.AD5940_SWMatrixCfgS) for AD5940_SWMatrixCfgS
+    impedance.o(i.AppIMPSeqMeasureGen) refers to ad5940.o(i.AD5940_AFECtrlS) for AD5940_AFECtrlS
+    impedance.o(i.AppIMPSeqMeasureGen) refers to ad5940.o(i.AD5940_EnterSleepS) for AD5940_EnterSleepS
+    impedance.o(i.AppIMPSeqMeasureGen) refers to ad5940.o(i.AD5940_SEQGenFetchSeq) for AD5940_SEQGenFetchSeq
+    impedance.o(i.AppIMPSeqMeasureGen) refers to ad5940.o(i.AD5940_SEQCmdWrite) for AD5940_SEQCmdWrite
+    impedance.o(i.AppIMPSeqMeasureGen) refers to impedance.o(.data) for AppIMPCfg
+    signalgen.o(i.signalGenAdjustFreq) refers to signalgen.o(i.signalGenSPIWrite) for signalGenSPIWrite
+    signalgen.o(i.signalGenAdjustPhaseShift) refers to signalgen.o(i.signalGenSPIWrite) for signalGenSPIWrite
+    signalgen.o(i.signalGenFreqCalc) refers to f2d.o(.text) for __aeabi_f2d
+    signalgen.o(i.signalGenFreqCalc) refers to ddiv.o(.text) for __aeabi_ddiv
+    signalgen.o(i.signalGenFreqCalc) refers to dfixui.o(.text) for __aeabi_d2uiz
+    signalgen.o(i.signalGenReset) refers to signalgen.o(i.signalGenFreqCalc) for signalGenFreqCalc
+    signalgen.o(i.signalGenReset) refers to signalgen.o(i.signalGenSetFreqAdjustMode) for signalGenSetFreqAdjustMode
+    signalgen.o(i.signalGenReset) refers to signalgen.o(i.signalGenAdjustFreq) for signalGenAdjustFreq
+    signalgen.o(i.signalGenReset) refers to signalgen.o(i.signalGenAdjustPhaseShift) for signalGenAdjustPhaseShift
+    signalgen.o(i.signalGenReset) refers to signalgen.o(i.signalGenSPIWrite) for signalGenSPIWrite
+    signalgen.o(i.signalGenSPIWrite) refers to adicup3029port.o(i.AD5940_SPI1CsClr) for AD5940_SPI1CsClr
+    signalgen.o(i.signalGenSPIWrite) refers to adicup3029port.o(i.AD5940_SPI1ReadWriteNBytes) for AD5940_SPI1ReadWriteNBytes
+    signalgen.o(i.signalGenSPIWrite) refers to adicup3029port.o(i.AD5940_SPI1CsSet) for AD5940_SPI1CsSet
+    signalgen.o(i.signalGenSelectFreqReg) refers to signalgen.o(i.signalGenSPIWrite) for signalGenSPIWrite
+    signalgen.o(i.signalGenSelectFreqReg) refers to signalgen.o(.data) for configReg
+    signalgen.o(i.signalGenSelectPhaseReg) refers to signalgen.o(i.signalGenSPIWrite) for signalGenSPIWrite
+    signalgen.o(i.signalGenSelectPhaseReg) refers to signalgen.o(.data) for configReg
+    signalgen.o(i.signalGenSetFreqAdjustMode) refers to signalgen.o(i.signalGenSPIWrite) for signalGenSPIWrite
+    signalgen.o(i.signalGenSetFreqAdjustMode) refers to signalgen.o(.data) for configReg
+    signalgen.o(i.signalGenSetMode) refers to signalgen.o(i.signalGenSPIWrite) for signalGenSPIWrite
+    signalgen.o(i.signalGenSetMode) refers to signalgen.o(.data) for configReg
+    amperometric.o(i.AppAMPCalcCurrent) refers to amperometric.o(i.AppAMPCalcVoltage) for AppAMPCalcVoltage
+    amperometric.o(i.AppAMPCalcCurrent) refers to fdiv.o(.text) for __aeabi_fdiv
+    amperometric.o(i.AppAMPCalcCurrent) refers to fmul.o(.text) for __aeabi_fmul
+    amperometric.o(i.AppAMPCalcCurrent) refers to amperometric.o(.data) for AppAMPCfg
+    amperometric.o(i.AppAMPCalcVoltage) refers to fdiv.o(.text) for __aeabi_fdiv
+    amperometric.o(i.AppAMPCalcVoltage) refers to fflti.o(.text) for __aeabi_i2f
+    amperometric.o(i.AppAMPCalcVoltage) refers to fmul.o(.text) for __aeabi_fmul
+    amperometric.o(i.AppAMPCalcVoltage) refers to amperometric.o(.data) for AppAMPCfg
+    amperometric.o(i.AppAMPCtrl) refers to ad5940.o(i.AD5940_ReadReg) for AD5940_ReadReg
+    amperometric.o(i.AppAMPCtrl) refers to fmul.o(.text) for __aeabi_fmul
+    amperometric.o(i.AppAMPCtrl) refers to ffixui.o(.text) for __aeabi_f2uiz
+    amperometric.o(i.AppAMPCtrl) refers to ad5940.o(i.AD5940_WUPTCfg) for AD5940_WUPTCfg
+    amperometric.o(i.AppAMPCtrl) refers to ad5940.o(i.AD5940_WUPTCtrl) for AD5940_WUPTCtrl
+    amperometric.o(i.AppAMPCtrl) refers to ad5940.o(i.AD5940_REFCfgS) for AD5940_REFCfgS
+    amperometric.o(i.AppAMPCtrl) refers to memseta.o(.text) for __aeabi_memclr4
+    amperometric.o(i.AppAMPCtrl) refers to ad5940.o(i.AD5940_LPLoopCfgS) for AD5940_LPLoopCfgS
+    amperometric.o(i.AppAMPCtrl) refers to ad5940.o(i.AD5940_EnterSleepS) for AD5940_EnterSleepS
+    amperometric.o(i.AppAMPCtrl) refers to amperometric.o(.data) for AppAMPCfg
+    amperometric.o(i.AppAMPDataProcess) refers to amperometric.o(i.AppAMPCalcCurrent) for AppAMPCalcCurrent
+    amperometric.o(i.AppAMPGetCfg) refers to amperometric.o(.data) for AppAMPCfg
+    amperometric.o(i.AppAMPISR) refers to ad5940.o(i.AD5940_WakeUp) for AD5940_WakeUp
+    amperometric.o(i.AppAMPISR) refers to ad5940.o(i.AD5940_SleepKeyCtrlS) for AD5940_SleepKeyCtrlS
+    amperometric.o(i.AppAMPISR) refers to ad5940.o(i.AD5940_INTCTestFlag) for AD5940_INTCTestFlag
+    amperometric.o(i.AppAMPISR) refers to ad5940.o(i.AD5940_FIFOGetCnt) for AD5940_FIFOGetCnt
+    amperometric.o(i.AppAMPISR) refers to ad5940.o(i.AD5940_FIFORd) for AD5940_FIFORd
+    amperometric.o(i.AppAMPISR) refers to ad5940.o(i.AD5940_INTCClrFlag) for AD5940_INTCClrFlag
+    amperometric.o(i.AppAMPISR) refers to amperometric.o(i.AppAMPRegModify) for AppAMPRegModify
+    amperometric.o(i.AppAMPISR) refers to amperometric.o(i.AppAMPDataProcess) for AppAMPDataProcess
+    amperometric.o(i.AppAMPInit) refers to ad5940.o(i.AD5940_WakeUp) for AD5940_WakeUp
+    amperometric.o(i.AppAMPInit) refers to ad5940.o(i.AD5940_SEQCfg) for AD5940_SEQCfg
+    amperometric.o(i.AppAMPInit) refers to amperometric.o(i.AppAMPRtiaCal) for AppAMPRtiaCal
+    amperometric.o(i.AppAMPInit) refers to ad5940.o(i.AD5940_FIFOCtrlS) for AD5940_FIFOCtrlS
+    amperometric.o(i.AppAMPInit) refers to ad5940.o(i.AD5940_FIFOCfg) for AD5940_FIFOCfg
+    amperometric.o(i.AppAMPInit) refers to ad5940.o(i.AD5940_INTCClrFlag) for AD5940_INTCClrFlag
+    amperometric.o(i.AppAMPInit) refers to ad5940.o(i.AD5940_SEQGenInit) for AD5940_SEQGenInit
+    amperometric.o(i.AppAMPInit) refers to amperometric.o(i.AppAMPSeqCfgGen) for AppAMPSeqCfgGen
+    amperometric.o(i.AppAMPInit) refers to amperometric.o(i.AppAMPSeqMeasureGen) for AppAMPSeqMeasureGen
+    amperometric.o(i.AppAMPInit) refers to ad5940.o(i.AD5940_SEQInfoCfg) for AD5940_SEQInfoCfg
+    amperometric.o(i.AppAMPInit) refers to ad5940.o(i.AD5940_SEQMmrTrig) for AD5940_SEQMmrTrig
+    amperometric.o(i.AppAMPInit) refers to ad5940.o(i.AD5940_INTCTestFlag) for AD5940_INTCTestFlag
+    amperometric.o(i.AppAMPInit) refers to ad5940.o(i.AD5940_SEQCtrlS) for AD5940_SEQCtrlS
+    amperometric.o(i.AppAMPInit) refers to adicup3029port.o(i.AD5940_ClrMCUIntFlag) for AD5940_ClrMCUIntFlag
+    amperometric.o(i.AppAMPInit) refers to ad5940.o(i.AD5940_AFEPwrBW) for AD5940_AFEPwrBW
+    amperometric.o(i.AppAMPInit) refers to amperometric.o(.data) for AppAMPCfg
+    amperometric.o(i.AppAMPRegModify) refers to ad5940.o(i.AD5940_WUPTCtrl) for AD5940_WUPTCtrl
+    amperometric.o(i.AppAMPRegModify) refers to amperometric.o(.data) for AppAMPCfg
+    amperometric.o(i.AppAMPRtiaCal) refers to ad5940.o(i.AD5940_StructInit) for AD5940_StructInit
+    amperometric.o(i.AppAMPRtiaCal) refers to fdiv.o(.text) for __aeabi_fdiv
+    amperometric.o(i.AppAMPRtiaCal) refers to fmul.o(.text) for __aeabi_fmul
+    amperometric.o(i.AppAMPRtiaCal) refers to ad5940.o(i.AD5940_LPRtiaCal) for AD5940_LPRtiaCal
+    amperometric.o(i.AppAMPRtiaCal) refers to amperometric.o(.data) for AppAMPCfg
+    amperometric.o(i.AppAMPSeqCfgGen) refers to ad5940.o(i.AD5940_SEQGenCtrl) for AD5940_SEQGenCtrl
+    amperometric.o(i.AppAMPSeqCfgGen) refers to ad5940.o(i.AD5940_REFCfgS) for AD5940_REFCfgS
+    amperometric.o(i.AppAMPSeqCfgGen) refers to fadd.o(.text) for __aeabi_fsub
+    amperometric.o(i.AppAMPSeqCfgGen) refers to fdiv.o(.text) for __aeabi_fdiv
+    amperometric.o(i.AppAMPSeqCfgGen) refers to ffixui.o(.text) for __aeabi_f2uiz
+    amperometric.o(i.AppAMPSeqCfgGen) refers to ffixi.o(.text) for __aeabi_f2iz
+    amperometric.o(i.AppAMPSeqCfgGen) refers to ad5940.o(i.AD5940_LPLoopCfgS) for AD5940_LPLoopCfgS
+    amperometric.o(i.AppAMPSeqCfgGen) refers to ad5940.o(i.AD5940_DSPCfgS) for AD5940_DSPCfgS
+    amperometric.o(i.AppAMPSeqCfgGen) refers to ad5940.o(i.AD5940_SWMatrixCfgS) for AD5940_SWMatrixCfgS
+    amperometric.o(i.AppAMPSeqCfgGen) refers to ad5940.o(i.AD5940_AFECtrlS) for AD5940_AFECtrlS
+    amperometric.o(i.AppAMPSeqCfgGen) refers to ad5940.o(i.AD5940_SEQGpioCtrlS) for AD5940_SEQGpioCtrlS
+    amperometric.o(i.AppAMPSeqCfgGen) refers to ad5940.o(i.AD5940_SEQGenInsert) for AD5940_SEQGenInsert
+    amperometric.o(i.AppAMPSeqCfgGen) refers to ad5940.o(i.AD5940_SEQGenFetchSeq) for AD5940_SEQGenFetchSeq
+    amperometric.o(i.AppAMPSeqCfgGen) refers to ad5940.o(i.AD5940_SEQCmdWrite) for AD5940_SEQCmdWrite
+    amperometric.o(i.AppAMPSeqCfgGen) refers to amperometric.o(.data) for AppAMPCfg
+    amperometric.o(i.AppAMPSeqMeasureGen) refers to fdiv.o(.text) for __aeabi_fdiv
+    amperometric.o(i.AppAMPSeqMeasureGen) refers to ad5940.o(i.AD5940_ClksCalculate) for AD5940_ClksCalculate
+    amperometric.o(i.AppAMPSeqMeasureGen) refers to ad5940.o(i.AD5940_SEQGenCtrl) for AD5940_SEQGenCtrl
+    amperometric.o(i.AppAMPSeqMeasureGen) refers to ad5940.o(i.AD5940_SEQGpioCtrlS) for AD5940_SEQGpioCtrlS
+    amperometric.o(i.AppAMPSeqMeasureGen) refers to ad5940.o(i.AD5940_AFECtrlS) for AD5940_AFECtrlS
+    amperometric.o(i.AppAMPSeqMeasureGen) refers to ad5940.o(i.AD5940_SEQGenInsert) for AD5940_SEQGenInsert
+    amperometric.o(i.AppAMPSeqMeasureGen) refers to ad5940.o(i.AD5940_EnterSleepS) for AD5940_EnterSleepS
+    amperometric.o(i.AppAMPSeqMeasureGen) refers to ad5940.o(i.AD5940_SEQGenFetchSeq) for AD5940_SEQGenFetchSeq
+    amperometric.o(i.AppAMPSeqMeasureGen) refers to ad5940.o(i.AD5940_SEQCmdWrite) for AD5940_SEQCmdWrite
+    amperometric.o(i.AppAMPSeqMeasureGen) refers to amperometric.o(.data) for AppAMPCfg
+    uartcmd.o(i.Str2Num) refers to strtoul.o(.text) for strtoul
+    uartcmd.o(i.UARTCmd_MatchCommand) refers to strcmp.o(.text) for strcmp
+    uartcmd.o(i.UARTCmd_MatchCommand) refers to uartcmd.o(.data) for pObjFound
+    uartcmd.o(i.UARTCmd_MatchCommand) refers to uartcmd.o(.bss) for line_buffer
+    uartcmd.o(i.UARTCmd_Process) refers to uartcmd.o(i.UARTCmd_RemoveSpaces) for UARTCmd_RemoveSpaces
+    uartcmd.o(i.UARTCmd_Process) refers to uartcmd.o(i.UARTCmd_MatchCommand) for UARTCmd_MatchCommand
+    uartcmd.o(i.UARTCmd_Process) refers to uartcmd.o(i.UARTCmd_TranslateParas) for UARTCmd_TranslateParas
+    uartcmd.o(i.UARTCmd_Process) refers to printfa.o(i.__0printf) for __2printf
+    uartcmd.o(i.UARTCmd_Process) refers to uartcmd.o(.data) for line_buffer_index
+    uartcmd.o(i.UARTCmd_Process) refers to uartcmd.o(.bss) for line_buffer
+    uartcmd.o(i.UARTCmd_RemoveSpaces) refers to uartcmd.o(.data) for token_count
+    uartcmd.o(i.UARTCmd_RemoveSpaces) refers to uartcmd.o(.bss) for line_buffer
+    uartcmd.o(i.UARTCmd_TranslateParas) refers to uartcmd.o(i.Str2Num) for Str2Num
+    uartcmd.o(i.UARTCmd_TranslateParas) refers to uartcmd.o(.bss) for line_buffer
+    uartcmd.o(i.UARTCmd_TranslateParas) refers to uartcmd.o(.data) for parameter1
+    uartcmd.o(i.help) refers to printfa.o(i.__0printf) for __2printf
+    uartcmd.o(i.help) refers to uartcmd.o(.data) for uart_cmd_table
+    uartcmd.o(i.say_hello) refers to printfa.o(i.__0printf) for __2printf
+    uartcmd.o(.data) refers to uartcmd.o(i.help) for help
+    uartcmd.o(.data) refers to uartcmd.o(.conststring) for .conststring
+    uartcmd.o(.data) refers to uartcmd.o(i.say_hello) for say_hello
+    startup_aducm3029.o(RESET) refers to startup_aducm3029.o(STACK) for __initial_sp
+    startup_aducm3029.o(RESET) refers to startup_aducm3029.o(.text) for Reset_Handler
+    startup_aducm3029.o(RESET) refers to adicup3029port.o(i.Ext_Int0_Handler) for Ext_Int0_Handler
+    startup_aducm3029.o(RESET) refers to main.o(i.UART_Int_Handler) for UART_Int_Handler
+    startup_aducm3029.o(.text) refers to system_aducm3029.o(i.SystemInit) for SystemInit
+    startup_aducm3029.o(.text) refers to entry.o(.ARM.Collect$$$$00000000) for __main
+    system_aducm3029.o(i.SystemCoreClockUpdate) refers to system_aducm3029.o(.data) for hfClock
+    system_aducm3029.o(i.SystemInit) refers to system_aducm3029.o(i.adi_system_EnableRetention) for adi_system_EnableRetention
+    system_aducm3029.o(i.SystemInit) refers to startup_aducm3029.o(RESET) for __Vectors
+    atan2.o(i.__softfp_atan2) refers (Special) to iusefp.o(.text) for __I$use$fp
+    atan2.o(i.__softfp_atan2) refers to atan2.o(i.atan2) for atan2
+    atan2.o(i.atan2) refers (Special) to iusefp.o(.text) for __I$use$fp
+    atan2.o(i.atan2) refers to dunder.o(i.__mathlib_dbl_infnan2) for __mathlib_dbl_infnan2
+    atan2.o(i.atan2) refers to atan.o(i.atan) for atan
+    atan2.o(i.atan2) refers to ddiv.o(.text) for __aeabi_ddiv
+    atan2.o(i.atan2) refers to dadd.o(.text) for __aeabi_dsub
+    atan2.o(i.atan2) refers to qnan.o(.constdata) for __mathlib_zero
+    atan2_x.o(i.____softfp_atan2$lsc) refers (Special) to iusefp.o(.text) for __I$use$fp
+    atan2_x.o(i.____softfp_atan2$lsc) refers to atan2_x.o(i.__atan2$lsc) for __atan2$lsc
+    atan2_x.o(i.__atan2$lsc) refers (Special) to iusefp.o(.text) for __I$use$fp
+    atan2_x.o(i.__atan2$lsc) refers to dunder.o(i.__mathlib_dbl_infnan2) for __mathlib_dbl_infnan2
+    atan2_x.o(i.__atan2$lsc) refers to atan.o(i.atan) for atan
+    atan2_x.o(i.__atan2$lsc) refers to errno.o(i.__set_errno) for __set_errno
+    atan2_x.o(i.__atan2$lsc) refers to ddiv.o(.text) for __aeabi_ddiv
+    atan2_x.o(i.__atan2$lsc) refers to dadd.o(.text) for __aeabi_dsub
+    atan2_x.o(i.__atan2$lsc) refers to qnan.o(.constdata) for __mathlib_zero
+    cos.o(i.__softfp_cos) refers (Special) to iusefp.o(.text) for __I$use$fp
+    cos.o(i.__softfp_cos) refers to cos.o(i.cos) for cos
+    cos.o(i.cos) refers (Special) to iusefp.o(.text) for __I$use$fp
+    cos.o(i.cos) refers to errno.o(i.__set_errno) for __set_errno
+    cos.o(i.cos) refers to dunder.o(i.__mathlib_dbl_invalid) for __mathlib_dbl_invalid
+    cos.o(i.cos) refers to dunder.o(i.__mathlib_dbl_infnan) for __mathlib_dbl_infnan
+    cos.o(i.cos) refers to rred.o(i.__ieee754_rem_pio2) for __ieee754_rem_pio2
+    cos.o(i.cos) refers to sin_i.o(i.__kernel_sin) for __kernel_sin
+    cos.o(i.cos) refers to cos_i.o(i.__kernel_cos) for __kernel_cos
+    cos_x.o(i.____softfp_cos$lsc) refers (Special) to iusefp.o(.text) for __I$use$fp
+    cos_x.o(i.____softfp_cos$lsc) refers to cos_x.o(i.__cos$lsc) for __cos$lsc
+    cos_x.o(i.__cos$lsc) refers (Special) to iusefp.o(.text) for __I$use$fp
+    cos_x.o(i.__cos$lsc) refers to errno.o(i.__set_errno) for __set_errno
+    cos_x.o(i.__cos$lsc) refers to dunder.o(i.__mathlib_dbl_infnan) for __mathlib_dbl_infnan
+    cos_x.o(i.__cos$lsc) refers to rred.o(i.__ieee754_rem_pio2) for __ieee754_rem_pio2
+    cos_x.o(i.__cos$lsc) refers to sin_i.o(i.__kernel_sin) for __kernel_sin
+    cos_x.o(i.__cos$lsc) refers to cos_i.o(i.__kernel_cos) for __kernel_cos
+    log10.o(i.__softfp_log10) refers (Special) to iusefp.o(.text) for __I$use$fp
+    log10.o(i.__softfp_log10) refers to log10.o(i.log10) for log10
+    log10.o(i.log10) refers (Special) to iusefp.o(.text) for __I$use$fp
+    log10.o(i.log10) refers to dunder.o(i.__mathlib_dbl_infnan) for __mathlib_dbl_infnan
+    log10.o(i.log10) refers to errno.o(i.__set_errno) for __set_errno
+    log10.o(i.log10) refers to dunder.o(i.__mathlib_dbl_invalid) for __mathlib_dbl_invalid
+    log10.o(i.log10) refers to dunder.o(i.__mathlib_dbl_divzero) for __mathlib_dbl_divzero
+    log10.o(i.log10) refers to dscalb.o(.text) for __ARM_scalbn
+    log10.o(i.log10) refers to dflti.o(.text) for __aeabi_i2d
+    log10.o(i.log10) refers to log.o(i.log) for log
+    log10.o(i.log10) refers to dmul.o(.text) for __aeabi_dmul
+    log10.o(i.log10) refers to dadd.o(.text) for __aeabi_dadd
+    log10_x.o(i.____softfp_log10$lsc) refers (Special) to iusefp.o(.text) for __I$use$fp
+    log10_x.o(i.____softfp_log10$lsc) refers to log10_x.o(i.__log10$lsc) for __log10$lsc
+    log10_x.o(i.__log10$lsc) refers (Special) to iusefp.o(.text) for __I$use$fp
+    log10_x.o(i.__log10$lsc) refers to dunder.o(i.__mathlib_dbl_infnan) for __mathlib_dbl_infnan
+    log10_x.o(i.__log10$lsc) refers to errno.o(i.__set_errno) for __set_errno
+    log10_x.o(i.__log10$lsc) refers to dscalb.o(.text) for __ARM_scalbn
+    log10_x.o(i.__log10$lsc) refers to dflti.o(.text) for __aeabi_i2d
+    log10_x.o(i.__log10$lsc) refers to log.o(i.log) for log
+    log10_x.o(i.__log10$lsc) refers to dmul.o(.text) for __aeabi_dmul
+    log10_x.o(i.__log10$lsc) refers to dadd.o(.text) for __aeabi_dadd
+    pow.o(i.__softfp_pow) refers (Special) to iusefp.o(.text) for __I$use$fp
+    pow.o(i.__softfp_pow) refers to pow.o(i.pow) for pow
+    pow.o(i.pow) refers (Special) to iusefp.o(.text) for __I$use$fp
+    pow.o(i.pow) refers to dunder.o(i.__mathlib_dbl_infnan2) for __mathlib_dbl_infnan2
+    pow.o(i.pow) refers to errno.o(i.__set_errno) for __set_errno
+    pow.o(i.pow) refers to dunder.o(i.__mathlib_dbl_divzero) for __mathlib_dbl_divzero
+    pow.o(i.pow) refers to ddiv.o(.text) for __aeabi_ddiv
+    pow.o(i.pow) refers to sqrt.o(i.sqrt) for sqrt
+    pow.o(i.pow) refers to dmul.o(.text) for __aeabi_dmul
+    pow.o(i.pow) refers to dflti.o(.text) for __aeabi_i2d
+    pow.o(i.pow) refers to dunder.o(i.__mathlib_dbl_invalid) for __mathlib_dbl_invalid
+    pow.o(i.pow) refers to dunder.o(i.__mathlib_dbl_overflow) for __mathlib_dbl_overflow
+    pow.o(i.pow) refers to dunder.o(i.__mathlib_dbl_underflow) for __mathlib_dbl_underflow
+    pow.o(i.pow) refers to dadd.o(.text) for __aeabi_dsub
+    pow.o(i.pow) refers to dscalb.o(.text) for __ARM_scalbn
+    pow.o(i.pow) refers to qnan.o(.constdata) for __mathlib_zero
+    pow.o(i.pow) refers to poly.o(i.__kernel_poly) for __kernel_poly
+    pow.o(i.pow) refers to cdrcmple.o(.text) for __aeabi_cdrcmple
+    pow.o(i.pow) refers to pow.o(.constdata) for .constdata
+    pow.o(i.pow) refers to fpclassify.o(i.__ARM_fpclassify) for __ARM_fpclassify
+    pow.o(.constdata) refers (Special) to iusefp.o(.text) for __I$use$fp
+    pow_x.o(i.____softfp_pow$lsc) refers (Special) to iusefp.o(.text) for __I$use$fp
+    pow_x.o(i.____softfp_pow$lsc) refers to pow_x.o(i.__pow$lsc) for __pow$lsc
+    pow_x.o(i.__pow$lsc) refers (Special) to iusefp.o(.text) for __I$use$fp
+    pow_x.o(i.__pow$lsc) refers to dunder.o(i.__mathlib_dbl_infnan2) for __mathlib_dbl_infnan2
+    pow_x.o(i.__pow$lsc) refers to errno.o(i.__set_errno) for __set_errno
+    pow_x.o(i.__pow$lsc) refers to ddiv.o(.text) for __aeabi_ddiv
+    pow_x.o(i.__pow$lsc) refers to sqrt.o(i.sqrt) for sqrt
+    pow_x.o(i.__pow$lsc) refers to dmul.o(.text) for __aeabi_dmul
+    pow_x.o(i.__pow$lsc) refers to dflti.o(.text) for __aeabi_i2d
+    pow_x.o(i.__pow$lsc) refers to dadd.o(.text) for __aeabi_dsub
+    pow_x.o(i.__pow$lsc) refers to dscalb.o(.text) for __ARM_scalbn
+    pow_x.o(i.__pow$lsc) refers to qnan.o(.constdata) for __mathlib_zero
+    pow_x.o(i.__pow$lsc) refers to poly.o(i.__kernel_poly) for __kernel_poly
+    pow_x.o(i.__pow$lsc) refers to cdrcmple.o(.text) for __aeabi_cdrcmple
+    pow_x.o(i.__pow$lsc) refers to pow_x.o(.constdata) for .constdata
+    pow_x.o(.constdata) refers (Special) to iusefp.o(.text) for __I$use$fp
+    sin.o(i.__softfp_sin) refers (Special) to iusefp.o(.text) for __I$use$fp
+    sin.o(i.__softfp_sin) refers to sin.o(i.sin) for sin
+    sin.o(i.sin) refers (Special) to iusefp.o(.text) for __I$use$fp
+    sin.o(i.sin) refers to errno.o(i.__set_errno) for __set_errno
+    sin.o(i.sin) refers to dunder.o(i.__mathlib_dbl_invalid) for __mathlib_dbl_invalid
+    sin.o(i.sin) refers to dunder.o(i.__mathlib_dbl_infnan) for __mathlib_dbl_infnan
+    sin.o(i.sin) refers to rred.o(i.__ieee754_rem_pio2) for __ieee754_rem_pio2
+    sin.o(i.sin) refers to cos_i.o(i.__kernel_cos) for __kernel_cos
+    sin.o(i.sin) refers to sin_i.o(i.__kernel_sin) for __kernel_sin
+    sin_x.o(i.____softfp_sin$lsc) refers (Special) to iusefp.o(.text) for __I$use$fp
+    sin_x.o(i.____softfp_sin$lsc) refers to sin_x.o(i.__sin$lsc) for __sin$lsc
+    sin_x.o(i.__sin$lsc) refers (Special) to iusefp.o(.text) for __I$use$fp
+    sin_x.o(i.__sin$lsc) refers to errno.o(i.__set_errno) for __set_errno
+    sin_x.o(i.__sin$lsc) refers to dunder.o(i.__mathlib_dbl_infnan) for __mathlib_dbl_infnan
+    sin_x.o(i.__sin$lsc) refers to rred.o(i.__ieee754_rem_pio2) for __ieee754_rem_pio2
+    sin_x.o(i.__sin$lsc) refers to cos_i.o(i.__kernel_cos) for __kernel_cos
+    sin_x.o(i.__sin$lsc) refers to sin_i.o(i.__kernel_sin) for __kernel_sin
+    sqrt.o(i.__softfp_sqrt) refers (Special) to iusefp.o(.text) for __I$use$fp
+    sqrt.o(i.__softfp_sqrt) refers to dsqrt.o(.text) for _dsqrt
+    sqrt.o(i.__softfp_sqrt) refers to errno.o(i.__set_errno) for __set_errno
+    sqrt.o(i.sqrt) refers (Special) to iusefp.o(.text) for __I$use$fp
+    sqrt.o(i.sqrt) refers to dsqrt.o(.text) for _dsqrt
+    sqrt.o(i.sqrt) refers to errno.o(i.__set_errno) for __set_errno
+    sqrt_x.o(i.____softfp_sqrt$lsc) refers (Special) to iusefp.o(.text) for __I$use$fp
+    sqrt_x.o(i.____softfp_sqrt$lsc) refers to cdcmple.o(.text) for __aeabi_cdcmple
+    sqrt_x.o(i.____softfp_sqrt$lsc) refers to errno.o(i.__set_errno) for __set_errno
+    sqrt_x.o(i.____softfp_sqrt$lsc) refers to dsqrt.o(.text) for _dsqrt
+    sqrt_x.o(i.__sqrt$lsc) refers (Special) to iusefp.o(.text) for __I$use$fp
+    sqrt_x.o(i.__sqrt$lsc) refers to cdcmple.o(.text) for __aeabi_cdcmple
+    sqrt_x.o(i.__sqrt$lsc) refers to errno.o(i.__set_errno) for __set_errno
+    sqrt_x.o(i.__sqrt$lsc) refers to dsqrt.o(.text) for _dsqrt
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry10a.o(.ARM.Collect$$$$0000000D) for __rt_final_cpp
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry11a.o(.ARM.Collect$$$$0000000F) for __rt_final_exit
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry7b.o(.ARM.Collect$$$$00000008) for _main_clock
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry8b.o(.ARM.Collect$$$$0000000A) for _main_cpp_init
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry9a.o(.ARM.Collect$$$$0000000B) for _main_init
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry5.o(.ARM.Collect$$$$00000004) for _main_scatterload
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry2.o(.ARM.Collect$$$$00000001) for _main_stk
+    uldiv.o(.text) refers to llushr.o(.text) for __aeabi_llsr
+    uldiv.o(.text) refers to llshl.o(.text) for __aeabi_llsl
+    printfb.o(i.__0fprintf$bare) refers to printfb.o(i._printf_core) for _printf_core
+    printfb.o(i.__0fprintf$bare) refers to main.o(i.fputc) for fputc
+    printfb.o(i.__0printf$bare) refers to printfb.o(i._printf_core) for _printf_core
+    printfb.o(i.__0printf$bare) refers to main.o(i.fputc) for fputc
+    printfb.o(i.__0printf$bare) refers to stdout.o(.data) for __stdout
+    printfb.o(i.__0snprintf$bare) refers to printfb.o(i._printf_core) for _printf_core
+    printfb.o(i.__0snprintf$bare) refers to printfb.o(i._snputc) for _snputc
+    printfb.o(i.__0sprintf$bare) refers to printfb.o(i._printf_core) for _printf_core
+    printfb.o(i.__0sprintf$bare) refers to printfb.o(i._sputc) for _sputc
+    printfb.o(i.__0vfprintf$bare) refers to printfb.o(i._printf_core) for _printf_core
+    printfb.o(i.__0vfprintf$bare) refers to main.o(i.fputc) for fputc
+    printfb.o(i.__0vprintf$bare) refers to printfb.o(i._printf_core) for _printf_core
+    printfb.o(i.__0vprintf$bare) refers to main.o(i.fputc) for fputc
+    printfb.o(i.__0vprintf$bare) refers to stdout.o(.data) for __stdout
+    printfb.o(i.__0vsnprintf$bare) refers to printfb.o(i._printf_core) for _printf_core
+    printfb.o(i.__0vsnprintf$bare) refers to printfb.o(i._snputc) for _snputc
+    printfb.o(i.__0vsprintf$bare) refers to printfb.o(i._printf_core) for _printf_core
+    printfb.o(i.__0vsprintf$bare) refers to printfb.o(i._sputc) for _sputc
+    printf0.o(i.__0fprintf$0) refers to printf0.o(i._printf_core) for _printf_core
+    printf0.o(i.__0fprintf$0) refers to main.o(i.fputc) for fputc
+    printf0.o(i.__0printf$0) refers to printf0.o(i._printf_core) for _printf_core
+    printf0.o(i.__0printf$0) refers to main.o(i.fputc) for fputc
+    printf0.o(i.__0printf$0) refers to stdout.o(.data) for __stdout
+    printf0.o(i.__0snprintf$0) refers to printf0.o(i._printf_core) for _printf_core
+    printf0.o(i.__0snprintf$0) refers to printf0.o(i._snputc) for _snputc
+    printf0.o(i.__0sprintf$0) refers to printf0.o(i._printf_core) for _printf_core
+    printf0.o(i.__0sprintf$0) refers to printf0.o(i._sputc) for _sputc
+    printf0.o(i.__0vfprintf$0) refers to printf0.o(i._printf_core) for _printf_core
+    printf0.o(i.__0vfprintf$0) refers to main.o(i.fputc) for fputc
+    printf0.o(i.__0vprintf$0) refers to printf0.o(i._printf_core) for _printf_core
+    printf0.o(i.__0vprintf$0) refers to main.o(i.fputc) for fputc
+    printf0.o(i.__0vprintf$0) refers to stdout.o(.data) for __stdout
+    printf0.o(i.__0vsnprintf$0) refers to printf0.o(i._printf_core) for _printf_core
+    printf0.o(i.__0vsnprintf$0) refers to printf0.o(i._snputc) for _snputc
+    printf0.o(i.__0vsprintf$0) refers to printf0.o(i._printf_core) for _printf_core
+    printf0.o(i.__0vsprintf$0) refers to printf0.o(i._sputc) for _sputc
+    printf1.o(i.__0fprintf$1) refers to printf1.o(i._printf_core) for _printf_core
+    printf1.o(i.__0fprintf$1) refers to main.o(i.fputc) for fputc
+    printf1.o(i.__0printf$1) refers to printf1.o(i._printf_core) for _printf_core
+    printf1.o(i.__0printf$1) refers to main.o(i.fputc) for fputc
+    printf1.o(i.__0printf$1) refers to stdout.o(.data) for __stdout
+    printf1.o(i.__0snprintf$1) refers to printf1.o(i._printf_core) for _printf_core
+    printf1.o(i.__0snprintf$1) refers to printf1.o(i._snputc) for _snputc
+    printf1.o(i.__0sprintf$1) refers to printf1.o(i._printf_core) for _printf_core
+    printf1.o(i.__0sprintf$1) refers to printf1.o(i._sputc) for _sputc
+    printf1.o(i.__0vfprintf$1) refers to printf1.o(i._printf_core) for _printf_core
+    printf1.o(i.__0vfprintf$1) refers to main.o(i.fputc) for fputc
+    printf1.o(i.__0vprintf$1) refers to printf1.o(i._printf_core) for _printf_core
+    printf1.o(i.__0vprintf$1) refers to main.o(i.fputc) for fputc
+    printf1.o(i.__0vprintf$1) refers to stdout.o(.data) for __stdout
+    printf1.o(i.__0vsnprintf$1) refers to printf1.o(i._printf_core) for _printf_core
+    printf1.o(i.__0vsnprintf$1) refers to printf1.o(i._snputc) for _snputc
+    printf1.o(i.__0vsprintf$1) refers to printf1.o(i._printf_core) for _printf_core
+    printf1.o(i.__0vsprintf$1) refers to printf1.o(i._sputc) for _sputc
+    printf1.o(i._printf_core) refers to uidiv.o(.text) for __aeabi_uidivmod
+    printf2.o(i.__0fprintf$2) refers to printf2.o(i._printf_core) for _printf_core
+    printf2.o(i.__0fprintf$2) refers to main.o(i.fputc) for fputc
+    printf2.o(i.__0printf$2) refers to printf2.o(i._printf_core) for _printf_core
+    printf2.o(i.__0printf$2) refers to main.o(i.fputc) for fputc
+    printf2.o(i.__0printf$2) refers to stdout.o(.data) for __stdout
+    printf2.o(i.__0snprintf$2) refers to printf2.o(i._printf_core) for _printf_core
+    printf2.o(i.__0snprintf$2) refers to printf2.o(i._snputc) for _snputc
+    printf2.o(i.__0sprintf$2) refers to printf2.o(i._printf_core) for _printf_core
+    printf2.o(i.__0sprintf$2) refers to printf2.o(i._sputc) for _sputc
+    printf2.o(i.__0vfprintf$2) refers to printf2.o(i._printf_core) for _printf_core
+    printf2.o(i.__0vfprintf$2) refers to main.o(i.fputc) for fputc
+    printf2.o(i.__0vprintf$2) refers to printf2.o(i._printf_core) for _printf_core
+    printf2.o(i.__0vprintf$2) refers to main.o(i.fputc) for fputc
+    printf2.o(i.__0vprintf$2) refers to stdout.o(.data) for __stdout
+    printf2.o(i.__0vsnprintf$2) refers to printf2.o(i._printf_core) for _printf_core
+    printf2.o(i.__0vsnprintf$2) refers to printf2.o(i._snputc) for _snputc
+    printf2.o(i.__0vsprintf$2) refers to printf2.o(i._printf_core) for _printf_core
+    printf2.o(i.__0vsprintf$2) refers to printf2.o(i._sputc) for _sputc
+    printf3.o(i.__0fprintf$3) refers to printf3.o(i._printf_core) for _printf_core
+    printf3.o(i.__0fprintf$3) refers to main.o(i.fputc) for fputc
+    printf3.o(i.__0printf$3) refers to printf3.o(i._printf_core) for _printf_core
+    printf3.o(i.__0printf$3) refers to main.o(i.fputc) for fputc
+    printf3.o(i.__0printf$3) refers to stdout.o(.data) for __stdout
+    printf3.o(i.__0snprintf$3) refers to printf3.o(i._printf_core) for _printf_core
+    printf3.o(i.__0snprintf$3) refers to printf3.o(i._snputc) for _snputc
+    printf3.o(i.__0sprintf$3) refers to printf3.o(i._printf_core) for _printf_core
+    printf3.o(i.__0sprintf$3) refers to printf3.o(i._sputc) for _sputc
+    printf3.o(i.__0vfprintf$3) refers to printf3.o(i._printf_core) for _printf_core
+    printf3.o(i.__0vfprintf$3) refers to main.o(i.fputc) for fputc
+    printf3.o(i.__0vprintf$3) refers to printf3.o(i._printf_core) for _printf_core
+    printf3.o(i.__0vprintf$3) refers to main.o(i.fputc) for fputc
+    printf3.o(i.__0vprintf$3) refers to stdout.o(.data) for __stdout
+    printf3.o(i.__0vsnprintf$3) refers to printf3.o(i._printf_core) for _printf_core
+    printf3.o(i.__0vsnprintf$3) refers to printf3.o(i._snputc) for _snputc
+    printf3.o(i.__0vsprintf$3) refers to printf3.o(i._printf_core) for _printf_core
+    printf3.o(i.__0vsprintf$3) refers to printf3.o(i._sputc) for _sputc
+    printf3.o(i._printf_core) refers to uidiv.o(.text) for __aeabi_uidivmod
+    printf4.o(i.__0fprintf$4) refers to printf4.o(i._printf_core) for _printf_core
+    printf4.o(i.__0fprintf$4) refers to main.o(i.fputc) for fputc
+    printf4.o(i.__0printf$4) refers to printf4.o(i._printf_core) for _printf_core
+    printf4.o(i.__0printf$4) refers to main.o(i.fputc) for fputc
+    printf4.o(i.__0printf$4) refers to stdout.o(.data) for __stdout
+    printf4.o(i.__0snprintf$4) refers to printf4.o(i._printf_core) for _printf_core
+    printf4.o(i.__0snprintf$4) refers to printf4.o(i._snputc) for _snputc
+    printf4.o(i.__0sprintf$4) refers to printf4.o(i._printf_core) for _printf_core
+    printf4.o(i.__0sprintf$4) refers to printf4.o(i._sputc) for _sputc
+    printf4.o(i.__0vfprintf$4) refers to printf4.o(i._printf_core) for _printf_core
+    printf4.o(i.__0vfprintf$4) refers to main.o(i.fputc) for fputc
+    printf4.o(i.__0vprintf$4) refers to printf4.o(i._printf_core) for _printf_core
+    printf4.o(i.__0vprintf$4) refers to main.o(i.fputc) for fputc
+    printf4.o(i.__0vprintf$4) refers to stdout.o(.data) for __stdout
+    printf4.o(i.__0vsnprintf$4) refers to printf4.o(i._printf_core) for _printf_core
+    printf4.o(i.__0vsnprintf$4) refers to printf4.o(i._snputc) for _snputc
+    printf4.o(i.__0vsprintf$4) refers to printf4.o(i._printf_core) for _printf_core
+    printf4.o(i.__0vsprintf$4) refers to printf4.o(i._sputc) for _sputc
+    printf4.o(i._printf_core) refers to uldiv.o(.text) for __aeabi_uldivmod
+    printf5.o(i.__0fprintf$5) refers to printf5.o(i._printf_core) for _printf_core
+    printf5.o(i.__0fprintf$5) refers to main.o(i.fputc) for fputc
+    printf5.o(i.__0printf$5) refers to printf5.o(i._printf_core) for _printf_core
+    printf5.o(i.__0printf$5) refers to main.o(i.fputc) for fputc
+    printf5.o(i.__0printf$5) refers to stdout.o(.data) for __stdout
+    printf5.o(i.__0snprintf$5) refers to printf5.o(i._printf_core) for _printf_core
+    printf5.o(i.__0snprintf$5) refers to printf5.o(i._snputc) for _snputc
+    printf5.o(i.__0sprintf$5) refers to printf5.o(i._printf_core) for _printf_core
+    printf5.o(i.__0sprintf$5) refers to printf5.o(i._sputc) for _sputc
+    printf5.o(i.__0vfprintf$5) refers to printf5.o(i._printf_core) for _printf_core
+    printf5.o(i.__0vfprintf$5) refers to main.o(i.fputc) for fputc
+    printf5.o(i.__0vprintf$5) refers to printf5.o(i._printf_core) for _printf_core
+    printf5.o(i.__0vprintf$5) refers to main.o(i.fputc) for fputc
+    printf5.o(i.__0vprintf$5) refers to stdout.o(.data) for __stdout
+    printf5.o(i.__0vsnprintf$5) refers to printf5.o(i._printf_core) for _printf_core
+    printf5.o(i.__0vsnprintf$5) refers to printf5.o(i._snputc) for _snputc
+    printf5.o(i.__0vsprintf$5) refers to printf5.o(i._printf_core) for _printf_core
+    printf5.o(i.__0vsprintf$5) refers to printf5.o(i._sputc) for _sputc
+    printf5.o(i._printf_core) refers to uldiv.o(.text) for __aeabi_uldivmod
+    printf6.o(i.__0fprintf$6) refers to printf6.o(i._printf_core) for _printf_core
+    printf6.o(i.__0fprintf$6) refers to main.o(i.fputc) for fputc
+    printf6.o(i.__0printf$6) refers to printf6.o(i._printf_core) for _printf_core
+    printf6.o(i.__0printf$6) refers to main.o(i.fputc) for fputc
+    printf6.o(i.__0printf$6) refers to stdout.o(.data) for __stdout
+    printf6.o(i.__0snprintf$6) refers to printf6.o(i._printf_core) for _printf_core
+    printf6.o(i.__0snprintf$6) refers to printf6.o(i._snputc) for _snputc
+    printf6.o(i.__0sprintf$6) refers to printf6.o(i._printf_core) for _printf_core
+    printf6.o(i.__0sprintf$6) refers to printf6.o(i._sputc) for _sputc
+    printf6.o(i.__0vfprintf$6) refers to printf6.o(i._printf_core) for _printf_core
+    printf6.o(i.__0vfprintf$6) refers to main.o(i.fputc) for fputc
+    printf6.o(i.__0vprintf$6) refers to printf6.o(i._printf_core) for _printf_core
+    printf6.o(i.__0vprintf$6) refers to main.o(i.fputc) for fputc
+    printf6.o(i.__0vprintf$6) refers to stdout.o(.data) for __stdout
+    printf6.o(i.__0vsnprintf$6) refers to printf6.o(i._printf_core) for _printf_core
+    printf6.o(i.__0vsnprintf$6) refers to printf6.o(i._snputc) for _snputc
+    printf6.o(i.__0vsprintf$6) refers to printf6.o(i._printf_core) for _printf_core
+    printf6.o(i.__0vsprintf$6) refers to printf6.o(i._sputc) for _sputc
+    printf6.o(i._printf_core) refers to printf6.o(i._printf_pre_padding) for _printf_pre_padding
+    printf6.o(i._printf_core) refers to uidiv.o(.text) for __aeabi_uidivmod
+    printf6.o(i._printf_core) refers to printf6.o(i._printf_post_padding) for _printf_post_padding
+    printf7.o(i.__0fprintf$7) refers to printf7.o(i._printf_core) for _printf_core
+    printf7.o(i.__0fprintf$7) refers to main.o(i.fputc) for fputc
+    printf7.o(i.__0printf$7) refers to printf7.o(i._printf_core) for _printf_core
+    printf7.o(i.__0printf$7) refers to main.o(i.fputc) for fputc
+    printf7.o(i.__0printf$7) refers to stdout.o(.data) for __stdout
+    printf7.o(i.__0snprintf$7) refers to printf7.o(i._printf_core) for _printf_core
+    printf7.o(i.__0snprintf$7) refers to printf7.o(i._snputc) for _snputc
+    printf7.o(i.__0sprintf$7) refers to printf7.o(i._printf_core) for _printf_core
+    printf7.o(i.__0sprintf$7) refers to printf7.o(i._sputc) for _sputc
+    printf7.o(i.__0vfprintf$7) refers to printf7.o(i._printf_core) for _printf_core
+    printf7.o(i.__0vfprintf$7) refers to main.o(i.fputc) for fputc
+    printf7.o(i.__0vprintf$7) refers to printf7.o(i._printf_core) for _printf_core
+    printf7.o(i.__0vprintf$7) refers to main.o(i.fputc) for fputc
+    printf7.o(i.__0vprintf$7) refers to stdout.o(.data) for __stdout
+    printf7.o(i.__0vsnprintf$7) refers to printf7.o(i._printf_core) for _printf_core
+    printf7.o(i.__0vsnprintf$7) refers to printf7.o(i._snputc) for _snputc
+    printf7.o(i.__0vsprintf$7) refers to printf7.o(i._printf_core) for _printf_core
+    printf7.o(i.__0vsprintf$7) refers to printf7.o(i._sputc) for _sputc
+    printf7.o(i._printf_core) refers to printf7.o(i._printf_pre_padding) for _printf_pre_padding
+    printf7.o(i._printf_core) refers to uldiv.o(.text) for __aeabi_uldivmod
+    printf7.o(i._printf_core) refers to printf7.o(i._printf_post_padding) for _printf_post_padding
+    printf8.o(i.__0fprintf$8) refers to printf8.o(i._printf_core) for _printf_core
+    printf8.o(i.__0fprintf$8) refers to main.o(i.fputc) for fputc
+    printf8.o(i.__0printf$8) refers to printf8.o(i._printf_core) for _printf_core
+    printf8.o(i.__0printf$8) refers to main.o(i.fputc) for fputc
+    printf8.o(i.__0printf$8) refers to stdout.o(.data) for __stdout
+    printf8.o(i.__0snprintf$8) refers to printf8.o(i._printf_core) for _printf_core
+    printf8.o(i.__0snprintf$8) refers to printf8.o(i._snputc) for _snputc
+    printf8.o(i.__0sprintf$8) refers to printf8.o(i._printf_core) for _printf_core
+    printf8.o(i.__0sprintf$8) refers to printf8.o(i._sputc) for _sputc
+    printf8.o(i.__0vfprintf$8) refers to printf8.o(i._printf_core) for _printf_core
+    printf8.o(i.__0vfprintf$8) refers to main.o(i.fputc) for fputc
+    printf8.o(i.__0vprintf$8) refers to printf8.o(i._printf_core) for _printf_core
+    printf8.o(i.__0vprintf$8) refers to main.o(i.fputc) for fputc
+    printf8.o(i.__0vprintf$8) refers to stdout.o(.data) for __stdout
+    printf8.o(i.__0vsnprintf$8) refers to printf8.o(i._printf_core) for _printf_core
+    printf8.o(i.__0vsnprintf$8) refers to printf8.o(i._snputc) for _snputc
+    printf8.o(i.__0vsprintf$8) refers to printf8.o(i._printf_core) for _printf_core
+    printf8.o(i.__0vsprintf$8) refers to printf8.o(i._sputc) for _sputc
+    printf8.o(i._printf_core) refers to printf8.o(i._printf_pre_padding) for _printf_pre_padding
+    printf8.o(i._printf_core) refers to uldiv.o(.text) for __aeabi_uldivmod
+    printf8.o(i._printf_core) refers to printf8.o(i._printf_post_padding) for _printf_post_padding
+    printfa.o(i.__0fprintf) refers (Special) to iusefp.o(.text) for __I$use$fp
+    printfa.o(i.__0fprintf) refers to printfa.o(i._printf_core) for _printf_core
+    printfa.o(i.__0fprintf) refers to main.o(i.fputc) for fputc
+    printfa.o(i.__0printf) refers (Special) to iusefp.o(.text) for __I$use$fp
+    printfa.o(i.__0printf) refers to printfa.o(i._printf_core) for _printf_core
+    printfa.o(i.__0printf) refers to main.o(i.fputc) for fputc
+    printfa.o(i.__0printf) refers to stdout.o(.data) for __stdout
+    printfa.o(i.__0snprintf) refers (Special) to iusefp.o(.text) for __I$use$fp
+    printfa.o(i.__0snprintf) refers to printfa.o(i._printf_core) for _printf_core
+    printfa.o(i.__0snprintf) refers to printfa.o(i._snputc) for _snputc
+    printfa.o(i.__0sprintf) refers (Special) to iusefp.o(.text) for __I$use$fp
+    printfa.o(i.__0sprintf) refers to printfa.o(i._printf_core) for _printf_core
+    printfa.o(i.__0sprintf) refers to printfa.o(i._sputc) for _sputc
+    printfa.o(i.__0vfprintf) refers (Special) to iusefp.o(.text) for __I$use$fp
+    printfa.o(i.__0vfprintf) refers to printfa.o(i._printf_core) for _printf_core
+    printfa.o(i.__0vfprintf) refers to main.o(i.fputc) for fputc
+    printfa.o(i.__0vprintf) refers (Special) to iusefp.o(.text) for __I$use$fp
+    printfa.o(i.__0vprintf) refers to printfa.o(i._printf_core) for _printf_core
+    printfa.o(i.__0vprintf) refers to main.o(i.fputc) for fputc
+    printfa.o(i.__0vprintf) refers to stdout.o(.data) for __stdout
+    printfa.o(i.__0vsnprintf) refers (Special) to iusefp.o(.text) for __I$use$fp
+    printfa.o(i.__0vsnprintf) refers to printfa.o(i._printf_core) for _printf_core
+    printfa.o(i.__0vsnprintf) refers to printfa.o(i._snputc) for _snputc
+    printfa.o(i.__0vsprintf) refers (Special) to iusefp.o(.text) for __I$use$fp
+    printfa.o(i.__0vsprintf) refers to printfa.o(i._printf_core) for _printf_core
+    printfa.o(i.__0vsprintf) refers to printfa.o(i._sputc) for _sputc
+    printfa.o(i._fp_digits) refers (Special) to iusefp.o(.text) for __I$use$fp
+    printfa.o(i._fp_digits) refers to dmul.o(.text) for __aeabi_dmul
+    printfa.o(i._fp_digits) refers to ddiv.o(.text) for __aeabi_ddiv
+    printfa.o(i._fp_digits) refers to cdrcmple.o(.text) for __aeabi_cdrcmple
+    printfa.o(i._fp_digits) refers to dadd.o(.text) for __aeabi_dadd
+    printfa.o(i._fp_digits) refers to dfixul.o(.text) for __aeabi_d2ulz
+    printfa.o(i._fp_digits) refers to uldiv.o(.text) for __aeabi_uldivmod
+    printfa.o(i._printf_core) refers (Special) to iusefp.o(.text) for __I$use$fp
+    printfa.o(i._printf_core) refers to printfa.o(i._printf_pre_padding) for _printf_pre_padding
+    printfa.o(i._printf_core) refers to uldiv.o(.text) for __aeabi_uldivmod
+    printfa.o(i._printf_core) refers to printfa.o(i._printf_post_padding) for _printf_post_padding
+    printfa.o(i._printf_core) refers to printfa.o(i._fp_digits) for _fp_digits
+    printfa.o(i._printf_core) refers to uidiv.o(.text) for __aeabi_uidivmod
+    printfa.o(i._printf_post_padding) refers (Special) to iusefp.o(.text) for __I$use$fp
+    printfa.o(i._printf_pre_padding) refers (Special) to iusefp.o(.text) for __I$use$fp
+    printfa.o(i._snputc) refers (Special) to iusefp.o(.text) for __I$use$fp
+    printfa.o(i._sputc) refers (Special) to iusefp.o(.text) for __I$use$fp
+    strtoul.o(.text) refers to errno.o(i.__aeabi_errno_addr) for __aeabi_errno_addr
+    strtoul.o(.text) refers to ctype_o.o(.text) for __rt_ctype_table
+    strtoul.o(.text) refers to _strtoul.o(.text) for _strtoul
+    fadd.o(.text) refers (Special) to iusefp.o(.text) for __I$use$fp
+    fadd.o(.text) refers to fepilogue.o(.text) for _float_epilogue
+    fmul.o(.text) refers (Special) to iusefp.o(.text) for __I$use$fp
+    fdiv.o(.text) refers (Special) to iusefp.o(.text) for __I$use$fp
+    fdiv.o(.text) refers to fepilogue.o(.text) for _float_round
+    dadd.o(.text) refers (Special) to iusefp.o(.text) for __I$use$fp
+    dadd.o(.text) refers to llshl.o(.text) for __aeabi_llsl
+    dadd.o(.text) refers to llsshr.o(.text) for __aeabi_lasr
+    dadd.o(.text) refers to depilogue.o(.text) for _double_epilogue
+    dmul.o(.text) refers (Special) to iusefp.o(.text) for __I$use$fp
+    dmul.o(.text) refers to depilogue.o(.text) for _double_epilogue
+    ddiv.o(.text) refers (Special) to iusefp.o(.text) for __I$use$fp
+    ddiv.o(.text) refers to depilogue.o(.text) for _double_round
+    fflti.o(.text) refers (Special) to iusefp.o(.text) for __I$use$fp
+    fflti.o(.text) refers to fepilogue.o(.text) for _float_epilogue
+    ffltui.o(.text) refers (Special) to iusefp.o(.text) for __I$use$fp
+    ffltui.o(.text) refers to fepilogue.o(.text) for _float_epilogue
+    ffltl.o(.text) refers (Special) to iusefp.o(.text) for __I$use$fp
+    ffltl.o(.text) refers to fepilogue.o(.text) for _float_epilogue
+    dflti.o(.text) refers (Special) to iusefp.o(.text) for __I$use$fp
+    dflti.o(.text) refers to depilogue.o(.text) for _double_epilogue
+    dfltui.o(.text) refers (Special) to iusefp.o(.text) for __I$use$fp
+    dfltui.o(.text) refers to depilogue.o(.text) for _double_epilogue
+    ffixi.o(.text) refers (Special) to iusefp.o(.text) for __I$use$fp
+    ffixui.o(.text) refers (Special) to iusefp.o(.text) for __I$use$fp
+    dfixi.o(.text) refers (Special) to iusefp.o(.text) for __I$use$fp
+    dfixi.o(.text) refers to llushr.o(.text) for __aeabi_llsr
+    dfixui.o(.text) refers (Special) to iusefp.o(.text) for __I$use$fp
+    dfixui.o(.text) refers to llushr.o(.text) for __aeabi_llsr
+    f2d.o(.text) refers (Special) to iusefp.o(.text) for __I$use$fp
+    cdcmple.o(.text) refers (Special) to iusefp.o(.text) for __I$use$fp
+    cdrcmple.o(.text) refers (Special) to iusefp.o(.text) for __I$use$fp
+    d2f.o(.text) refers (Special) to iusefp.o(.text) for __I$use$fp
+    d2f.o(.text) refers to fepilogue.o(.text) for _float_round
+    cfcmple.o(.text) refers (Special) to iusefp.o(.text) for __I$use$fp
+    cfrcmple.o(.text) refers (Special) to iusefp.o(.text) for __I$use$fp
+    atan.o(i.__softfp_atan) refers (Special) to iusefp.o(.text) for __I$use$fp
+    atan.o(i.__softfp_atan) refers to atan.o(i.atan) for atan
+    atan.o(i.atan) refers (Special) to iusefp.o(.text) for __I$use$fp
+    atan.o(i.atan) refers to dunder.o(i.__mathlib_dbl_infnan) for __mathlib_dbl_infnan
+    atan.o(i.atan) refers to fpclassify.o(i.__ARM_fpclassify) for __ARM_fpclassify
+    atan.o(i.atan) refers to dunder.o(i.__mathlib_dbl_underflow) for __mathlib_dbl_underflow
+    atan.o(i.atan) refers to dadd.o(.text) for __aeabi_dadd
+    atan.o(i.atan) refers to dscalb.o(.text) for __ARM_scalbn
+    atan.o(i.atan) refers to ddiv.o(.text) for __aeabi_ddiv
+    atan.o(i.atan) refers to dmul.o(.text) for __aeabi_dmul
+    atan.o(i.atan) refers to poly.o(i.__kernel_poly) for __kernel_poly
+    atan.o(i.atan) refers to atan.o(.constdata) for .constdata
+    atan.o(.constdata) refers (Special) to iusefp.o(.text) for __I$use$fp
+    atan_x.o(i.____softfp_atan$lsc) refers (Special) to iusefp.o(.text) for __I$use$fp
+    atan_x.o(i.____softfp_atan$lsc) refers to atan_x.o(i.__atan$lsc) for __atan$lsc
+    atan_x.o(i.__atan$lsc) refers (Special) to iusefp.o(.text) for __I$use$fp
+    atan_x.o(i.__atan$lsc) refers to dunder.o(i.__mathlib_dbl_infnan) for __mathlib_dbl_infnan
+    atan_x.o(i.__atan$lsc) refers to dadd.o(.text) for __aeabi_dadd
+    atan_x.o(i.__atan$lsc) refers to dscalb.o(.text) for __ARM_scalbn
+    atan_x.o(i.__atan$lsc) refers to ddiv.o(.text) for __aeabi_ddiv
+    atan_x.o(i.__atan$lsc) refers to dmul.o(.text) for __aeabi_dmul
+    atan_x.o(i.__atan$lsc) refers to poly.o(i.__kernel_poly) for __kernel_poly
+    atan_x.o(i.__atan$lsc) refers to atan_x.o(.constdata) for .constdata
+    atan_x.o(.constdata) refers (Special) to iusefp.o(.text) for __I$use$fp
+    cos_i.o(i.__kernel_cos) refers (Special) to iusefp.o(.text) for __I$use$fp
+    cos_i.o(i.__kernel_cos) refers to dfixi.o(.text) for __aeabi_d2iz
+    cos_i.o(i.__kernel_cos) refers to dmul.o(.text) for __aeabi_dmul
+    cos_i.o(i.__kernel_cos) refers to poly.o(i.__kernel_poly) for __kernel_poly
+    cos_i.o(i.__kernel_cos) refers to dadd.o(.text) for __aeabi_dsub
+    cos_i.o(i.__kernel_cos) refers to dscalb.o(.text) for __ARM_scalbn
+    cos_i.o(i.__kernel_cos) refers to cos_i.o(.constdata) for .constdata
+    cos_i.o(.constdata) refers (Special) to iusefp.o(.text) for __I$use$fp
+    dunder.o(i.__mathlib_dbl_divzero) refers to ddiv.o(.text) for __aeabi_ddiv
+    dunder.o(i.__mathlib_dbl_infnan) refers to dscalb.o(.text) for __ARM_scalbn
+    dunder.o(i.__mathlib_dbl_infnan2) refers to dadd.o(.text) for __aeabi_dadd
+    dunder.o(i.__mathlib_dbl_invalid) refers to ddiv.o(.text) for __aeabi_ddiv
+    dunder.o(i.__mathlib_dbl_overflow) refers to dscalb.o(.text) for __ARM_scalbn
+    dunder.o(i.__mathlib_dbl_posinfnan) refers to dmul.o(.text) for __aeabi_dmul
+    dunder.o(i.__mathlib_dbl_underflow) refers to dscalb.o(.text) for __ARM_scalbn
+    fpclassify.o(i.__ARM_fpclassify) refers (Special) to iusefp.o(.text) for __I$use$fp
+    log.o(i.__softfp_log) refers (Special) to iusefp.o(.text) for __I$use$fp
+    log.o(i.__softfp_log) refers to log.o(i.log) for log
+    log.o(i.log) refers (Special) to iusefp.o(.text) for __I$use$fp
+    log.o(i.log) refers to dunder.o(i.__mathlib_dbl_infnan) for __mathlib_dbl_infnan
+    log.o(i.log) refers to errno.o(i.__set_errno) for __set_errno
+    log.o(i.log) refers to dunder.o(i.__mathlib_dbl_invalid) for __mathlib_dbl_invalid
+    log.o(i.log) refers to dunder.o(i.__mathlib_dbl_divzero) for __mathlib_dbl_divzero
+    log.o(i.log) refers to dscalb.o(.text) for __ARM_scalbn
+    log.o(i.log) refers to dadd.o(.text) for __aeabi_dsub
+    log.o(i.log) refers to cdcmple.o(.text) for __aeabi_cdcmpeq
+    log.o(i.log) refers to dflti.o(.text) for __aeabi_i2d
+    log.o(i.log) refers to dmul.o(.text) for __aeabi_dmul
+    log.o(i.log) refers to ddiv.o(.text) for __aeabi_ddiv
+    log.o(i.log) refers to poly.o(i.__kernel_poly) for __kernel_poly
+    log.o(i.log) refers to qnan.o(.constdata) for __mathlib_zero
+    log.o(i.log) refers to log.o(.constdata) for .constdata
+    log.o(.constdata) refers (Special) to iusefp.o(.text) for __I$use$fp
+    log_x.o(i.____softfp_log$lsc) refers (Special) to iusefp.o(.text) for __I$use$fp
+    log_x.o(i.____softfp_log$lsc) refers to log_x.o(i.__log$lsc) for __log$lsc
+    log_x.o(i.__log$lsc) refers (Special) to iusefp.o(.text) for __I$use$fp
+    log_x.o(i.__log$lsc) refers to dunder.o(i.__mathlib_dbl_infnan) for __mathlib_dbl_infnan
+    log_x.o(i.__log$lsc) refers to errno.o(i.__set_errno) for __set_errno
+    log_x.o(i.__log$lsc) refers to dscalb.o(.text) for __ARM_scalbn
+    log_x.o(i.__log$lsc) refers to dadd.o(.text) for __aeabi_dsub
+    log_x.o(i.__log$lsc) refers to cdcmple.o(.text) for __aeabi_cdcmpeq
+    log_x.o(i.__log$lsc) refers to dflti.o(.text) for __aeabi_i2d
+    log_x.o(i.__log$lsc) refers to dmul.o(.text) for __aeabi_dmul
+    log_x.o(i.__log$lsc) refers to ddiv.o(.text) for __aeabi_ddiv
+    log_x.o(i.__log$lsc) refers to poly.o(i.__kernel_poly) for __kernel_poly
+    log_x.o(i.__log$lsc) refers to qnan.o(.constdata) for __mathlib_zero
+    log_x.o(i.__log$lsc) refers to log_x.o(.constdata) for .constdata
+    log_x.o(.constdata) refers (Special) to iusefp.o(.text) for __I$use$fp
+    poly.o(i.__kernel_poly) refers (Special) to iusefp.o(.text) for __I$use$fp
+    poly.o(i.__kernel_poly) refers to dmul.o(.text) for __aeabi_dmul
+    poly.o(i.__kernel_poly) refers to dadd.o(.text) for __aeabi_dadd
+    qnan.o(.constdata) refers (Special) to iusefp.o(.text) for __I$use$fp
+    rred.o(i.__ieee754_rem_pio2) refers (Special) to iusefp.o(.text) for __I$use$fp
+    rred.o(i.__ieee754_rem_pio2) refers to dadd.o(.text) for __aeabi_dsub
+    rred.o(i.__ieee754_rem_pio2) refers to dmul.o(.text) for __aeabi_dmul
+    rred.o(i.__ieee754_rem_pio2) refers to dfixi.o(.text) for __aeabi_d2iz
+    rred.o(i.__ieee754_rem_pio2) refers to dflti.o(.text) for __aeabi_i2d
+    rred.o(i.__ieee754_rem_pio2) refers to dfltui.o(.text) for __aeabi_ui2d
+    rred.o(i.__ieee754_rem_pio2) refers to dscalb.o(.text) for __ARM_scalbn
+    rred.o(i.__ieee754_rem_pio2) refers to rred.o(.constdata) for .constdata
+    rred.o(i.__use_accurate_range_reduction) refers (Special) to iusefp.o(.text) for __I$use$fp
+    rred.o(.constdata) refers (Special) to iusefp.o(.text) for __I$use$fp
+    sin_i.o(i.__kernel_sin) refers (Special) to iusefp.o(.text) for __I$use$fp
+    sin_i.o(i.__kernel_sin) refers to fpclassify.o(i.__ARM_fpclassify) for __ARM_fpclassify
+    sin_i.o(i.__kernel_sin) refers to dunder.o(i.__mathlib_dbl_underflow) for __mathlib_dbl_underflow
+    sin_i.o(i.__kernel_sin) refers to dmul.o(.text) for __aeabi_dmul
+    sin_i.o(i.__kernel_sin) refers to poly.o(i.__kernel_poly) for __kernel_poly
+    sin_i.o(i.__kernel_sin) refers to dscalb.o(.text) for __ARM_scalbn
+    sin_i.o(i.__kernel_sin) refers to dadd.o(.text) for __aeabi_dsub
+    sin_i.o(i.__kernel_sin) refers to sin_i.o(.constdata) for .constdata
+    sin_i.o(.constdata) refers (Special) to iusefp.o(.text) for __I$use$fp
+    sin_i_x.o(i.____kernel_sin$lsc) refers (Special) to iusefp.o(.text) for __I$use$fp
+    sin_i_x.o(i.____kernel_sin$lsc) refers to dmul.o(.text) for __aeabi_dmul
+    sin_i_x.o(i.____kernel_sin$lsc) refers to poly.o(i.__kernel_poly) for __kernel_poly
+    sin_i_x.o(i.____kernel_sin$lsc) refers to dscalb.o(.text) for __ARM_scalbn
+    sin_i_x.o(i.____kernel_sin$lsc) refers to dadd.o(.text) for __aeabi_dsub
+    sin_i_x.o(i.____kernel_sin$lsc) refers to sin_i_x.o(.constdata) for .constdata
+    sin_i_x.o(.constdata) refers (Special) to iusefp.o(.text) for __I$use$fp
+    entry2.o(.ARM.Collect$$$$00000001) refers to entry2.o(.ARM.Collect$$$$00002712) for __lit__00000000
+    entry2.o(.ARM.Collect$$$$00002712) refers to startup_aducm3029.o(STACK) for __initial_sp
+    entry2.o(__vectab_stack_and_reset_area) refers to startup_aducm3029.o(STACK) for __initial_sp
+    entry2.o(__vectab_stack_and_reset_area) refers to entry.o(.ARM.Collect$$$$00000000) for __main
+    entry5.o(.ARM.Collect$$$$00000004) refers to init.o(.text) for __scatterload
+    entry9a.o(.ARM.Collect$$$$0000000B) refers to main.o(i.main) for main
+    entry9b.o(.ARM.Collect$$$$0000000C) refers to main.o(i.main) for main
+    ctype_o.o(.text) refers to ctype_o.o(.constdata) for .constdata
+    ctype_o.o(.constdata) refers to ctype_o.o(.constdata) for __ctype_table
+    isalnum_o.o(.text) refers to ctype_o.o(.text) for __rt_ctype_table
+    isalpha_o.o(.text) refers to ctype_o.o(.text) for __rt_ctype_table
+    isblank_o.o(.text) refers to ctype_o.o(.constdata) for __ctype_table
+    iscntrl_o.o(.text) refers to ctype_o.o(.text) for __rt_ctype_table
+    isdigit_o.o(.text) refers to ctype_o.o(.text) for __rt_ctype_table
+    isgraph_o.o(.text) refers to ctype_o.o(.text) for __rt_ctype_table
+    islower_o.o(.text) refers to ctype_o.o(.text) for __rt_ctype_table
+    isprint_o.o(.text) refers to ctype_o.o(.text) for __rt_ctype_table
+    ispunct_o.o(.text) refers to ctype_o.o(.text) for __rt_ctype_table
+    isspace_o.o(.text) refers to ctype_o.o(.text) for __rt_ctype_table
+    isupper_o.o(.text) refers to ctype_o.o(.text) for __rt_ctype_table
+    isxdigit_o.o(.text) refers to ctype_o.o(.text) for __rt_ctype_table
+    errno.o(i.__aeabi_errno_addr) refers to errno.o(.data) for .data
+    errno.o(i.__read_errno) refers to errno.o(.data) for .data
+    errno.o(i.__set_errno) refers to errno.o(.data) for .data
+    _strtoul.o(.text) refers to _chval.o(.text) for _chval
+    _strtoul.o(.text) refers to errno.o(i.__aeabi_errno_addr) for __aeabi_errno_addr
+    depilogue.o(.text) refers to llshl.o(.text) for __aeabi_llsl
+    depilogue.o(.text) refers to llushr.o(.text) for __aeabi_llsr
+    dsqrt.o(.text) refers to llushr.o(.text) for __aeabi_llsr
+    dsqrt.o(.text) refers to depilogue.o(.text) for _double_round
+    dfixul.o(.text) refers to llushr.o(.text) for __aeabi_llsr
+    dfixul.o(.text) refers to llshl.o(.text) for __aeabi_llsl
+    init.o(.text) refers to entry5.o(.ARM.Collect$$$$00000004) for __main_after_scatterload
+
+
+==============================================================================
+
+Removing Unused input sections from the image.
+
+    Removing ad5940.o(i.AD5940_ADCBaseCfgS), (32 bytes).
+    Removing ad5940.o(i.AD5940_ADCCode2Volt), (148 bytes).
+    Removing ad5940.o(i.AD5940_ADCConvtCtrlS), (40 bytes).
+    Removing ad5940.o(i.AD5940_ADCDigCompCfgS), (46 bytes).
+    Removing ad5940.o(i.AD5940_ADCFilterCfgS), (108 bytes).
+    Removing ad5940.o(i.AD5940_ADCMuxCfgS), (40 bytes).
+    Removing ad5940.o(i.AD5940_ADCPGACal), (1066 bytes).
+    Removing ad5940.o(i.AD5940_ADCPowerCtrlS), (40 bytes).
+    Removing ad5940.o(i.AD5940_ADCRepeatCfgS), (16 bytes).
+    Removing ad5940.o(i.AD5940_AFECtrlS), (94 bytes).
+    Removing ad5940.o(i.AD5940_AFEPwrBW), (24 bytes).
+    Removing ad5940.o(i.AD5940_AGPIOCfg), (38 bytes).
+    Removing ad5940.o(i.AD5940_AGPIOClr), (14 bytes).
+    Removing ad5940.o(i.AD5940_AGPIOFuncCfg), (14 bytes).
+    Removing ad5940.o(i.AD5940_AGPIOIen), (14 bytes).
+    Removing ad5940.o(i.AD5940_AGPIOIn), (10 bytes).
+    Removing ad5940.o(i.AD5940_AGPIOOen), (14 bytes).
+    Removing ad5940.o(i.AD5940_AGPIOPen), (14 bytes).
+    Removing ad5940.o(i.AD5940_AGPIOSet), (14 bytes).
+    Removing ad5940.o(i.AD5940_AGPIOToggle), (14 bytes).
+    Removing ad5940.o(i.AD5940_CLKCfg), (288 bytes).
+    Removing ad5940.o(i.AD5940_ClksCalculate), (352 bytes).
+    Removing ad5940.o(i.AD5940_ComplexAddFloat), (38 bytes).
+    Removing ad5940.o(i.AD5940_ComplexDivFloat), (126 bytes).
+    Removing ad5940.o(i.AD5940_ComplexDivInt), (210 bytes).
+    Removing ad5940.o(i.AD5940_ComplexMag), (54 bytes).
+    Removing ad5940.o(i.AD5940_ComplexMulFloat), (78 bytes).
+    Removing ad5940.o(i.AD5940_ComplexMulInt), (134 bytes).
+    Removing ad5940.o(i.AD5940_ComplexPhase), (46 bytes).
+    Removing ad5940.o(i.AD5940_ComplexSubFloat), (38 bytes).
+    Removing ad5940.o(i.AD5940_DFTCfgS), (86 bytes).
+    Removing ad5940.o(i.AD5940_DSPCfgS), (44 bytes).
+    Removing ad5940.o(i.AD5940_EnterSleepS), (24 bytes).
+    Removing ad5940.o(i.AD5940_FIFOCfg), (92 bytes).
+    Removing ad5940.o(i.AD5940_FIFOCtrlS), (32 bytes).
+    Removing ad5940.o(i.AD5940_FIFOGetCfg), (76 bytes).
+    Removing ad5940.o(i.AD5940_FIFOGetCnt), (14 bytes).
+    Removing ad5940.o(i.AD5940_FIFORd), (160 bytes).
+    Removing ad5940.o(i.AD5940_FIFOThrshSet), (16 bytes).
+    Removing ad5940.o(i.AD5940_GetADIID), (12 bytes).
+    Removing ad5940.o(i.AD5940_GetChipID), (12 bytes).
+    Removing ad5940.o(i.AD5940_HFOSC32MHzCtrl), (138 bytes).
+    Removing ad5940.o(i.AD5940_HSDACCal), (724 bytes).
+    Removing ad5940.o(i.AD5940_HSDacCfgS), (44 bytes).
+    Removing ad5940.o(i.AD5940_HSLoopCfgS), (36 bytes).
+    Removing ad5940.o(i.AD5940_HSRTIACfgS), (36 bytes).
+    Removing ad5940.o(i.AD5940_HSRtiaCal), (1612 bytes).
+    Removing ad5940.o(i.AD5940_HSTIACfgS), (180 bytes).
+    Removing ad5940.o(i.AD5940_HSTIAOffsetCal), (6 bytes).
+    Removing ad5940.o(i.AD5940_HWReset), (26 bytes).
+    Removing ad5940.o(i.AD5940_INTCCfg), (56 bytes).
+    Removing ad5940.o(i.AD5940_INTCClrFlag), (16 bytes).
+    Removing ad5940.o(i.AD5940_INTCGetCfg), (32 bytes).
+    Removing ad5940.o(i.AD5940_INTCGetFlag), (30 bytes).
+    Removing ad5940.o(i.AD5940_INTCTestFlag), (46 bytes).
+    Removing ad5940.o(i.AD5940_Initialize), (304 bytes).
+    Removing ad5940.o(i.AD5940_LFOSCMeasure), (460 bytes).
+    Removing ad5940.o(i.AD5940_LPAMPCfgS), (106 bytes).
+    Removing ad5940.o(i.AD5940_LPDAC0WriteS), (28 bytes).
+    Removing ad5940.o(i.AD5940_LPDAC1WriteS), (28 bytes).
+    Removing ad5940.o(i.AD5940_LPDACCal), (868 bytes).
+    Removing ad5940.o(i.AD5940_LPDACCfgS), (116 bytes).
+    Removing ad5940.o(i.AD5940_LPDACWriteS), (28 bytes).
+    Removing ad5940.o(i.AD5940_LPLoopCfgS), (20 bytes).
+    Removing ad5940.o(i.AD5940_LPModeClkS), (16 bytes).
+    Removing ad5940.o(i.AD5940_LPModeCtrlS), (124 bytes).
+    Removing ad5940.o(i.AD5940_LPModeEnS), (40 bytes).
+    Removing ad5940.o(i.AD5940_LPRtiaCal), (2244 bytes).
+    Removing ad5940.o(i.AD5940_LPRtiaCal_HSDAC), (1780 bytes).
+    Removing ad5940.o(i.AD5940_LPTIAOffsetCal), (468 bytes).
+    Removing ad5940.o(i.AD5940_REFCfgS), (176 bytes).
+    Removing ad5940.o(i.AD5940_ReadAfeResult), (112 bytes).
+    Removing ad5940.o(i.AD5940_ReadReg), (32 bytes).
+    Removing ad5940.o(i.AD5940_ReadWrite16B), (40 bytes).
+    Removing ad5940.o(i.AD5940_ReadWrite32B), (68 bytes).
+    Removing ad5940.o(i.AD5940_ReadWrite8B), (22 bytes).
+    Removing ad5940.o(i.AD5940_SEQCfg), (120 bytes).
+    Removing ad5940.o(i.AD5940_SEQCmdWrite), (42 bytes).
+    Removing ad5940.o(i.AD5940_SEQCtrlS), (40 bytes).
+    Removing ad5940.o(i.AD5940_SEQCycleTime), (72 bytes).
+    Removing ad5940.o(i.AD5940_SEQGenCtrl), (28 bytes).
+    Removing ad5940.o(i.AD5940_SEQGenFetchSeq), (28 bytes).
+    Removing ad5940.o(i.AD5940_SEQGenGetRegDefault), (18 bytes).
+    Removing ad5940.o(i.AD5940_SEQGenInit), (40 bytes).
+    Removing ad5940.o(i.AD5940_SEQGenInsert), (56 bytes).
+    Removing ad5940.o(i.AD5940_SEQGenSearchReg), (52 bytes).
+    Removing ad5940.o(i.AD5940_SEQGetCfg), (58 bytes).
+    Removing ad5940.o(i.AD5940_SEQGpioCtrlS), (16 bytes).
+    Removing ad5940.o(i.AD5940_SEQGpioTrigCfg), (162 bytes).
+    Removing ad5940.o(i.AD5940_SEQHaltS), (14 bytes).
+    Removing ad5940.o(i.AD5940_SEQInfoCfg), (116 bytes).
+    Removing ad5940.o(i.AD5940_SEQInfoGet), (112 bytes).
+    Removing ad5940.o(i.AD5940_SEQMmrTrig), (28 bytes).
+    Removing ad5940.o(i.AD5940_SEQReadReg), (56 bytes).
+    Removing ad5940.o(i.AD5940_SEQRegInfoInsert), (92 bytes).
+    Removing ad5940.o(i.AD5940_SEQTimeOutRd), (12 bytes).
+    Removing ad5940.o(i.AD5940_SEQWriteReg), (124 bytes).
+    Removing ad5940.o(i.AD5940_SPIReadReg), (82 bytes).
+    Removing ad5940.o(i.AD5940_SPIWriteReg), (70 bytes).
+    Removing ad5940.o(i.AD5940_SPIWriteRegCSSelect), (64 bytes).
+    Removing ad5940.o(i.AD5940_SWMatrixCfgS), (58 bytes).
+    Removing ad5940.o(i.AD5940_ShutDownS), (52 bytes).
+    Removing ad5940.o(i.AD5940_SleepKeyCtrlS), (16 bytes).
+    Removing ad5940.o(i.AD5940_SoftRst), (24 bytes).
+    Removing ad5940.o(i.AD5940_StatisticCfgS), (40 bytes).
+    Removing ad5940.o(i.AD5940_StructInit), (16 bytes).
+    Removing ad5940.o(i.AD5940_SweepNext), (540 bytes).
+    Removing ad5940.o(i.AD5940_WGCfgS), (170 bytes).
+    Removing ad5940.o(i.AD5940_WGDACCodeS), (22 bytes).
+    Removing ad5940.o(i.AD5940_WGFreqCtrlS), (28 bytes).
+    Removing ad5940.o(i.AD5940_WGFreqWordCal), (136 bytes).
+    Removing ad5940.o(i.AD5940_WUPTCfg), (348 bytes).
+    Removing ad5940.o(i.AD5940_WUPTCtrl), (38 bytes).
+    Removing ad5940.o(i.AD5940_WUPTTime), (220 bytes).
+    Removing ad5940.o(i.AD5940_WakeUp), (50 bytes).
+    Removing ad5940.o(i.AD5940_WriteReg), (40 bytes).
+    Removing ad5940.o(i.AD5940_WriteRegCSSelect), (44 bytes).
+    Removing ad5940.o(i.__AD5940_ReferenceON), (66 bytes).
+    Removing ad5940.o(i.__AD5940_TakeMeasurement), (84 bytes).
+    Removing ad5940.o(.bss), (28 bytes).
+    Removing ad5940.o(.constdata), (508 bytes).
+    Removing ad5940.o(.data), (1 bytes).
+    Removing adicup3029port.o(.rev16_text), (4 bytes).
+    Removing adicup3029port.o(.revsh_text), (4 bytes).
+    Removing adicup3029port.o(.rrx_text), (6 bytes).
+    Removing adicup3029port.o(i.AD5940_ClrMCUIntFlag), (16 bytes).
+    Removing adicup3029port.o(i.AD5940_CsClr), (16 bytes).
+    Removing adicup3029port.o(i.AD5940_Delay10us), (92 bytes).
+    Removing adicup3029port.o(i.AD5940_GetMCUIntFlag), (12 bytes).
+    Removing adicup3029port.o(i.AD5940_ReadWriteNBytes), (98 bytes).
+    Removing adicup3029port.o(i.AD5940_RstClr), (12 bytes).
+    Removing adicup3029port.o(i.AD5940_SPI1CsClr), (16 bytes).
+    Removing adicup3029port.o(i.AD5940_SPI1ReadWriteNBytes), (108 bytes).
+    Removing main.o(.rev16_text), (4 bytes).
+    Removing main.o(.revsh_text), (4 bytes).
+    Removing main.o(.rrx_text), (6 bytes).
+    Removing main.o(.data), (4 bytes).
+    Removing ad5940main.o(i.AD5940AMPPlatformCfg), (260 bytes).
+    Removing ad5940main.o(i.AD5940AMPStructInit), (108 bytes).
+    Removing ad5940main.o(i.AD5940ImpedancePlatformCfg), (168 bytes).
+    Removing ad5940main.o(i.AD5940ImpedanceStructInit), (148 bytes).
+    Removing ad5940main.o(i.AD5940_Main), (68 bytes).
+    Removing ad5940main.o(i.AMPShowResult), (72 bytes).
+    Removing ad5940main.o(i.ImpedanceShowResult), (140 bytes).
+    Removing ad5940main.o(.bss), (2048 bytes).
+    Removing ad5940main.o(.data), (4 bytes).
+    Removing impedance.o(i.AppIMPCtrl), (240 bytes).
+    Removing impedance.o(i.AppIMPDataProcess), (640 bytes).
+    Removing impedance.o(i.AppIMPGetCfg), (24 bytes).
+    Removing impedance.o(i.AppIMPGetCurrFreq), (28 bytes).
+    Removing impedance.o(i.AppIMPISR), (112 bytes).
+    Removing impedance.o(i.AppIMPInit), (284 bytes).
+    Removing impedance.o(i.AppIMPRegModify), (104 bytes).
+    Removing impedance.o(i.AppIMPSeqCfgGen), (720 bytes).
+    Removing impedance.o(i.AppIMPSeqMeasureGen), (360 bytes).
+    Removing impedance.o(.data), (204 bytes).
+    Removing signalgen.o(.rev16_text), (4 bytes).
+    Removing signalgen.o(.revsh_text), (4 bytes).
+    Removing signalgen.o(.rrx_text), (6 bytes).
+    Removing signalgen.o(i.signalGenAdjustFreq), (58 bytes).
+    Removing signalgen.o(i.signalGenAdjustPhaseShift), (30 bytes).
+    Removing signalgen.o(i.signalGenFreqCalc), (40 bytes).
+    Removing signalgen.o(i.signalGenReset), (80 bytes).
+    Removing signalgen.o(i.signalGenSPIWrite), (46 bytes).
+    Removing signalgen.o(i.signalGenSelectFreqReg), (48 bytes).
+    Removing signalgen.o(i.signalGenSelectPhaseReg), (48 bytes).
+    Removing signalgen.o(i.signalGenSetFreqAdjustMode), (76 bytes).
+    Removing signalgen.o(i.signalGenSetMode), (100 bytes).
+    Removing signalgen.o(.data), (2 bytes).
+    Removing amperometric.o(i.AppAMPCalcCurrent), (52 bytes).
+    Removing amperometric.o(i.AppAMPCalcVoltage), (304 bytes).
+    Removing amperometric.o(i.AppAMPCtrl), (188 bytes).
+    Removing amperometric.o(i.AppAMPDataProcess), (50 bytes).
+    Removing amperometric.o(i.AppAMPGetCfg), (24 bytes).
+    Removing amperometric.o(i.AppAMPISR), (104 bytes).
+    Removing amperometric.o(i.AppAMPInit), (324 bytes).
+    Removing amperometric.o(i.AppAMPRegModify), (84 bytes).
+    Removing amperometric.o(i.AppAMPRtiaCal), (148 bytes).
+    Removing amperometric.o(i.AppAMPSeqCfgGen), (484 bytes).
+    Removing amperometric.o(i.AppAMPSeqMeasureGen), (216 bytes).
+    Removing amperometric.o(.data), (160 bytes).
+    Removing startup_aducm3029.o(HEAP), (3072 bytes).
+    Removing system_aducm3029.o(.rev16_text), (4 bytes).
+    Removing system_aducm3029.o(.revsh_text), (4 bytes).
+    Removing system_aducm3029.o(.rrx_text), (6 bytes).
+    Removing system_aducm3029.o(i.SystemCoreClockUpdate), (168 bytes).
+    Removing system_aducm3029.o(i.adi_system_EnableCache), (44 bytes).
+    Removing system_aducm3029.o(i.adi_system_SetGlobalIrqPriority), (60 bytes).
+    Removing system_aducm3029.o(.data), (12 bytes).
+    Removing fadd.o(.text), (176 bytes).
+    Removing fmul.o(.text), (100 bytes).
+    Removing fdiv.o(.text), (124 bytes).
+    Removing fflti.o(.text), (18 bytes).
+    Removing ffltui.o(.text), (10 bytes).
+    Removing ffltl.o(.text), (44 bytes).
+    Removing dflti.o(.text), (34 bytes).
+    Removing dfltui.o(.text), (26 bytes).
+    Removing ffixi.o(.text), (50 bytes).
+    Removing ffixui.o(.text), (40 bytes).
+    Removing dfixi.o(.text), (62 bytes).
+    Removing dfixui.o(.text), (50 bytes).
+    Removing f2d.o(.text), (38 bytes).
+    Removing cdcmple.o(.text), (48 bytes).
+    Removing d2f.o(.text), (56 bytes).
+    Removing cfcmple.o(.text), (20 bytes).
+    Removing cfrcmple.o(.text), (20 bytes).
+    Removing fepilogue.o(.text), (110 bytes).
+    Removing dscalb.o(.text), (46 bytes).
+    Removing dsqrt.o(.text), (162 bytes).
+
+209 unused section(s) (total 31243 bytes) removed from the image.
+
+==============================================================================
+
+Image Symbol Table
+
+    Local Symbols
+
+    Symbol Name                              Value     Ov Type        Size  Object(Section)
+
+    RESET                                    0x00000000   Section      324  startup_aducm3029.o(RESET)
+    ../clib/microlib/ctype/ctype.c           0x00000000   Number         0  isxdigit_o.o ABSOLUTE
+    ../clib/microlib/ctype/ctype.c           0x00000000   Number         0  isupper_o.o ABSOLUTE
+    ../clib/microlib/ctype/ctype.c           0x00000000   Number         0  ctype_o.o ABSOLUTE
+    ../clib/microlib/ctype/ctype.c           0x00000000   Number         0  iscntrl_o.o ABSOLUTE
+    ../clib/microlib/ctype/ctype.c           0x00000000   Number         0  isalnum_o.o ABSOLUTE
+    ../clib/microlib/ctype/ctype.c           0x00000000   Number         0  isalpha_o.o ABSOLUTE
+    ../clib/microlib/ctype/ctype.c           0x00000000   Number         0  isblank_o.o ABSOLUTE
+    ../clib/microlib/ctype/ctype.c           0x00000000   Number         0  isdigit_o.o ABSOLUTE
+    ../clib/microlib/ctype/ctype.c           0x00000000   Number         0  isgraph_o.o ABSOLUTE
+    ../clib/microlib/ctype/ctype.c           0x00000000   Number         0  islower_o.o ABSOLUTE
+    ../clib/microlib/ctype/ctype.c           0x00000000   Number         0  isprint_o.o ABSOLUTE
+    ../clib/microlib/ctype/ctype.c           0x00000000   Number         0  ispunct_o.o ABSOLUTE
+    ../clib/microlib/ctype/ctype.c           0x00000000   Number         0  isspace_o.o ABSOLUTE
+    ../clib/microlib/division.c              0x00000000   Number         0  uidiv.o ABSOLUTE
+    ../clib/microlib/division.c              0x00000000   Number         0  uldiv.o ABSOLUTE
+    ../clib/microlib/errno.c                 0x00000000   Number         0  errno.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry7a.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry5.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry2.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry11a.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry10b.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry9b.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry11b.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry9a.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry8b.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry8a.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry7b.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry10a.o ABSOLUTE
+    ../clib/microlib/longlong.c              0x00000000   Number         0  llushr.o ABSOLUTE
+    ../clib/microlib/longlong.c              0x00000000   Number         0  llshl.o ABSOLUTE
+    ../clib/microlib/longlong.c              0x00000000   Number         0  llsshr.o ABSOLUTE
+    ../clib/microlib/printf/printf.c         0x00000000   Number         0  printfa.o ABSOLUTE
+    ../clib/microlib/printf/printf.c         0x00000000   Number         0  printf8.o ABSOLUTE
+    ../clib/microlib/printf/printf.c         0x00000000   Number         0  printf7.o ABSOLUTE
+    ../clib/microlib/printf/printf.c         0x00000000   Number         0  printf6.o ABSOLUTE
+    ../clib/microlib/printf/printf.c         0x00000000   Number         0  printf4.o ABSOLUTE
+    ../clib/microlib/printf/printf.c         0x00000000   Number         0  printf3.o ABSOLUTE
+    ../clib/microlib/printf/printf.c         0x00000000   Number         0  printf2.o ABSOLUTE
+    ../clib/microlib/printf/printf.c         0x00000000   Number         0  printf5.o ABSOLUTE
+    ../clib/microlib/printf/printf.c         0x00000000   Number         0  printf1.o ABSOLUTE
+    ../clib/microlib/printf/printf.c         0x00000000   Number         0  printf0.o ABSOLUTE
+    ../clib/microlib/printf/printf.c         0x00000000   Number         0  printfb.o ABSOLUTE
+    ../clib/microlib/printf/stubs.s          0x00000000   Number         0  stubs.o ABSOLUTE
+    ../clib/microlib/stdio/streams.c         0x00000000   Number         0  stdout.o ABSOLUTE
+    ../clib/microlib/string/memcpy.c         0x00000000   Number         0  memcpya.o ABSOLUTE
+    ../clib/microlib/string/memcpy.c         0x00000000   Number         0  memcpyb.o ABSOLUTE
+    ../clib/microlib/string/memset.c         0x00000000   Number         0  memseta.o ABSOLUTE
+    ../clib/microlib/string/strcmp.c         0x00000000   Number         0  strcmp.o ABSOLUTE
+    ../clib/microlib/stubs.s                 0x00000000   Number         0  useno.o ABSOLUTE
+    ../clib/microlib/stubs.s                 0x00000000   Number         0  iusefp.o ABSOLUTE
+    ../clib/scanf.c                          0x00000000   Number         0  strtoul.o ABSOLUTE
+    ../clib/scanf.c                          0x00000000   Number         0  _chval.o ABSOLUTE
+    ../clib/scanf.c                          0x00000000   Number         0  _strtoul.o ABSOLUTE
+    ../fplib/microlib/d2f.c                  0x00000000   Number         0  d2f.o ABSOLUTE
+    ../fplib/microlib/f2d.c                  0x00000000   Number         0  f2d.o ABSOLUTE
+    ../fplib/microlib/fpadd.c                0x00000000   Number         0  dadd.o ABSOLUTE
+    ../fplib/microlib/fpadd.c                0x00000000   Number         0  fadd.o ABSOLUTE
+    ../fplib/microlib/fpdiv.c                0x00000000   Number         0  fdiv.o ABSOLUTE
+    ../fplib/microlib/fpdiv.c                0x00000000   Number         0  ddiv.o ABSOLUTE
+    ../fplib/microlib/fpepilogue.c           0x00000000   Number         0  depilogue.o ABSOLUTE
+    ../fplib/microlib/fpepilogue.c           0x00000000   Number         0  fepilogue.o ABSOLUTE
+    ../fplib/microlib/fpfix.c                0x00000000   Number         0  dfixui.o ABSOLUTE
+    ../fplib/microlib/fpfix.c                0x00000000   Number         0  dfixi.o ABSOLUTE
+    ../fplib/microlib/fpfix.c                0x00000000   Number         0  ffixui.o ABSOLUTE
+    ../fplib/microlib/fpfix.c                0x00000000   Number         0  ffixi.o ABSOLUTE
+    ../fplib/microlib/fpfix.c                0x00000000   Number         0  dfixul.o ABSOLUTE
+    ../fplib/microlib/fpflt.c                0x00000000   Number         0  ffltl.o ABSOLUTE
+    ../fplib/microlib/fpflt.c                0x00000000   Number         0  dfltui.o ABSOLUTE
+    ../fplib/microlib/fpflt.c                0x00000000   Number         0  dflti.o ABSOLUTE
+    ../fplib/microlib/fpflt.c                0x00000000   Number         0  fflti.o ABSOLUTE
+    ../fplib/microlib/fpflt.c                0x00000000   Number         0  ffltui.o ABSOLUTE
+    ../fplib/microlib/fpmul.c                0x00000000   Number         0  dmul.o ABSOLUTE
+    ../fplib/microlib/fpmul.c                0x00000000   Number         0  fmul.o ABSOLUTE
+    ../fplib/microlib/fpscalb.c              0x00000000   Number         0  dscalb.o ABSOLUTE
+    ../fplib/microlib/fpsqrt.c               0x00000000   Number         0  dsqrt.o ABSOLUTE
+    ../mathlib/atan.c                        0x00000000   Number         0  atan_x.o ABSOLUTE
+    ../mathlib/atan.c                        0x00000000   Number         0  atan.o ABSOLUTE
+    ../mathlib/atan2.c                       0x00000000   Number         0  atan2.o ABSOLUTE
+    ../mathlib/atan2.c                       0x00000000   Number         0  atan2_x.o ABSOLUTE
+    ../mathlib/cos.c                         0x00000000   Number         0  cos_x.o ABSOLUTE
+    ../mathlib/cos.c                         0x00000000   Number         0  cos.o ABSOLUTE
+    ../mathlib/cos_i.c                       0x00000000   Number         0  cos_i.o ABSOLUTE
+    ../mathlib/dunder.c                      0x00000000   Number         0  dunder.o ABSOLUTE
+    ../mathlib/fpclassify.c                  0x00000000   Number         0  fpclassify.o ABSOLUTE
+    ../mathlib/log.c                         0x00000000   Number         0  log_x.o ABSOLUTE
+    ../mathlib/log.c                         0x00000000   Number         0  log.o ABSOLUTE
+    ../mathlib/log10.c                       0x00000000   Number         0  log10_x.o ABSOLUTE
+    ../mathlib/log10.c                       0x00000000   Number         0  log10.o ABSOLUTE
+    ../mathlib/poly.c                        0x00000000   Number         0  poly.o ABSOLUTE
+    ../mathlib/pow.c                         0x00000000   Number         0  pow.o ABSOLUTE
+    ../mathlib/pow.c                         0x00000000   Number         0  pow_x.o ABSOLUTE
+    ../mathlib/qnan.c                        0x00000000   Number         0  qnan.o ABSOLUTE
+    ../mathlib/rred.c                        0x00000000   Number         0  rred.o ABSOLUTE
+    ../mathlib/sin.c                         0x00000000   Number         0  sin.o ABSOLUTE
+    ../mathlib/sin.c                         0x00000000   Number         0  sin_x.o ABSOLUTE
+    ../mathlib/sin_i.c                       0x00000000   Number         0  sin_i_x.o ABSOLUTE
+    ../mathlib/sin_i.c                       0x00000000   Number         0  sin_i.o ABSOLUTE
+    ../mathlib/sqrt.c                        0x00000000   Number         0  sqrt.o ABSOLUTE
+    ../mathlib/sqrt.c                        0x00000000   Number         0  sqrt_x.o ABSOLUTE
+    ..\..\AD5940Lib\ad5940.c                 0x00000000   Number         0  ad5940.o ABSOLUTE
+    ..\AD5940Main.c                          0x00000000   Number         0  ad5940main.o ABSOLUTE
+    ..\Amperometric.c                        0x00000000   Number         0  amperometric.o ABSOLUTE
+    ..\Impedance.c                           0x00000000   Number         0  impedance.o ABSOLUTE
+    ..\SignalGen.c                           0x00000000   Number         0  signalgen.o ABSOLUTE
+    ..\UARTCmd.c                             0x00000000   Number         0  uartcmd.o ABSOLUTE
+    ..\\SignalGen.c                          0x00000000   Number         0  signalgen.o ABSOLUTE
+    ADICUP3029Port.c                         0x00000000   Number         0  adicup3029port.o ABSOLUTE
+    ADICUP3029Port.c                         0x00000000   Number         0  adicup3029port.o ABSOLUTE
+    RTE\Device\ADuCM3029\system_ADuCM3029.c  0x00000000   Number         0  system_aducm3029.o ABSOLUTE
+    RTE\\Device\\ADuCM3029\\startup_ADuCM3029.s 0x00000000   Number         0  startup_aducm3029.o ABSOLUTE
+    RTE\\Device\\ADuCM3029\\system_ADuCM3029.c 0x00000000   Number         0  system_aducm3029.o ABSOLUTE
+    cdcmple.s                                0x00000000   Number         0  cdcmple.o ABSOLUTE
+    cdrcmple.s                               0x00000000   Number         0  cdrcmple.o ABSOLUTE
+    cfcmple.s                                0x00000000   Number         0  cfcmple.o ABSOLUTE
+    cfrcmple.s                               0x00000000   Number         0  cfrcmple.o ABSOLUTE
+    dc.s                                     0x00000000   Number         0  dc.o ABSOLUTE
+    handlers.s                               0x00000000   Number         0  handlers.o ABSOLUTE
+    init.s                                   0x00000000   Number         0  init.o ABSOLUTE
+    main.c                                   0x00000000   Number         0  main.o ABSOLUTE
+    main.c                                   0x00000000   Number         0  main.o ABSOLUTE
+    .ARM.Collect$$$$00000000                 0x00000144   Section        0  entry.o(.ARM.Collect$$$$00000000)
+    .ARM.Collect$$$$00000001                 0x00000144   Section        4  entry2.o(.ARM.Collect$$$$00000001)
+    .ARM.Collect$$$$00000004                 0x00000148   Section        4  entry5.o(.ARM.Collect$$$$00000004)
+    .ARM.Collect$$$$00000008                 0x0000014c   Section        0  entry7b.o(.ARM.Collect$$$$00000008)
+    .ARM.Collect$$$$0000000A                 0x0000014c   Section        0  entry8b.o(.ARM.Collect$$$$0000000A)
+    .ARM.Collect$$$$0000000B                 0x0000014c   Section        8  entry9a.o(.ARM.Collect$$$$0000000B)
+    .ARM.Collect$$$$0000000D                 0x00000154   Section        0  entry10a.o(.ARM.Collect$$$$0000000D)
+    .ARM.Collect$$$$0000000F                 0x00000154   Section        0  entry11a.o(.ARM.Collect$$$$0000000F)
+    .ARM.Collect$$$$00002712                 0x00000154   Section        4  entry2.o(.ARM.Collect$$$$00002712)
+    __lit__00000000                          0x00000154   Data           4  entry2.o(.ARM.Collect$$$$00002712)
+    .text                                    0x00000158   Section       36  startup_aducm3029.o(.text)
+    .text                                    0x0000017c   Section        0  iusefp.o(.text)
+    i.__scatterload_null                     0x0000017c   Section        2  handlers.o(i.__scatterload_null)
+    .ARM.__AT_0x00000180                     0x00000180   Section       32  system_aducm3029.o(.ARM.__AT_0x00000180)
+    .text                                    0x000001a0   Section        0  uldiv.o(.text)
+    .text                                    0x00000202   Section        0  llshl.o(.text)
+    .text                                    0x00000220   Section        0  strcmp.o(.text)
+    .text                                    0x0000023c   Section        0  strtoul.o(.text)
+    .text                                    0x000002ae   Section        0  dadd.o(.text)
+    .text                                    0x000003fc   Section        0  dmul.o(.text)
+    .text                                    0x000004e0   Section        0  ddiv.o(.text)
+    .text                                    0x000005c0   Section       48  cdrcmple.o(.text)
+    .text                                    0x000005f0   Section        0  uidiv.o(.text)
+    .text                                    0x0000061c   Section        0  llushr.o(.text)
+    .text                                    0x0000063c   Section        0  llsshr.o(.text)
+    .text                                    0x00000660   Section        0  ctype_o.o(.text)
+    .text                                    0x00000668   Section        0  _strtoul.o(.text)
+    .text                                    0x00000706   Section        0  depilogue.o(.text)
+    .text                                    0x000007c0   Section        0  dfixul.o(.text)
+    .text                                    0x000007f0   Section       36  init.o(.text)
+    .text                                    0x00000814   Section        0  _chval.o(.text)
+    i.AD5940_CsSet                           0x00000830   Section        0  adicup3029port.o(i.AD5940_CsSet)
+    i.AD5940_MCUResourceInit                 0x00000840   Section        0  adicup3029port.o(i.AD5940_MCUResourceInit)
+    i.AD5940_RstSet                          0x0000092c   Section        0  adicup3029port.o(i.AD5940_RstSet)
+    i.AD5940_SPI1CsSet                       0x00000938   Section        0  adicup3029port.o(i.AD5940_SPI1CsSet)
+    i.Ext_Int0_Handler                       0x00000948   Section        0  adicup3029port.o(i.Ext_Int0_Handler)
+    i.MCUPlatformInit                        0x0000095c   Section        0  main.o(i.MCUPlatformInit)
+    i.Str2Num                                0x000009c0   Section        0  uartcmd.o(i.Str2Num)
+    Str2Num                                  0x000009c1   Thumb Code    24  uartcmd.o(i.Str2Num)
+    i.SystemInit                             0x000009d8   Section        0  system_aducm3029.o(i.SystemInit)
+    i.UARTCmd_MatchCommand                   0x00000a30   Section        0  uartcmd.o(i.UARTCmd_MatchCommand)
+    i.UARTCmd_Process                        0x00000a98   Section        0  uartcmd.o(i.UARTCmd_Process)
+    i.UARTCmd_RemoveSpaces                   0x00000b54   Section        0  uartcmd.o(i.UARTCmd_RemoveSpaces)
+    i.UARTCmd_TranslateParas                 0x00000bc4   Section        0  uartcmd.o(i.UARTCmd_TranslateParas)
+    i.UART_Int_Handler                       0x00000c38   Section        0  main.o(i.UART_Int_Handler)
+    i.UrtCfg                                 0x00000c94   Section        0  main.o(i.UrtCfg)
+    i.__0printf                              0x00000e2c   Section        0  printfa.o(i.__0printf)
+    i.__aeabi_errno_addr                     0x00000e4c   Section        0  errno.o(i.__aeabi_errno_addr)
+    i.__scatterload_copy                     0x00000e54   Section       14  handlers.o(i.__scatterload_copy)
+    i.__scatterload_zeroinit                 0x00000e62   Section       14  handlers.o(i.__scatterload_zeroinit)
+    i._fp_digits                             0x00000e70   Section        0  printfa.o(i._fp_digits)
+    _fp_digits                               0x00000e71   Thumb Code   366  printfa.o(i._fp_digits)
+    i._printf_core                           0x00000ff4   Section        0  printfa.o(i._printf_core)
+    _printf_core                             0x00000ff5   Thumb Code  1744  printfa.o(i._printf_core)
+    i._printf_post_padding                   0x000016d0   Section        0  printfa.o(i._printf_post_padding)
+    _printf_post_padding                     0x000016d1   Thumb Code    36  printfa.o(i._printf_post_padding)
+    i._printf_pre_padding                    0x000016f4   Section        0  printfa.o(i._printf_pre_padding)
+    _printf_pre_padding                      0x000016f5   Thumb Code    46  printfa.o(i._printf_pre_padding)
+    i.adi_system_EnableRetention             0x00001724   Section        0  system_aducm3029.o(i.adi_system_EnableRetention)
+    i.fputc                                  0x00001754   Section        0  main.o(i.fputc)
+    i.help                                   0x0000176c   Section        0  uartcmd.o(i.help)
+    i.main                                   0x00001810   Section        0  main.o(i.main)
+    i.say_hello                              0x00001850   Section        0  uartcmd.o(i.say_hello)
+    .constdata                               0x00001894   Section      129  ctype_o.o(.constdata)
+    .constdata                               0x00001918   Section        4  ctype_o.o(.constdata)
+    table                                    0x00001918   Data           4  ctype_o.o(.constdata)
+    .conststring                             0x0000191c   Section       77  uartcmd.o(.conststring)
+    .data                                    0x20000000   Section        4  adicup3029port.o(.data)
+    ucInterrupted                            0x20000000   Data           4  adicup3029port.o(.data)
+    .data                                    0x20000004   Section       92  uartcmd.o(.data)
+    .data                                    0x20000060   Section        4  stdout.o(.data)
+    .data                                    0x20000064   Section        4  errno.o(.data)
+    _errno                                   0x20000064   Data           4  errno.o(.data)
+    .bss                                     0x20000068   Section      128  uartcmd.o(.bss)
+    STACK                                    0x200000e8   Section     1024  startup_aducm3029.o(STACK)
+
+    Global Symbols
+
+    Symbol Name                              Value     Ov Type        Size  Object(Section)
+
+    BuildAttributes$$THM_ISAv4$P$D$K$B$S$PE$A:L22UL41UL21$X:L11$S22US41US21$IEEE1$IW$USESV6$~STKCKD$USESV7$~SHL$OTIME$ROPI$IEEEX$EBA8$MICROLIB$REQ8$PRES8$EABIv2 0x00000000   Number         0  anon$$obj.o ABSOLUTE
+    __ARM_use_no_argv                        0x00000000   Number         0  main.o ABSOLUTE
+    __Vectors                                0x00000000   Data           4  startup_aducm3029.o(RESET)
+    __use_no_errno                           0x00000000   Number         0  useno.o ABSOLUTE
+    __use_no_exception_handling              0x00000000   Number         0  useno.o ABSOLUTE
+    __use_no_fp                              0x00000000   Number         0  useno.o ABSOLUTE
+    __use_no_heap                            0x00000000   Number         0  useno.o ABSOLUTE
+    __use_no_heap_region                     0x00000000   Number         0  useno.o ABSOLUTE
+    __use_no_semihosting                     0x00000000   Number         0  useno.o ABSOLUTE
+    __use_no_semihosting_swi                 0x00000000   Number         0  useno.o ABSOLUTE
+    __use_no_signal_handling                 0x00000000   Number         0  useno.o ABSOLUTE
+    _printf_a                                0x00000000   Number         0  stubs.o ABSOLUTE
+    _printf_c                                0x00000000   Number         0  stubs.o ABSOLUTE
+    _printf_charcount                        0x00000000   Number         0  stubs.o ABSOLUTE
+    _printf_d                                0x00000000   Number         0  stubs.o ABSOLUTE
+    _printf_e                                0x00000000   Number         0  stubs.o ABSOLUTE
+    _printf_f                                0x00000000   Number         0  stubs.o ABSOLUTE
+    _printf_flags                            0x00000000   Number         0  stubs.o ABSOLUTE
+    _printf_fp_dec                           0x00000000   Number         0  stubs.o ABSOLUTE
+    _printf_fp_hex                           0x00000000   Number         0  stubs.o ABSOLUTE
+    _printf_g                                0x00000000   Number         0  stubs.o ABSOLUTE
+    _printf_i                                0x00000000   Number         0  stubs.o ABSOLUTE
+    _printf_int_dec                          0x00000000   Number         0  stubs.o ABSOLUTE
+    _printf_l                                0x00000000   Number         0  stubs.o ABSOLUTE
+    _printf_lc                               0x00000000   Number         0  stubs.o ABSOLUTE
+    _printf_ll                               0x00000000   Number         0  stubs.o ABSOLUTE
+    _printf_lld                              0x00000000   Number         0  stubs.o ABSOLUTE
+    _printf_lli                              0x00000000   Number         0  stubs.o ABSOLUTE
+    _printf_llo                              0x00000000   Number         0  stubs.o ABSOLUTE
+    _printf_llu                              0x00000000   Number         0  stubs.o ABSOLUTE
+    _printf_llx                              0x00000000   Number         0  stubs.o ABSOLUTE
+    _printf_longlong_dec                     0x00000000   Number         0  stubs.o ABSOLUTE
+    _printf_longlong_hex                     0x00000000   Number         0  stubs.o ABSOLUTE
+    _printf_longlong_oct                     0x00000000   Number         0  stubs.o ABSOLUTE
+    _printf_ls                               0x00000000   Number         0  stubs.o ABSOLUTE
+    _printf_mbtowc                           0x00000000   Number         0  stubs.o ABSOLUTE
+    _printf_n                                0x00000000   Number         0  stubs.o ABSOLUTE
+    _printf_o                                0x00000000   Number         0  stubs.o ABSOLUTE
+    _printf_p                                0x00000000   Number         0  stubs.o ABSOLUTE
+    _printf_percent                          0x00000000   Number         0  stubs.o ABSOLUTE
+    _printf_pre_padding                      0x00000000   Number         0  stubs.o ABSOLUTE
+    _printf_return_value                     0x00000000   Number         0  stubs.o ABSOLUTE
+    _printf_s                                0x00000000   Number         0  stubs.o ABSOLUTE
+    _printf_sizespec                         0x00000000   Number         0  stubs.o ABSOLUTE
+    _printf_str                              0x00000000   Number         0  stubs.o ABSOLUTE
+    _printf_truncate_signed                  0x00000000   Number         0  stubs.o ABSOLUTE
+    _printf_truncate_unsigned                0x00000000   Number         0  stubs.o ABSOLUTE
+    _printf_u                                0x00000000   Number         0  stubs.o ABSOLUTE
+    _printf_wc                               0x00000000   Number         0  stubs.o ABSOLUTE
+    _printf_wctomb                           0x00000000   Number         0  stubs.o ABSOLUTE
+    _printf_widthprec                        0x00000000   Number         0  stubs.o ABSOLUTE
+    _printf_x                                0x00000000   Number         0  stubs.o ABSOLUTE
+    __cpp_initialize__aeabi_                  - Undefined Weak Reference
+    __cxa_finalize                            - Undefined Weak Reference
+    __decompress                              - Undefined Weak Reference
+    _clock_init                               - Undefined Weak Reference
+    _microlib_exit                            - Undefined Weak Reference
+    __Vectors_End                            0x00000144   Data           0  startup_aducm3029.o(RESET)
+    __Vectors_Size                           0x00000144   Number         0  startup_aducm3029.o ABSOLUTE
+    __main                                   0x00000145   Thumb Code     0  entry.o(.ARM.Collect$$$$00000000)
+    _main_stk                                0x00000145   Thumb Code     0  entry2.o(.ARM.Collect$$$$00000001)
+    _main_scatterload                        0x00000149   Thumb Code     0  entry5.o(.ARM.Collect$$$$00000004)
+    __main_after_scatterload                 0x0000014d   Thumb Code     0  entry5.o(.ARM.Collect$$$$00000004)
+    _main_clock                              0x0000014d   Thumb Code     0  entry7b.o(.ARM.Collect$$$$00000008)
+    _main_cpp_init                           0x0000014d   Thumb Code     0  entry8b.o(.ARM.Collect$$$$0000000A)
+    _main_init                               0x0000014d   Thumb Code     0  entry9a.o(.ARM.Collect$$$$0000000B)
+    __rt_final_cpp                           0x00000155   Thumb Code     0  entry10a.o(.ARM.Collect$$$$0000000D)
+    __rt_final_exit                          0x00000155   Thumb Code     0  entry11a.o(.ARM.Collect$$$$0000000F)
+    Reset_Handler                            0x00000159   Thumb Code     8  startup_aducm3029.o(.text)
+    NMI_Handler                              0x00000161   Thumb Code     2  startup_aducm3029.o(.text)
+    HardFault_Handler                        0x00000163   Thumb Code     2  startup_aducm3029.o(.text)
+    MemManage_Handler                        0x00000165   Thumb Code     2  startup_aducm3029.o(.text)
+    BusFault_Handler                         0x00000167   Thumb Code     2  startup_aducm3029.o(.text)
+    UsageFault_Handler                       0x00000169   Thumb Code     2  startup_aducm3029.o(.text)
+    SVC_Handler                              0x0000016b   Thumb Code     2  startup_aducm3029.o(.text)
+    DebugMon_Handler                         0x0000016d   Thumb Code     2  startup_aducm3029.o(.text)
+    PendSV_Handler                           0x0000016f   Thumb Code     2  startup_aducm3029.o(.text)
+    SysTick_Handler                          0x00000171   Thumb Code     2  startup_aducm3029.o(.text)
+    ADC_Int_Handler                          0x00000173   Thumb Code     0  startup_aducm3029.o(.text)
+    Battery_Voltage_Int_Handler              0x00000173   Thumb Code     0  startup_aducm3029.o(.text)
+    Beep_Int_Handler                         0x00000173   Thumb Code     0  startup_aducm3029.o(.text)
+    Crypto_Int_Handler                       0x00000173   Thumb Code     0  startup_aducm3029.o(.text)
+    Crystal_osc_Int_Handler                  0x00000173   Thumb Code     0  startup_aducm3029.o(.text)
+    DMA_ADC0_Int_Handler                     0x00000173   Thumb Code     0  startup_aducm3029.o(.text)
+    DMA_AES0_IN_Int_Handler                  0x00000173   Thumb Code     0  startup_aducm3029.o(.text)
+    DMA_AES0_OUT_Int_Handler                 0x00000173   Thumb Code     0  startup_aducm3029.o(.text)
+    DMA_Err_Int_Handler                      0x00000173   Thumb Code     0  startup_aducm3029.o(.text)
+    DMA_FLASH0_Int_Handler                   0x00000173   Thumb Code     0  startup_aducm3029.o(.text)
+    DMA_I2C0_MX_Int_Handler                  0x00000173   Thumb Code     0  startup_aducm3029.o(.text)
+    DMA_I2C0_SRX_Int_Handler                 0x00000173   Thumb Code     0  startup_aducm3029.o(.text)
+    DMA_I2C0_STX_Int_Handler                 0x00000173   Thumb Code     0  startup_aducm3029.o(.text)
+    DMA_SIP0_Int_Handler                     0x00000173   Thumb Code     0  startup_aducm3029.o(.text)
+    DMA_SIP1_Int_Handler                     0x00000173   Thumb Code     0  startup_aducm3029.o(.text)
+    DMA_SIP2_Int_Handler                     0x00000173   Thumb Code     0  startup_aducm3029.o(.text)
+    DMA_SIP3_Int_Handler                     0x00000173   Thumb Code     0  startup_aducm3029.o(.text)
+    DMA_SIP4_Int_Handler                     0x00000173   Thumb Code     0  startup_aducm3029.o(.text)
+    DMA_SIP5_Int_Handler                     0x00000173   Thumb Code     0  startup_aducm3029.o(.text)
+    DMA_SIP6_Int_Handler                     0x00000173   Thumb Code     0  startup_aducm3029.o(.text)
+    DMA_SIP7_Int_Handler                     0x00000173   Thumb Code     0  startup_aducm3029.o(.text)
+    DMA_SPI0_RX_Int_Handler                  0x00000173   Thumb Code     0  startup_aducm3029.o(.text)
+    DMA_SPI0_TX_Int_Handler                  0x00000173   Thumb Code     0  startup_aducm3029.o(.text)
+    DMA_SPI1_RX_Int_Handler                  0x00000173   Thumb Code     0  startup_aducm3029.o(.text)
+    DMA_SPI1_TX_Int_Handler                  0x00000173   Thumb Code     0  startup_aducm3029.o(.text)
+    DMA_SPI2_RX_Int_Handler                  0x00000173   Thumb Code     0  startup_aducm3029.o(.text)
+    DMA_SPI2_TX_Int_Handler                  0x00000173   Thumb Code     0  startup_aducm3029.o(.text)
+    DMA_SPORT0A_Int_Handler                  0x00000173   Thumb Code     0  startup_aducm3029.o(.text)
+    DMA_SPORT0B_Int_Handler                  0x00000173   Thumb Code     0  startup_aducm3029.o(.text)
+    DMA_UART_RX_Int_Handler                  0x00000173   Thumb Code     0  startup_aducm3029.o(.text)
+    DMA_UART_TX_Int_Handler                  0x00000173   Thumb Code     0  startup_aducm3029.o(.text)
+    Ext_Int1_Handler                         0x00000173   Thumb Code     0  startup_aducm3029.o(.text)
+    Ext_Int2_Handler                         0x00000173   Thumb Code     0  startup_aducm3029.o(.text)
+    Ext_Int3_Handler                         0x00000173   Thumb Code     0  startup_aducm3029.o(.text)
+    Flash0_Int_Handler                       0x00000173   Thumb Code     0  startup_aducm3029.o(.text)
+    GPIO_A_Int_Handler                       0x00000173   Thumb Code     0  startup_aducm3029.o(.text)
+    GPIO_B_Int_Handler                       0x00000173   Thumb Code     0  startup_aducm3029.o(.text)
+    GP_Tmr0_Int_Handler                      0x00000173   Thumb Code     0  startup_aducm3029.o(.text)
+    GP_Tmr1_Int_Handler                      0x00000173   Thumb Code     0  startup_aducm3029.o(.text)
+    GP_Tmr2_Int_Handler                      0x00000173   Thumb Code     0  startup_aducm3029.o(.text)
+    I2C0_Master_Int_Handler                  0x00000173   Thumb Code     0  startup_aducm3029.o(.text)
+    I2C0_Slave_Int_Handler                   0x00000173   Thumb Code     0  startup_aducm3029.o(.text)
+    PLL_Int_Handler                          0x00000173   Thumb Code     0  startup_aducm3029.o(.text)
+    RNG_Int_Handler                          0x00000173   Thumb Code     0  startup_aducm3029.o(.text)
+    RTC0_Int_Handler                         0x00000173   Thumb Code     0  startup_aducm3029.o(.text)
+    RTC1_Int_Handler                         0x00000173   Thumb Code     0  startup_aducm3029.o(.text)
+    SPI0_Int_Handler                         0x00000173   Thumb Code     0  startup_aducm3029.o(.text)
+    SPI1_Int_Handler                         0x00000173   Thumb Code     0  startup_aducm3029.o(.text)
+    SPI2_Int_Handler                         0x00000173   Thumb Code     0  startup_aducm3029.o(.text)
+    SPORT0A_Int_Handler                      0x00000173   Thumb Code     0  startup_aducm3029.o(.text)
+    SPORT0B_Int_Handler                      0x00000173   Thumb Code     0  startup_aducm3029.o(.text)
+    Vreg_over_Int_Handler                    0x00000173   Thumb Code     0  startup_aducm3029.o(.text)
+    WDog_Tmr_Int_Handler                     0x00000173   Thumb Code     0  startup_aducm3029.o(.text)
+    __I$use$fp                               0x0000017d   Thumb Code     0  iusefp.o(.text)
+    __scatterload_null                       0x0000017d   Thumb Code     2  handlers.o(i.__scatterload_null)
+    adi_aducm302x_security_options           0x00000180   Data          32  system_aducm3029.o(.ARM.__AT_0x00000180)
+    __aeabi_uldivmod                         0x000001a1   Thumb Code    98  uldiv.o(.text)
+    __aeabi_llsl                             0x00000203   Thumb Code    30  llshl.o(.text)
+    _ll_shift_l                              0x00000203   Thumb Code     0  llshl.o(.text)
+    strcmp                                   0x00000221   Thumb Code    28  strcmp.o(.text)
+    strtoul                                  0x0000023d   Thumb Code   114  strtoul.o(.text)
+    __aeabi_dadd                             0x000002af   Thumb Code   322  dadd.o(.text)
+    __aeabi_dsub                             0x000003f1   Thumb Code     6  dadd.o(.text)
+    __aeabi_drsub                            0x000003f7   Thumb Code     6  dadd.o(.text)
+    __aeabi_dmul                             0x000003fd   Thumb Code   228  dmul.o(.text)
+    __aeabi_ddiv                             0x000004e1   Thumb Code   222  ddiv.o(.text)
+    __aeabi_cdrcmple                         0x000005c1   Thumb Code    48  cdrcmple.o(.text)
+    __aeabi_uidiv                            0x000005f1   Thumb Code     0  uidiv.o(.text)
+    __aeabi_uidivmod                         0x000005f1   Thumb Code    44  uidiv.o(.text)
+    __aeabi_llsr                             0x0000061d   Thumb Code    32  llushr.o(.text)
+    _ll_ushift_r                             0x0000061d   Thumb Code     0  llushr.o(.text)
+    __aeabi_lasr                             0x0000063d   Thumb Code    36  llsshr.o(.text)
+    _ll_sshift_r                             0x0000063d   Thumb Code     0  llsshr.o(.text)
+    __rt_ctype_table                         0x00000661   Thumb Code     4  ctype_o.o(.text)
+    _strtoul                                 0x00000669   Thumb Code   158  _strtoul.o(.text)
+    _double_round                            0x00000707   Thumb Code    30  depilogue.o(.text)
+    _double_epilogue                         0x00000725   Thumb Code   156  depilogue.o(.text)
+    __aeabi_d2ulz                            0x000007c1   Thumb Code    48  dfixul.o(.text)
+    __scatterload                            0x000007f1   Thumb Code    28  init.o(.text)
+    __scatterload_rt2                        0x000007f1   Thumb Code     0  init.o(.text)
+    _chval                                   0x00000815   Thumb Code    28  _chval.o(.text)
+    AD5940_CsSet                             0x00000831   Thumb Code    10  adicup3029port.o(i.AD5940_CsSet)
+    AD5940_MCUResourceInit                   0x00000841   Thumb Code   224  adicup3029port.o(i.AD5940_MCUResourceInit)
+    AD5940_RstSet                            0x0000092d   Thumb Code     8  adicup3029port.o(i.AD5940_RstSet)
+    AD5940_SPI1CsSet                         0x00000939   Thumb Code    10  adicup3029port.o(i.AD5940_SPI1CsSet)
+    Ext_Int0_Handler                         0x00000949   Thumb Code    12  adicup3029port.o(i.Ext_Int0_Handler)
+    MCUPlatformInit                          0x0000095d   Thumb Code    84  main.o(i.MCUPlatformInit)
+    SystemInit                               0x000009d9   Thumb Code    78  system_aducm3029.o(i.SystemInit)
+    UARTCmd_MatchCommand                     0x00000a31   Thumb Code    86  uartcmd.o(i.UARTCmd_MatchCommand)
+    UARTCmd_Process                          0x00000a99   Thumb Code   150  uartcmd.o(i.UARTCmd_Process)
+    UARTCmd_RemoveSpaces                     0x00000b55   Thumb Code   100  uartcmd.o(i.UARTCmd_RemoveSpaces)
+    UARTCmd_TranslateParas                   0x00000bc5   Thumb Code    98  uartcmd.o(i.UARTCmd_TranslateParas)
+    UART_Int_Handler                         0x00000c39   Thumb Code    86  main.o(i.UART_Int_Handler)
+    UrtCfg                                   0x00000c95   Thumb Code   382  main.o(i.UrtCfg)
+    __0printf                                0x00000e2d   Thumb Code    22  printfa.o(i.__0printf)
+    __1printf                                0x00000e2d   Thumb Code     0  printfa.o(i.__0printf)
+    __2printf                                0x00000e2d   Thumb Code     0  printfa.o(i.__0printf)
+    __c89printf                              0x00000e2d   Thumb Code     0  printfa.o(i.__0printf)
+    printf                                   0x00000e2d   Thumb Code     0  printfa.o(i.__0printf)
+    __aeabi_errno_addr                       0x00000e4d   Thumb Code     4  errno.o(i.__aeabi_errno_addr)
+    __rt_errno_addr                          0x00000e4d   Thumb Code     0  errno.o(i.__aeabi_errno_addr)
+    __scatterload_copy                       0x00000e55   Thumb Code    14  handlers.o(i.__scatterload_copy)
+    __scatterload_zeroinit                   0x00000e63   Thumb Code    14  handlers.o(i.__scatterload_zeroinit)
+    adi_system_EnableRetention               0x00001725   Thumb Code    42  system_aducm3029.o(i.adi_system_EnableRetention)
+    fputc                                    0x00001755   Thumb Code    20  main.o(i.fputc)
+    help                                     0x0000176d   Thumb Code    72  uartcmd.o(i.help)
+    main                                     0x00001811   Thumb Code    24  main.o(i.main)
+    say_hello                                0x00001851   Thumb Code    26  uartcmd.o(i.say_hello)
+    __ctype_table                            0x00001894   Data         129  ctype_o.o(.constdata)
+    Region$$Table$$Base                      0x0000196c   Number         0  anon$$obj.o(Region$$Table)
+    Region$$Table$$Limit                     0x0000198c   Number         0  anon$$obj.o(Region$$Table)
+    uart_cmd_table                           0x20000004   Data          72  uartcmd.o(.data)
+    line_buffer_index                        0x2000004c   Data           4  uartcmd.o(.data)
+    token_count                              0x20000050   Data           4  uartcmd.o(.data)
+    pObjFound                                0x20000054   Data           4  uartcmd.o(.data)
+    parameter1                               0x20000058   Data           4  uartcmd.o(.data)
+    parameter2                               0x2000005c   Data           4  uartcmd.o(.data)
+    __stdout                                 0x20000060   Data           4  stdout.o(.data)
+    line_buffer                              0x20000068   Data         128  uartcmd.o(.bss)
+    __initial_sp                             0x200004e8   Data           0  startup_aducm3029.o(STACK)
+
+
+
+==============================================================================
+
+Memory Map of the image
+
+  Image Entry point : 0x00000159
+
+  Load Region LR_1 (Base: 0x00000000, Size: 0x000019f4, Max: 0xffffffff, ABSOLUTE)
+
+    Execution Region ER_RO (Exec base: 0x00000000, Load base: 0x00000000, Size: 0x0000198c, Max: 0xffffffff, ABSOLUTE)
+
+    Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
+
+    0x00000000   0x00000000   0x00000144   Data   RO         1298    RESET               startup_aducm3029.o
+    0x00000144   0x00000144   0x00000000   Code   RO         1437  * .ARM.Collect$$$$00000000  mc_w.l(entry.o)
+    0x00000144   0x00000144   0x00000004   Code   RO         1810    .ARM.Collect$$$$00000001  mc_w.l(entry2.o)
+    0x00000148   0x00000148   0x00000004   Code   RO         1813    .ARM.Collect$$$$00000004  mc_w.l(entry5.o)
+    0x0000014c   0x0000014c   0x00000000   Code   RO         1815    .ARM.Collect$$$$00000008  mc_w.l(entry7b.o)
+    0x0000014c   0x0000014c   0x00000000   Code   RO         1817    .ARM.Collect$$$$0000000A  mc_w.l(entry8b.o)
+    0x0000014c   0x0000014c   0x00000008   Code   RO         1818    .ARM.Collect$$$$0000000B  mc_w.l(entry9a.o)
+    0x00000154   0x00000154   0x00000000   Code   RO         1820    .ARM.Collect$$$$0000000D  mc_w.l(entry10a.o)
+    0x00000154   0x00000154   0x00000000   Code   RO         1822    .ARM.Collect$$$$0000000F  mc_w.l(entry11a.o)
+    0x00000154   0x00000154   0x00000004   Code   RO         1811    .ARM.Collect$$$$00002712  mc_w.l(entry2.o)
+    0x00000158   0x00000158   0x00000024   Code   RO         1299  * .text               startup_aducm3029.o
+    0x0000017c   0x0000017c   0x00000000   Code   RO         1868    .text               mc_w.l(iusefp.o)
+    0x0000017c   0x0000017c   0x00000002   Code   RO         1886    i.__scatterload_null  mc_w.l(handlers.o)
+    0x0000017e   0x0000017e   0x00000002   PAD
+    0x00000180   0x00000180   0x00000020   Data   RO         1311    .ARM.__AT_0x00000180  system_aducm3029.o
+    0x000001a0   0x000001a0   0x00000062   Code   RO         1440    .text               mc_w.l(uldiv.o)
+    0x00000202   0x00000202   0x0000001e   Code   RO         1442    .text               mc_w.l(llshl.o)
+    0x00000220   0x00000220   0x0000001c   Code   RO         1448    .text               mc_w.l(strcmp.o)
+    0x0000023c   0x0000023c   0x00000072   Code   RO         1713    .text               mc_w.l(strtoul.o)
+    0x000002ae   0x000002ae   0x0000014e   Code   RO         1721    .text               mf_w.l(dadd.o)
+    0x000003fc   0x000003fc   0x000000e4   Code   RO         1723    .text               mf_w.l(dmul.o)
+    0x000004e0   0x000004e0   0x000000de   Code   RO         1725    .text               mf_w.l(ddiv.o)
+    0x000005be   0x000005be   0x00000002   PAD
+    0x000005c0   0x000005c0   0x00000030   Code   RO         1749    .text               mf_w.l(cdrcmple.o)
+    0x000005f0   0x000005f0   0x0000002c   Code   RO         1825    .text               mc_w.l(uidiv.o)
+    0x0000061c   0x0000061c   0x00000020   Code   RO         1827    .text               mc_w.l(llushr.o)
+    0x0000063c   0x0000063c   0x00000024   Code   RO         1829    .text               mc_w.l(llsshr.o)
+    0x00000660   0x00000660   0x00000008   Code   RO         1831    .text               mc_w.l(ctype_o.o)
+    0x00000668   0x00000668   0x0000009e   Code   RO         1866    .text               mc_w.l(_strtoul.o)
+    0x00000706   0x00000706   0x000000ba   Code   RO         1871    .text               mf_w.l(depilogue.o)
+    0x000007c0   0x000007c0   0x00000030   Code   RO         1877    .text               mf_w.l(dfixul.o)
+    0x000007f0   0x000007f0   0x00000024   Code   RO         1879    .text               mc_w.l(init.o)
+    0x00000814   0x00000814   0x0000001c   Code   RO         1881    .text               mc_w.l(_chval.o)
+    0x00000830   0x00000830   0x00000010   Code   RO          737    i.AD5940_CsSet      adicup3029port.o
+    0x00000840   0x00000840   0x000000ec   Code   RO          740    i.AD5940_MCUResourceInit  adicup3029port.o
+    0x0000092c   0x0000092c   0x0000000c   Code   RO          743    i.AD5940_RstSet     adicup3029port.o
+    0x00000938   0x00000938   0x00000010   Code   RO          745    i.AD5940_SPI1CsSet  adicup3029port.o
+    0x00000948   0x00000948   0x00000014   Code   RO          747    i.Ext_Int0_Handler  adicup3029port.o
+    0x0000095c   0x0000095c   0x00000064   Code   RO          895    i.MCUPlatformInit   main.o
+    0x000009c0   0x000009c0   0x00000018   Code   RO         1241    i.Str2Num           uartcmd.o
+    0x000009d8   0x000009d8   0x00000058   Code   RO         1307    i.SystemInit        system_aducm3029.o
+    0x00000a30   0x00000a30   0x00000068   Code   RO         1242    i.UARTCmd_MatchCommand  uartcmd.o
+    0x00000a98   0x00000a98   0x000000bc   Code   RO         1243    i.UARTCmd_Process   uartcmd.o
+    0x00000b54   0x00000b54   0x00000070   Code   RO         1244    i.UARTCmd_RemoveSpaces  uartcmd.o
+    0x00000bc4   0x00000bc4   0x00000074   Code   RO         1245    i.UARTCmd_TranslateParas  uartcmd.o
+    0x00000c38   0x00000c38   0x0000005c   Code   RO          896    i.UART_Int_Handler  main.o
+    0x00000c94   0x00000c94   0x00000198   Code   RO          897    i.UrtCfg            main.o
+    0x00000e2c   0x00000e2c   0x00000020   Code   RO         1685    i.__0printf         mc_w.l(printfa.o)
+    0x00000e4c   0x00000e4c   0x00000008   Code   RO         1859    i.__aeabi_errno_addr  mc_w.l(errno.o)
+    0x00000e54   0x00000e54   0x0000000e   Code   RO         1885    i.__scatterload_copy  mc_w.l(handlers.o)
+    0x00000e62   0x00000e62   0x0000000e   Code   RO         1887    i.__scatterload_zeroinit  mc_w.l(handlers.o)
+    0x00000e70   0x00000e70   0x00000184   Code   RO         1692    i._fp_digits        mc_w.l(printfa.o)
+    0x00000ff4   0x00000ff4   0x000006dc   Code   RO         1693    i._printf_core      mc_w.l(printfa.o)
+    0x000016d0   0x000016d0   0x00000024   Code   RO         1694    i._printf_post_padding  mc_w.l(printfa.o)
+    0x000016f4   0x000016f4   0x0000002e   Code   RO         1695    i._printf_pre_padding  mc_w.l(printfa.o)
+    0x00001722   0x00001722   0x00000002   PAD
+    0x00001724   0x00001724   0x00000030   Code   RO         1309    i.adi_system_EnableRetention  system_aducm3029.o
+    0x00001754   0x00001754   0x00000018   Code   RO          898    i.fputc             main.o
+    0x0000176c   0x0000176c   0x000000a4   Code   RO         1246    i.help              uartcmd.o
+    0x00001810   0x00001810   0x00000040   Code   RO          899    i.main              main.o
+    0x00001850   0x00001850   0x00000044   Code   RO         1247    i.say_hello         uartcmd.o
+    0x00001894   0x00001894   0x00000081   Data   RO         1832    .constdata          mc_w.l(ctype_o.o)
+    0x00001915   0x00001915   0x00000003   PAD
+    0x00001918   0x00001918   0x00000004   Data   RO         1833    .constdata          mc_w.l(ctype_o.o)
+    0x0000191c   0x0000191c   0x0000004d   Data   RO         1249    .conststring        uartcmd.o
+    0x00001969   0x00001969   0x00000003   PAD
+    0x0000196c   0x0000196c   0x00000020   Data   RO         1883    Region$$Table       anon$$obj.o
+
+
+    Execution Region ER_RW (Exec base: 0x20000000, Load base: 0x0000198c, Size: 0x00000068, Max: 0xffffffff, ABSOLUTE)
+
+    Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
+
+    0x20000000   0x0000198c   0x00000004   Data   RW          748    .data               adicup3029port.o
+    0x20000004   0x00001990   0x0000005c   Data   RW         1250    .data               uartcmd.o
+    0x20000060   0x000019ec   0x00000004   Data   RW         1824    .data               mc_w.l(stdout.o)
+    0x20000064   0x000019f0   0x00000004   Data   RW         1862    .data               mc_w.l(errno.o)
+
+
+    Execution Region ER_ZI (Exec base: 0x20000068, Load base: 0x000019f4, Size: 0x00000480, Max: 0xffffffff, ABSOLUTE)
+
+    Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
+
+    0x20000068        -       0x00000080   Zero   RW         1248    .bss                uartcmd.o
+    0x200000e8        -       0x00000400   Zero   RW         1296    STACK               startup_aducm3029.o
+
+
+==============================================================================
+
+Image component sizes
+
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Object Name
+
+         0          0          0          0          0       4508   ad5940.o
+       300         36          0          4          0      45341   adicup3029port.o
+       688         92          0          0          0       4517   main.o
+        36          8        324          0       1024        836   startup_aducm3029.o
+       136         16         32          0          0       6089   system_aducm3029.o
+       776        220         77         92        128       5203   uartcmd.o
+
+    ----------------------------------------------------------------------
+      1936        372        468         96       1152      66494   Object Totals
+         0          0         32          0          0          0   (incl. Generated)
+         0          0          3          0          0          0   (incl. Padding)
+
+    ----------------------------------------------------------------------
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Library Member Name
+
+        28          0          0          0          0         68   _chval.o
+       158          0          0          0          0         92   _strtoul.o
+         8          4        133          0          0         68   ctype_o.o
+         0          0          0          0          0          0   entry.o
+         0          0          0          0          0          0   entry10a.o
+         0          0          0          0          0          0   entry11a.o
+         8          4          0          0          0          0   entry2.o
+         4          0          0          0          0          0   entry5.o
+         0          0          0          0          0          0   entry7b.o
+         0          0          0          0          0          0   entry8b.o
+         8          4          0          0          0          0   entry9a.o
+         8          4          0          4          0         68   errno.o
+        30          0          0          0          0          0   handlers.o
+        36          8          0          0          0         68   init.o
+         0          0          0          0          0          0   iusefp.o
+        30          0          0          0          0         68   llshl.o
+        36          0          0          0          0         68   llsshr.o
+        32          0          0          0          0         68   llushr.o
+      2258         90          0          0          0        452   printfa.o
+         0          0          0          4          0          0   stdout.o
+        28          0          0          0          0         76   strcmp.o
+       114          0          0          0          0         92   strtoul.o
+        44          0          0          0          0         80   uidiv.o
+        98          0          0          0          0         92   uldiv.o
+        48          0          0          0          0         68   cdrcmple.o
+       334          0          0          0          0        148   dadd.o
+       222          0          0          0          0        100   ddiv.o
+       186          0          0          0          0        176   depilogue.o
+        48          0          0          0          0         68   dfixul.o
+       228          0          0          0          0         96   dmul.o
+
+    ----------------------------------------------------------------------
+      4000        114        136          8          0       2016   Library Totals
+         6          0          3          0          0          0   (incl. Padding)
+
+    ----------------------------------------------------------------------
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Library Name
+
+      2928        114        133          8          0       1360   mc_w.l
+      1066          0          0          0          0        656   mf_w.l
+
+    ----------------------------------------------------------------------
+      4000        114        136          8          0       2016   Library Totals
+
+    ----------------------------------------------------------------------
+
+==============================================================================
+
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   
+
+      5936        486        604        104       1152      66738   Grand Totals
+      5936        486        604        104       1152      66738   ELF Image Totals
+      5936        486        604        104          0          0   ROM Totals
+
+==============================================================================
+
+    Total RO  Size (Code + RO Data)                 6540 (   6.39kB)
+    Total RW  Size (RW Data + ZI Data)              1256 (   1.23kB)
+    Total ROM Size (Code + RO Data + RW Data)       6644 (   6.49kB)
+
+==============================================================================
+

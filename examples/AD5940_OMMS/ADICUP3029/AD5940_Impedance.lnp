@@ -1,0 +1,15 @@
+--cpu Cortex-M3
+".\ad5940.o"
+".\adicup3029port.o"
+".\main.o"
+".\ad5940main.o"
+".\impedance.o"
+".\signalgen.o"
+".\amperometric.o"
+".\uartcmd.o"
+"..\..\..\..\..\AppData\Local\Arm\Packs\ARM\CMSIS\5.5.1\CMSIS\DSP\Lib\ARM\arm_cortexM3l_math.lib"
+".\startup_aducm3029.o"
+".\system_aducm3029.o"
+--library_type=microlib --ro-base 0x00000000 --entry 0x00000000 --rw-base 0x20000000 --entry Reset_Handler --first __Vectors --strict --summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\AD5940_Impedance.map" -o .\AD5940_Impedance.axf
